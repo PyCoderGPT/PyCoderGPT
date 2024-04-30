@@ -1,0 +1,109 @@
+from case_MBPP_414 import sum_in_Range
+
+
+def check(candidate):
+    assert candidate(2,5) == 8
+    assert candidate(5,7) == 12
+    assert candidate(7,13) == 40
+    assert candidate(4, 6) == 5
+    assert candidate(1, 2) == 1
+    assert candidate(7, 7) == 7
+    assert candidate(5, 4) == 0
+    assert candidate(1, 3) == 4
+    assert candidate(6, 10) == 16
+    assert candidate(4, 3) == 0
+    assert candidate(4, 8) == 12
+    assert candidate(1, 5) == 9
+    assert candidate(7, 2) == -8
+    assert candidate(3, 4) == 3
+    assert candidate(7, 2) == -8
+    assert candidate(6, 7) == 7
+    assert candidate(6, 6) == 0
+    assert candidate(3, 5) == 8
+    assert candidate(5, 6) == 5
+    assert candidate(2, 10) == 24
+    assert candidate(2, 4) == 3
+    assert candidate(4, 4) == 0
+    assert candidate(5, 4) == 0
+    assert candidate(7, 8) == 7
+    assert candidate(5, 4) == 0
+    assert candidate(7, 5) == 0
+    assert candidate(7, 5) == 0
+    assert candidate(6, 2) == -8
+    assert candidate(4, 2) == -3
+    assert candidate(2, 6) == 8
+    assert candidate(4, 7) == 12
+    assert candidate(7, 2) == -8
+    assert candidate(6, 10) == 16
+    assert candidate(1, 7) == 16
+    assert candidate(2, 5) == 8
+    assert candidate(3, 1) == 0
+    assert candidate(7, 9) == 16
+    assert candidate(4, 12) == 32
+    assert candidate(8, 7) == 0
+    assert candidate(4, 10) == 21
+    assert candidate(8, 6) == -7
+    assert candidate(3, 12) == 35
+    assert candidate(7, 11) == 27
+    assert candidate(8, 6) == -7
+    assert candidate(5, 6) == 5
+    assert candidate(4, 9) == 21
+    assert candidate(6, 10) == 16
+    assert candidate(9, 5) == -7
+    assert candidate(8, 6) == -7
+    assert candidate(2, 7) == 15
+    assert candidate(6, 3) == -5
+    assert candidate(6, 9) == 16
+    assert candidate(4, 9) == 21
+    assert candidate(8, 12) == 20
+    assert candidate(1, 4) == 4
+    assert candidate(5, 11) == 32
+    assert candidate(5, 9) == 21
+    assert candidate(4, 9) == 21
+    assert candidate(8, 11) == 20
+    assert candidate(9, 9) == 9
+    assert candidate(8, 5) == -7
+    assert candidate(10, 12) == 11
+    assert candidate(5, 10) == 21
+    assert candidate(9, 11) == 20
+    assert candidate(8, 5) == -7
+    assert candidate(1, 4) == 4
+    assert candidate(10, 8) == -9
+    assert candidate(10, 5) == -16
+    assert candidate(3, 9) == 24
+    assert candidate(4, 13) == 45
+    assert candidate(8, 8) == 0
+    assert candidate(10, 10) == 0
+    assert candidate(4, 9) == 21
+    assert candidate(3, 15) == 63
+    assert candidate(11, 12) == 11
+    assert candidate(9, 9) == 9
+    assert candidate(12, 18) == 45
+    assert candidate(4, 17) == 77
+    assert candidate(4, 18) == 77
+    assert candidate(7, 13) == 40
+    assert candidate(12, 9) == -11
+    assert candidate(10, 15) == 39
+    assert candidate(4, 12) == 32
+    assert candidate(12, 8) == -20
+    assert candidate(8, 10) == 9
+    assert candidate(4, 17) == 77
+    assert candidate(12, 16) == 28
+    assert candidate(4, 15) == 60
+    assert candidate(11, 17) == 56
+    assert candidate(3, 17) == 80
+    assert candidate(10, 15) == 39
+    assert candidate(3, 14) == 48
+    assert candidate(4, 16) == 60
+    assert candidate(9, 14) == 33
+    assert candidate(3, 18) == 80
+    assert candidate(7, 17) == 72
+    assert candidate(10, 10) == 0
+    assert candidate(2, 16) == 63
+    assert candidate(10, 12) == 11
+    assert candidate(10, 18) == 56
+    assert candidate(9, 9) == 9
+    assert candidate(2, 8) == 15
+
+if __name__ == '__main__':
+    check(sum_in_Range)

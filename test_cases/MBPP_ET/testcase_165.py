@@ -1,0 +1,109 @@
+from case_MBPP_165 import sum_div
+
+
+def check(candidate):
+    assert candidate(8)==7
+    assert candidate(12)==16
+    assert candidate(7)==1
+    assert candidate(9) == 4
+    assert candidate(5) == 1
+    assert candidate(12) == 16
+    assert candidate(13) == 1
+    assert candidate(3) == 1
+    assert candidate(7) == 1
+    assert candidate(10) == 8
+    assert candidate(11) == 1
+    assert candidate(10) == 8
+    assert candidate(9) == 4
+    assert candidate(13) == 1
+    assert candidate(4) == 3
+    assert candidate(5) == 1
+    assert candidate(12) == 16
+    assert candidate(7) == 1
+    assert candidate(6) == 6
+    assert candidate(4) == 3
+    assert candidate(11) == 1
+    assert candidate(4) == 3
+    assert candidate(12) == 16
+    assert candidate(11) == 1
+    assert candidate(6) == 6
+    assert candidate(11) == 1
+    assert candidate(13) == 1
+    assert candidate(10) == 8
+    assert candidate(5) == 1
+    assert candidate(11) == 1
+    assert candidate(6) == 6
+    assert candidate(3) == 1
+    assert candidate(12) == 16
+    assert candidate(10) == 8
+    assert candidate(13) == 1
+    assert candidate(6) == 6
+    assert candidate(16) == 15
+    assert candidate(7) == 1
+    assert candidate(15) == 9
+    assert candidate(13) == 1
+    assert candidate(14) == 10
+    assert candidate(10) == 8
+    assert candidate(13) == 1
+    assert candidate(9) == 4
+    assert candidate(8) == 7
+    assert candidate(13) == 1
+    assert candidate(16) == 15
+    assert candidate(12) == 16
+    assert candidate(14) == 10
+    assert candidate(16) == 15
+    assert candidate(8) == 7
+    assert candidate(8) == 7
+    assert candidate(13) == 1
+    assert candidate(7) == 1
+    assert candidate(17) == 1
+    assert candidate(9) == 4
+    assert candidate(11) == 1
+    assert candidate(16) == 15
+    assert candidate(12) == 16
+    assert candidate(16) == 15
+    assert candidate(16) == 15
+    assert candidate(17) == 1
+    assert candidate(15) == 9
+    assert candidate(10) == 8
+    assert candidate(16) == 15
+    assert candidate(14) == 10
+    assert candidate(10) == 8
+    assert candidate(16) == 15
+    assert candidate(10) == 8
+    assert candidate(10) == 8
+    assert candidate(11) == 1
+    assert candidate(5) == 1
+    assert candidate(7) == 1
+    assert candidate(5) == 1
+    assert candidate(8) == 7
+    assert candidate(9) == 4
+    assert candidate(2) == 1
+    assert candidate(9) == 4
+    assert candidate(2) == 1
+    assert candidate(5) == 1
+    assert candidate(2) == 1
+    assert candidate(6) == 6
+    assert candidate(5) == 1
+    assert candidate(10) == 8
+    assert candidate(4) == 3
+    assert candidate(8) == 7
+    assert candidate(12) == 16
+    assert candidate(4) == 3
+    assert candidate(9) == 4
+    assert candidate(2) == 1
+    assert candidate(9) == 4
+    assert candidate(9) == 4
+    assert candidate(3) == 1
+    assert candidate(8) == 7
+    assert candidate(5) == 1
+    assert candidate(12) == 16
+    assert candidate(3) == 1
+    assert candidate(8) == 7
+    assert candidate(5) == 1
+    assert candidate(9) == 4
+    assert candidate(10) == 8
+    assert candidate(2) == 1
+
+if __name__ == '__main__':
+    check(sum_div)

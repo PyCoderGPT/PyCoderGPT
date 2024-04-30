@@ -1,0 +1,109 @@
+from case_MBPP_408 import even_position
+
+
+def check(candidate):
+    assert candidate([3,2,1]) == False
+    assert candidate([1,2,3]) == False
+    assert candidate([2,1,4]) == True
+    assert candidate([7, 6, 4]) == False
+    assert candidate([6, 3, 1]) == False
+    assert candidate([8, 1, 3]) == False
+    assert candidate([7, 6, 1]) == False
+    assert candidate([1, 7, 4]) == False
+    assert candidate([5, 2, 1]) == False
+    assert candidate([8, 6, 5]) == False
+    assert candidate([2, 3, 6]) == True
+    assert candidate([3, 7, 5]) == False
+    assert candidate([6, 7, 3]) == False
+    assert candidate([1, 6, 4]) == False
+    assert candidate([2, 6, 1]) == False
+    assert candidate([3, 7, 5]) == False
+    assert candidate([7, 4, 5]) == False
+    assert candidate([2, 1, 5]) == False
+    assert candidate([2, 4, 3]) == False
+    assert candidate([8, 4, 1]) == False
+    assert candidate([6, 7, 4]) == True
+    assert candidate([2, 1, 1]) == False
+    assert candidate([7, 3, 1]) == False
+    assert candidate([8, 3, 5]) == False
+    assert candidate([1, 1, 3]) == False
+    assert candidate([8, 1, 2]) == True
+    assert candidate([2, 2, 5]) == False
+    assert candidate([6, 5, 6]) == True
+    assert candidate([5, 6, 3]) == False
+    assert candidate([5, 2, 4]) == False
+    assert candidate([7, 5, 5]) == False
+    assert candidate([4, 3, 1]) == False
+    assert candidate([5, 5, 1]) == False
+    assert candidate([3, 4, 4]) == False
+    assert candidate([6, 1, 4]) == True
+    assert candidate([5, 3, 6]) == False
+    assert candidate([3, 2, 2]) == False
+    assert candidate([1, 3, 6]) == False
+    assert candidate([2, 3, 1]) == False
+    assert candidate([2, 4, 8]) == False
+    assert candidate([1, 3, 1]) == False
+    assert candidate([1, 2, 6]) == False
+    assert candidate([4, 2, 5]) == False
+    assert candidate([3, 3, 5]) == False
+    assert candidate([1, 7, 2]) == False
+    assert candidate([2, 7, 7]) == False
+    assert candidate([1, 3, 3]) == False
+    assert candidate([4, 4, 2]) == False
+    assert candidate([4, 6, 2]) == False
+    assert candidate([4, 3, 4]) == True
+    assert candidate([6, 3, 7]) == False
+    assert candidate([1, 4, 7]) == False
+    assert candidate([5, 2, 7]) == False
+    assert candidate([4, 1, 1]) == False
+    assert candidate([5, 7, 4]) == False
+    assert candidate([6, 1, 3]) == False
+    assert candidate([6, 1, 5]) == False
+    assert candidate([5, 5, 4]) == False
+    assert candidate([1, 6, 3]) == False
+    assert candidate([4, 1, 3]) == False
+    assert candidate([6, 5, 1]) == False
+    assert candidate([1, 4, 3]) == False
+    assert candidate([1, 3, 3]) == False
+    assert candidate([1, 3, 6]) == False
+    assert candidate([6, 5, 6]) == True
+    assert candidate([3, 2, 7]) == False
+    assert candidate([2, 2, 3]) == False
+    assert candidate([3, 7, 3]) == False
+    assert candidate([1, 3, 3]) == False
+    assert candidate([4, 1, 8]) == True
+    assert candidate([4, 6, 9]) == False
+    assert candidate([3, 1, 3]) == False
+    assert candidate([4, 2, 9]) == False
+    assert candidate([3, 2, 2]) == False
+    assert candidate([6, 5, 2]) == True
+    assert candidate([1, 2, 3]) == False
+    assert candidate([2, 2, 9]) == False
+    assert candidate([1, 2, 5]) == False
+    assert candidate([7, 1, 7]) == False
+    assert candidate([3, 5, 5]) == False
+    assert candidate([6, 1, 2]) == True
+    assert candidate([1, 1, 3]) == False
+    assert candidate([2, 2, 2]) == False
+    assert candidate([5, 1, 4]) == False
+    assert candidate([2, 1, 4]) == True
+    assert candidate([5, 4, 5]) == False
+    assert candidate([2, 2, 1]) == False
+    assert candidate([5, 1, 2]) == False
+    assert candidate([4, 6, 6]) == False
+    assert candidate([7, 1, 9]) == False
+    assert candidate([2, 5, 7]) == False
+    assert candidate([7, 5, 3]) == False
+    assert candidate([3, 1, 3]) == False
+    assert candidate([1, 4, 1]) == False
+    assert candidate([3, 6, 6]) == False
+    assert candidate([2, 5, 4]) == True
+    assert candidate([4, 6, 9]) == False
+    assert candidate([1, 2, 2]) == False
+    assert candidate([2, 3, 4]) == True
+    assert candidate([7, 5, 6]) == False
+    assert candidate([4, 5, 1]) == False
+    assert candidate([4, 5, 8]) == True
+
+if __name__ == '__main__':
+    check(even_position)

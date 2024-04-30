@@ -1,0 +1,109 @@
+from case_MBPP_194 import minimum
+
+
+def check(candidate):
+    assert candidate(1,2) == 1
+    assert candidate(-5,-4) == -5
+    assert candidate(0,0) == 0
+    assert candidate(5, 3) == 3
+    assert candidate(6, 5) == 5
+    assert candidate(4, 6) == 4
+    assert candidate(1, 6) == 1
+    assert candidate(6, 6) == 6
+    assert candidate(2, 6) == 2
+    assert candidate(1, 6) == 1
+    assert candidate(3, 5) == 3
+    assert candidate(3, 5) == 3
+    assert candidate(2, 6) == 2
+    assert candidate(3, 1) == 1
+    assert candidate(6, 6) == 6
+    assert candidate(4, 6) == 4
+    assert candidate(3, 7) == 3
+    assert candidate(2, 6) == 2
+    assert candidate(2, 4) == 2
+    assert candidate(4, 3) == 3
+    assert candidate(4, 2) == 2
+    assert candidate(5, 6) == 5
+    assert candidate(5, 2) == 2
+    assert candidate(3, 4) == 3
+    assert candidate(6, 7) == 6
+    assert candidate(1, 4) == 1
+    assert candidate(5, 3) == 3
+    assert candidate(3, 1) == 1
+    assert candidate(5, 6) == 5
+    assert candidate(1, 1) == 1
+    assert candidate(2, 7) == 2
+    assert candidate(3, 2) == 2
+    assert candidate(1, 2) == 1
+    assert candidate(6, 6) == 6
+    assert candidate(1, 6) == 1
+    assert candidate(4, 1) == 1
+    assert candidate(-3, -6) == -6
+    assert candidate(-3, 0) == -3
+    assert candidate(-10, -2) == -10
+    assert candidate(0, -9) == -9
+    assert candidate(-10, -6) == -10
+    assert candidate(0, -4) == -4
+    assert candidate(-9, -5) == -9
+    assert candidate(-1, -4) == -4
+    assert candidate(-2, -6) == -6
+    assert candidate(-9, -8) == -9
+    assert candidate(-7, 1) == -7
+    assert candidate(-2, 1) == -2
+    assert candidate(-10, -2) == -10
+    assert candidate(-1, -2) == -2
+    assert candidate(0, -3) == -3
+    assert candidate(-8, 1) == -8
+    assert candidate(-4, 1) == -4
+    assert candidate(-10, -6) == -10
+    assert candidate(-3, 0) == -3
+    assert candidate(-1, -5) == -5
+    assert candidate(-9, 1) == -9
+    assert candidate(-7, -6) == -7
+    assert candidate(-2, -7) == -7
+    assert candidate(-10, 0) == -10
+    assert candidate(-7, -1) == -7
+    assert candidate(-4, -6) == -6
+    assert candidate(0, -6) == -6
+    assert candidate(-3, 0) == -3
+    assert candidate(-6, -9) == -9
+    assert candidate(-9, -1) == -9
+    assert candidate(-8, -4) == -8
+    assert candidate(-2, 0) == -2
+    assert candidate(-3, -5) == -5
+    assert candidate(2, 3) == 2
+    assert candidate(4, 4) == 4
+    assert candidate(4, 5) == 4
+    assert candidate(2, 4) == 2
+    assert candidate(1, 2) == 1
+    assert candidate(1, 3) == 1
+    assert candidate(2, 5) == 2
+    assert candidate(2, 4) == 2
+    assert candidate(4, 3) == 3
+    assert candidate(4, 5) == 4
+    assert candidate(4, 2) == 2
+    assert candidate(2, 1) == 1
+    assert candidate(1, 1) == 1
+    assert candidate(3, 2) == 2
+    assert candidate(2, 2) == 2
+    assert candidate(5, 2) == 2
+    assert candidate(1, 3) == 1
+    assert candidate(1, 5) == 1
+    assert candidate(5, 5) == 5
+    assert candidate(3, 2) == 2
+    assert candidate(4, 3) == 3
+    assert candidate(1, 1) == 1
+    assert candidate(3, 5) == 3
+    assert candidate(1, 1) == 1
+    assert candidate(2, 5) == 2
+    assert candidate(5, 5) == 5
+    assert candidate(3, 3) == 3
+    assert candidate(5, 5) == 5
+    assert candidate(2, 1) == 1
+    assert candidate(1, 2) == 1
+    assert candidate(4, 2) == 2
+    assert candidate(5, 4) == 4
+    assert candidate(3, 2) == 2
+
+if __name__ == '__main__':
+    check(minimum)

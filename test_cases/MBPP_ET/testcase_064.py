@@ -1,0 +1,109 @@
+from case_MBPP_064 import check_integer
+
+
+def check(candidate):
+    assert candidate("python")==False
+    assert candidate("1")==True
+    assert candidate("12345")==True
+    assert candidate("fgkcdhhrpl") == False
+    assert candidate("uspfu") == False
+    assert candidate("kveuakdr") == False
+    assert candidate("aqqpjjpyjq") == False
+    assert candidate("cziajgoqijv") == False
+    assert candidate("rafunclfpp") == False
+    assert candidate("mckyacb") == False
+    assert candidate("ynf") == False
+    assert candidate("fapnvo") == False
+    assert candidate("esresdewytw") == False
+    assert candidate("kcxabaqn") == False
+    assert candidate("qdtnovp") == False
+    assert candidate("tnlwnpxcydw") == False
+    assert candidate("wknfjq") == False
+    assert candidate("fiigqowa") == False
+    assert candidate("kqbslr") == False
+    assert candidate("sgrgvqrashp") == False
+    assert candidate("jblilq") == False
+    assert candidate("ydelvotk") == False
+    assert candidate("ffjfbemkj") == False
+    assert candidate("gkdimxtbnv") == False
+    assert candidate("xzu") == False
+    assert candidate("ckdowzuj") == False
+    assert candidate("yxyvhoyfndl") == False
+    assert candidate("uxigx") == False
+    assert candidate("nxp") == False
+    assert candidate("mdm") == False
+    assert candidate("fsmjeqyhapem") == False
+    assert candidate("ovbweub") == False
+    assert candidate("zxuqr") == False
+    assert candidate("cos") == False
+    assert candidate("xmwmtghjllo") == False
+    assert candidate("qcgzzz") == False
+    assert candidate("1") == True
+    assert candidate("5") == True
+    assert candidate("1") == True
+    assert candidate("1") == True
+    assert candidate("7") == True
+    assert candidate("6") == True
+    assert candidate("2") == True
+    assert candidate("9") == True
+    assert candidate("4") == True
+    assert candidate("0") == True
+    assert candidate("0") == True
+    assert candidate("7") == True
+    assert candidate("0") == True
+    assert candidate("9") == True
+    assert candidate("7") == True
+    assert candidate("5") == True
+    assert candidate("7") == True
+    assert candidate("8") == True
+    assert candidate("9") == True
+    assert candidate("9") == True
+    assert candidate("7") == True
+    assert candidate("8") == True
+    assert candidate("4") == True
+    assert candidate("3") == True
+    assert candidate("2") == True
+    assert candidate("1") == True
+    assert candidate("2") == True
+    assert candidate("6") == True
+    assert candidate("7") == True
+    assert candidate("0") == True
+    assert candidate("0") == True
+    assert candidate("0") == True
+    assert candidate("2") == True
+    assert candidate("807") == True
+    assert candidate("3579") == True
+    assert candidate("4228475") == True
+    assert candidate("7808") == True
+    assert candidate("105437533") == True
+    assert candidate("55265") == True
+    assert candidate("69571168") == True
+    assert candidate("0851379") == True
+    assert candidate("556939413") == True
+    assert candidate("036") == True
+    assert candidate("74814") == True
+    assert candidate("966930383") == True
+    assert candidate("636") == True
+    assert candidate("845") == True
+    assert candidate("805209869") == True
+    assert candidate("2088") == True
+    assert candidate("738551") == True
+    assert candidate("150123") == True
+    assert candidate("01856") == True
+    assert candidate("50494") == True
+    assert candidate("890753043") == True
+    assert candidate("893096") == True
+    assert candidate("20774632") == True
+    assert candidate("031") == True
+    assert candidate("8108703") == True
+    assert candidate("3831") == True
+    assert candidate("584") == True
+    assert candidate("8686") == True
+    assert candidate("5088") == True
+    assert candidate("1535") == True
+    assert candidate("73707") == True
+    assert candidate("300321743") == True
+    assert candidate("1734") == True
+
+if __name__ == '__main__':
+    check(check_integer)

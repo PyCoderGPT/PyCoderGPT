@@ -1,0 +1,109 @@
+from case_MBPP_156 import check_element
+
+
+def check(candidate):
+    assert candidate(["green", "orange", "black", "white"],'blue')==False
+    assert candidate([1,2,3,4],7)==False
+    assert candidate(["green", "green", "green", "green"],'green')==True
+    assert candidate(['kjtnbmhr', 'kokjyadgh', 'diyb', 'dlkvo'], 'fcebhgy') == False
+    assert candidate(['dhexfu', 'btazydt', 'mtjn', 'gtc'], 'dpuils') == False
+    assert candidate(['pzt', 'qoqwfbzp', 'xuzbx', 'ddkgikkfc'], 'zcd') == False
+    assert candidate(['iumv', 'xtbnw', 'fyrxdd', 'zzzesud'], 'pkwbnc') == False
+    assert candidate(['hflevlxr', 'srqsg', 'wlyjdl', 'gymwa'], 'blm') == False
+    assert candidate(['dicp', 'winwrlp', 'ugwwtw', 'ufd'], 'cflzrk') == False
+    assert candidate(['ucnzz', 'yyqptfx', 'sch', 'ybljkmyt'], 'kikexsyw') == False
+    assert candidate(['cym', 'gkt', 'kwaxysw', 'upevwnx'], 'kibfjjkbp') == False
+    assert candidate(['qypbx', 'jlgdzkf', 'oabirph', 'mwpodi'], 'drbubj') == False
+    assert candidate(['kbd', 'cvpmamqmu', 'mraa', 'ssmtueyvn'], 'tra') == False
+    assert candidate(['dbvq', 'fedbgfc', 'ewnojm', 'thql'], 'bkqqgd') == False
+    assert candidate(['jyu', 'jfcbreyl', 'ihkssi', 'eilxlczs'], 'imumoxw') == False
+    assert candidate(['gcaujsnkq', 'lpgjftst', 'byhzmyl', 'bzu'], 'aausq') == False
+    assert candidate(['cxneblxvx', 'zoiuqdcvtngk', 'eonz', 'bdhrt'], 'fynahaqj') == False
+    assert candidate(['nntv', 'cdizmbvyx', 'aqn', 'bsmyxi'], 'vdtksmum') == False
+    assert candidate(['ioatt', 'eeeyuw', 'qzjb', 'iffwgp'], 'qvlt') == False
+    assert candidate(['ufubrzgil', 'trkuttd', 'ubho', 'axaihiun'], 'yktimilj') == False
+    assert candidate(['fzggrf', 'stxzervqca', 'dfwtakg', 'bubq'], 'saydq') == False
+    assert candidate(['jpxhqe', 'nibhm', 'ooffq', 'uij'], 'leaduhoow') == False
+    assert candidate(['qtcab', 'jldjkortnga', 'jpbfp', 'onokdlejs'], 'ygidpmkyz') == False
+    assert candidate(['ajlmcvqbm', 'csjteybvfpd', 'yckfkfw', 'axvey'], 'sivja') == False
+    assert candidate(['htouzb', 'eoru', 'vuzcw', 'dbg'], 'yuhyfsl') == False
+    assert candidate(['ybfnngiy', 'qqaqcmxypnyt', 'hikkidiit', 'uoleamw'], 'eeswyhk') == False
+    assert candidate(['kektkv', 'ofv', 'qyjjjvw', 'ojhcoc'], 'lkyapr') == False
+    assert candidate(['ksyjya', 'ufzcf', 'jbpkm', 'sjaj'], 'rpqxyw') == False
+    assert candidate(['jhogyc', 'tcdrhpz', 'kkjv', 'lamgpxk'], 'qxhp') == False
+    assert candidate(['nocvt', 'eyubihywmro', 'ipteixxxo', 'gbbdl'], 'sfxt') == False
+    assert candidate(['rkqm', 'gwrqv', 'rff', 'hizd'], 'pfqxgdm') == False
+    assert candidate(['rndi', 'bfecc', 'qmtd', 'hoqamvz'], 'ieldvm') == False
+    assert candidate(['ocdlqnhq', 'ooe', 'viatabsvb', 'cmpkaan'], 'untjyj') == False
+    assert candidate(['uaegwul', 'hgkep', 'xvu', 'pkmbvlhvz'], 'pmhdzbtik') == False
+    assert candidate(['qucz', 'ujwiyvpamphu', 'cdjtoycq', 'akjaubuzq'], 'qir') == False
+    assert candidate(['rpxvklhs', 'lwhvgv', 'gmo', 'mbnczebo'], 'spwxteizw') == False
+    assert candidate([6, 6, 5, 8], 9) == False
+    assert candidate([3, 7, 3, 8], 5) == False
+    assert candidate([2, 4, 2, 3], 2) == False
+    assert candidate([5, 5, 6, 7], 10) == False
+    assert candidate([3, 6, 1, 3], 12) == False
+    assert candidate([2, 1, 6, 8], 4) == False
+    assert candidate([4, 6, 5, 3], 7) == False
+    assert candidate([5, 1, 4, 3], 2) == False
+    assert candidate([6, 1, 4, 8], 4) == False
+    assert candidate([5, 5, 7, 9], 2) == False
+    assert candidate([3, 1, 2, 8], 5) == False
+    assert candidate([2, 1, 3, 5], 12) == False
+    assert candidate([6, 4, 3, 9], 10) == False
+    assert candidate([1, 6, 2, 2], 11) == False
+    assert candidate([3, 7, 7, 9], 3) == False
+    assert candidate([6, 1, 1, 7], 7) == False
+    assert candidate([2, 5, 4, 9], 10) == False
+    assert candidate([5, 6, 7, 3], 9) == False
+    assert candidate([6, 4, 5, 6], 4) == False
+    assert candidate([1, 2, 5, 6], 11) == False
+    assert candidate([5, 7, 5, 5], 5) == False
+    assert candidate([6, 5, 3, 9], 8) == False
+    assert candidate([2, 1, 6, 7], 12) == False
+    assert candidate([2, 3, 1, 9], 2) == False
+    assert candidate([5, 4, 4, 3], 4) == False
+    assert candidate([2, 4, 1, 1], 3) == False
+    assert candidate([3, 4, 2, 2], 10) == False
+    assert candidate([3, 1, 5, 4], 2) == False
+    assert candidate([5, 6, 2, 7], 4) == False
+    assert candidate([1, 2, 7, 3], 12) == False
+    assert candidate([4, 6, 1, 8], 10) == False
+    assert candidate([3, 3, 8, 4], 11) == False
+    assert candidate([2, 1, 3, 4], 9) == False
+    assert candidate(['twxgyyvy', 'nbotihav', 'eyx', 'pqthuxh'], 'fue') == False
+    assert candidate(['rbjrzjhvm', 'tphcjlahp', 'klujjx', 'rmrjoet'], 'imtitayfb') == False
+    assert candidate(['gacsl', 'nmuwr', 'jrylm', 'tljtd'], 'gglbhwrq') == False
+    assert candidate(['shh', 'bsgupw', 'fnzbuobn', 'xsyxp'], 'gvv') == False
+    assert candidate(['bybqbq', 'yqfarwzt', 'wlhjg', 'furwg'], 'rndiv') == False
+    assert candidate(['wnllzt', 'reiuyv', 'vuioj', 'kbbbna'], 'lhlnyhlxs') == False
+    assert candidate(['wvz', 'ucpfmzep', 'nzt', 'jctttjb'], 'aclnn') == False
+    assert candidate(['cwwdzh', 'oadwwaf', 'oeljcsin', 'lnrerjf'], 'msld') == False
+    assert candidate(['tvdd', 'ejfmfb', 'vgpamj', 'qeyujydc'], 'vuiuso') == False
+    assert candidate(['nrjty', 'qmd', 'lptpgj', 'fir'], 'mtaqgwh') == False
+    assert candidate(['dzv', 'izc', 'yzj', 'yaoc'], 'vkwbk') == False
+    assert candidate(['wci', 'qbsxierh', 'lsnom', 'mqmnfxfmo'], 'zbvxeo') == False
+    assert candidate(['inly', 'huuy', 'izjt', 'pskj'], 'zeei') == False
+    assert candidate(['wvyiembfl', 'aqawt', 'hbwkgj', 'igrvy'], 'gffxi') == False
+    assert candidate(['znvxy', 'nck', 'uwqnckvj', 'vhrstfofy'], 'kgbt') == False
+    assert candidate(['lufyesid', 'wykb', 'uwv', 'buo'], 'amhyjmygp') == False
+    assert candidate(['corckyd', 'agoivl', 'xkkdhbhec', 'yjottc'], 'bomgv') == False
+    assert candidate(['wejjjguc', 'srglrq', 'nkuilzmzo', 'lkhzxt'], 'adi') == False
+    assert candidate(['ghnmsg', 'anrvphr', 'ojyb', 'ujfvkwtej'], 'kbhipuo') == False
+    assert candidate(['kirp', 'gchvjmakk', 'lwu', 'dzmgu'], 'xrujixxyn') == False
+    assert candidate(['cca', 'tufalq', 'mtmmvnwvh', 'yvm'], 'whgqcomzr') == False
+    assert candidate(['mxo', 'vzfymij', 'apftwk', 'tfhndxe'], 'shbhvrw') == False
+    assert candidate(['iylr', 'qbaggndx', 'kshgf', 'usrisohn'], 'eawk') == False
+    assert candidate(['rjbvoga', 'xaxs', 'lkhbg', 'edea'], 'yqecdinr') == False
+    assert candidate(['jyl', 'ckfxl', 'roszyhvr', 'gtvufyn'], 'ugovkk') == False
+    assert candidate(['kwcle', 'vou', 'vkupqz', 'uycuemmxp'], 'meuex') == False
+    assert candidate(['qpxubn', 'gscj', 'ltyqkavi', 'tbzq'], 'jast') == False
+    assert candidate(['fomuzfac', 'vzmhaixs', 'jdohtr', 'mxmbutpvi'], 'phx') == False
+    assert candidate(['jiifmliv', 'rbcr', 'zhfsgqrp', 'ejitlh'], 'mqiz') == False
+    assert candidate(['nmbdehbx', 'noanqi', 'byixwf', 'vscuiv'], 'azr') == False
+    assert candidate(['nwlkov', 'ysg', 'wcxqlqxti', 'fdrtzk'], 'ahtgyqa') == False
+    assert candidate(['ojavf', 'ovndofiqd', 'ynjrpqijl', 'gbyfvnkmn'], 'ofkeoatq') == False
+    assert candidate(['hiqzqqyh', 'ueapyxb', 'toqg', 'sxmgw'], 'dumihpsyd') == False
+
+if __name__ == '__main__':
+    check(check_element)

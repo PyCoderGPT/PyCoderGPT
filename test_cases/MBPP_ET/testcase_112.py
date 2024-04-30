@@ -1,0 +1,109 @@
+from case_MBPP_112 import lateralsuface_cylinder
+
+
+def check(candidate):
+    assert candidate(10,5)==314.15000000000003
+    assert candidate(4,5)==125.66000000000001
+    assert candidate(4,10)==251.32000000000002
+    assert candidate(11, 10) == 691.13
+    assert candidate(13, 6) == 490.074
+    assert candidate(13, 5) == 408.395
+    assert candidate(14, 10) == 879.62
+    assert candidate(8, 10) == 502.64000000000004
+    assert candidate(15, 3) == 282.735
+    assert candidate(7, 3) == 131.943
+    assert candidate(9, 4) == 226.18800000000002
+    assert candidate(11, 7) == 483.791
+    assert candidate(15, 8) == 753.96
+    assert candidate(9, 9) == 508.92300000000006
+    assert candidate(15, 4) == 376.98
+    assert candidate(8, 7) == 351.848
+    assert candidate(11, 4) == 276.452
+    assert candidate(15, 10) == 942.45
+    assert candidate(14, 2) == 175.924
+    assert candidate(11, 4) == 276.452
+    assert candidate(11, 7) == 483.791
+    assert candidate(6, 2) == 75.396
+    assert candidate(13, 7) == 571.753
+    assert candidate(12, 3) == 226.188
+    assert candidate(13, 4) == 326.716
+    assert candidate(13, 2) == 163.358
+    assert candidate(11, 10) == 691.13
+    assert candidate(12, 5) == 376.98
+    assert candidate(5, 5) == 157.07500000000002
+    assert candidate(9, 5) == 282.735
+    assert candidate(6, 7) == 263.886
+    assert candidate(10, 4) == 251.32000000000002
+    assert candidate(14, 5) == 439.81
+    assert candidate(12, 5) == 376.98
+    assert candidate(11, 7) == 483.791
+    assert candidate(12, 8) == 603.168
+    assert candidate(4, 8) == 201.056
+    assert candidate(9, 7) == 395.829
+    assert candidate(7, 6) == 263.886
+    assert candidate(8, 10) == 502.64000000000004
+    assert candidate(1, 9) == 56.547000000000004
+    assert candidate(7, 6) == 263.886
+    assert candidate(9, 9) == 508.92300000000006
+    assert candidate(2, 2) == 25.132
+    assert candidate(7, 1) == 43.981
+    assert candidate(3, 1) == 18.849
+    assert candidate(1, 10) == 62.830000000000005
+    assert candidate(8, 1) == 50.264
+    assert candidate(8, 6) == 301.584
+    assert candidate(1, 6) == 37.698
+    assert candidate(8, 1) == 50.264
+    assert candidate(5, 7) == 219.90500000000003
+    assert candidate(6, 9) == 339.282
+    assert candidate(5, 5) == 157.07500000000002
+    assert candidate(7, 1) == 43.981
+    assert candidate(5, 4) == 125.66000000000001
+    assert candidate(3, 7) == 131.943
+    assert candidate(2, 1) == 12.566
+    assert candidate(6, 9) == 339.282
+    assert candidate(6, 7) == 263.886
+    assert candidate(6, 1) == 37.698
+    assert candidate(8, 10) == 502.64000000000004
+    assert candidate(4, 5) == 125.66000000000001
+    assert candidate(2, 5) == 62.830000000000005
+    assert candidate(6, 9) == 339.282
+    assert candidate(2, 3) == 37.698
+    assert candidate(1, 10) == 62.830000000000005
+    assert candidate(6, 3) == 113.094
+    assert candidate(9, 10) == 565.47
+    assert candidate(5, 9) == 282.735
+    assert candidate(4, 14) == 351.848
+    assert candidate(7, 10) == 439.81
+    assert candidate(4, 12) == 301.584
+    assert candidate(5, 11) == 345.56500000000005
+    assert candidate(8, 6) == 301.584
+    assert candidate(3, 9) == 169.641
+    assert candidate(5, 6) == 188.49
+    assert candidate(7, 7) == 307.867
+    assert candidate(1, 10) == 62.830000000000005
+    assert candidate(7, 8) == 351.848
+    assert candidate(5, 11) == 345.56500000000005
+    assert candidate(2, 11) == 138.226
+    assert candidate(7, 8) == 351.848
+    assert candidate(5, 15) == 471.225
+    assert candidate(4, 12) == 301.584
+    assert candidate(2, 15) == 188.49
+    assert candidate(2, 7) == 87.962
+    assert candidate(5, 6) == 188.49
+    assert candidate(1, 10) == 62.830000000000005
+    assert candidate(7, 14) == 615.734
+    assert candidate(5, 13) == 408.39500000000004
+    assert candidate(5, 8) == 251.32000000000002
+    assert candidate(3, 5) == 94.245
+    assert candidate(3, 15) == 282.735
+    assert candidate(6, 12) == 452.376
+    assert candidate(7, 5) == 219.905
+    assert candidate(3, 15) == 282.735
+    assert candidate(3, 10) == 188.49
+    assert candidate(2, 13) == 163.358
+    assert candidate(8, 7) == 351.848
+    assert candidate(4, 7) == 175.924
+    assert candidate(9, 7) == 395.829
+
+if __name__ == '__main__':
+    check(lateralsuface_cylinder)

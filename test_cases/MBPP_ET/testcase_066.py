@@ -1,0 +1,109 @@
+from case_MBPP_066 import tuple_to_int
+
+
+def check(candidate):
+    assert candidate((1,2,3))==123
+    assert candidate((4,5,6))==456
+    assert candidate((5,6,7))==567
+    assert candidate((5, 4, 5)) == 545
+    assert candidate((3, 4, 8)) == 348
+    assert candidate((6, 7, 7)) == 677
+    assert candidate((2, 7, 4)) == 274
+    assert candidate((4, 7, 6)) == 476
+    assert candidate((5, 5, 5)) == 555
+    assert candidate((5, 1, 7)) == 517
+    assert candidate((5, 6, 6)) == 566
+    assert candidate((3, 6, 6)) == 366
+    assert candidate((3, 5, 4)) == 354
+    assert candidate((1, 7, 8)) == 178
+    assert candidate((5, 1, 8)) == 518
+    assert candidate((2, 5, 3)) == 253
+    assert candidate((2, 7, 3)) == 273
+    assert candidate((1, 5, 6)) == 156
+    assert candidate((2, 5, 2)) == 252
+    assert candidate((6, 4, 5)) == 645
+    assert candidate((4, 7, 6)) == 476
+    assert candidate((1, 4, 7)) == 147
+    assert candidate((1, 1, 6)) == 116
+    assert candidate((6, 4, 8)) == 648
+    assert candidate((4, 7, 6)) == 476
+    assert candidate((5, 4, 7)) == 547
+    assert candidate((4, 1, 6)) == 416
+    assert candidate((2, 3, 2)) == 232
+    assert candidate((3, 7, 4)) == 374
+    assert candidate((6, 2, 5)) == 625
+    assert candidate((1, 6, 7)) == 167
+    assert candidate((5, 5, 7)) == 557
+    assert candidate((1, 7, 7)) == 177
+    assert candidate((5, 7, 8)) == 578
+    assert candidate((2, 7, 5)) == 275
+    assert candidate((1, 7, 2)) == 172
+    assert candidate((7, 10, 8)) == 7108
+    assert candidate((1, 7, 10)) == 1710
+    assert candidate((1, 3, 6)) == 136
+    assert candidate((3, 10, 1)) == 3101
+    assert candidate((8, 8, 2)) == 882
+    assert candidate((2, 8, 10)) == 2810
+    assert candidate((9, 10, 8)) == 9108
+    assert candidate((4, 7, 4)) == 474
+    assert candidate((9, 9, 1)) == 991
+    assert candidate((6, 5, 5)) == 655
+    assert candidate((4, 9, 7)) == 497
+    assert candidate((3, 9, 3)) == 393
+    assert candidate((3, 10, 9)) == 3109
+    assert candidate((4, 8, 6)) == 486
+    assert candidate((3, 9, 3)) == 393
+    assert candidate((2, 2, 5)) == 225
+    assert candidate((5, 8, 7)) == 587
+    assert candidate((5, 5, 10)) == 5510
+    assert candidate((5, 2, 11)) == 5211
+    assert candidate((1, 5, 1)) == 151
+    assert candidate((5, 6, 10)) == 5610
+    assert candidate((3, 5, 5)) == 355
+    assert candidate((8, 5, 1)) == 851
+    assert candidate((7, 7, 2)) == 772
+    assert candidate((3, 8, 2)) == 382
+    assert candidate((4, 1, 8)) == 418
+    assert candidate((2, 7, 1)) == 271
+    assert candidate((4, 7, 5)) == 475
+    assert candidate((9, 6, 10)) == 9610
+    assert candidate((3, 3, 8)) == 338
+    assert candidate((9, 6, 2)) == 962
+    assert candidate((9, 7, 11)) == 9711
+    assert candidate((5, 2, 11)) == 5211
+    assert candidate((3, 6, 4)) == 364
+    assert candidate((1, 9, 9)) == 199
+    assert candidate((9, 5, 9)) == 959
+    assert candidate((5, 11, 7)) == 5117
+    assert candidate((4, 11, 7)) == 4117
+    assert candidate((7, 5, 10)) == 7510
+    assert candidate((1, 10, 2)) == 1102
+    assert candidate((3, 5, 9)) == 359
+    assert candidate((9, 5, 12)) == 9512
+    assert candidate((5, 8, 5)) == 585
+    assert candidate((10, 2, 12)) == 10212
+    assert candidate((4, 6, 8)) == 468
+    assert candidate((9, 3, 3)) == 933
+    assert candidate((10, 5, 12)) == 10512
+    assert candidate((2, 6, 8)) == 268
+    assert candidate((1, 5, 11)) == 1511
+    assert candidate((4, 5, 10)) == 4510
+    assert candidate((3, 11, 4)) == 3114
+    assert candidate((1, 4, 7)) == 147
+    assert candidate((7, 7, 7)) == 777
+    assert candidate((9, 11, 12)) == 91112
+    assert candidate((9, 1, 3)) == 913
+    assert candidate((3, 7, 8)) == 378
+    assert candidate((9, 8, 7)) == 987
+    assert candidate((5, 9, 8)) == 598
+    assert candidate((3, 4, 7)) == 347
+    assert candidate((3, 8, 12)) == 3812
+    assert candidate((7, 2, 11)) == 7211
+    assert candidate((8, 8, 11)) == 8811
+    assert candidate((1, 7, 9)) == 179
+    assert candidate((7, 7, 2)) == 772
+    assert candidate((5, 7, 12)) == 5712
+    assert candidate((5, 9, 6)) == 596
+
+if __name__ == '__main__':
+    check(tuple_to_int)

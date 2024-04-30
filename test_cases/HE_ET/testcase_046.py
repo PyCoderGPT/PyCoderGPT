@@ -1,0 +1,81 @@
+from case_HE_046 import fib4
+
+
+def check(candidate):
+    assert candidate(90) == 6564155744179952341356968
+    assert candidate(48) == 7027941791676
+    assert candidate(95) == 174670928672918843046473740
+    assert candidate(6) == 8
+    assert candidate(31) == 100389016
+    assert candidate(16) == 5328
+    assert candidate(36) == 2671332512
+    assert candidate(50) == 26112283777288
+    assert candidate(4) == 2
+    assert candidate(15) == 2764
+    assert candidate(98) == 1250966502919879120640717716
+    assert candidate(25) == 1957204
+    assert candidate(82) == 34443880418283540493826
+    assert candidate(55) == 694842876205932
+    assert candidate(72) == 48643920250633737730
+    assert candidate(56) == 1339352707109744
+    assert candidate(38) == 9925323044
+    assert candidate(20) == 73552
+    assert candidate(23) == 526768
+    assert candidate(58) == 4976358513292148
+    assert candidate(30) == 52080824
+    assert candidate(67) == 1828044717908083822
+    assert candidate(75) == 348380324456838586684
+    assert candidate(17) == 10270
+    assert candidate(74) == 180736250708388495690
+    assert candidate(29) == 27019014
+    assert candidate(97) == 648988991706202294407873694
+    assert candidate(49) == 13546793363542
+    assert candidate(76) == 671524666429406262592
+    assert candidate(22) == 273282
+    assert candidate(64) == 255247656741676658
+    assert candidate(79) == 4809357057697235769150
+    assert candidate(5) == 4
+    assert candidate(26) == 3772632
+    assert candidate(39) == 19131675294
+    assert candidate(54) == 360477579991610
+    assert candidate(7) == 14
+    assert candidate(96) == 336689040332208585492454928
+    assert candidate(19) == 38158
+    assert candidate(59) == 9592239446592686
+    assert candidate(45) == 981302949796
+    assert candidate(37) == 5149158974
+    assert candidate(42) == 137018135298
+    assert candidate(43) == 264110947552
+    assert candidate(93) == 47011480492525468175029672
+    assert candidate(12) == 386
+    assert candidate(14) == 1434
+    assert candidate(78) == 2495046654202812132420
+    assert candidate(77) == 1294405412608178787454
+    assert candidate(83) == 66392714182364268855232
+    assert candidate(87) == 916545069043324623948942
+    assert candidate(89) == 3405418776501538656143990
+    assert candidate(85) == 246681808823124970931012
+    assert candidate(66) == 948371435605898616
+    assert candidate(81) == 17869142915445859640640
+    assert candidate(1) == 0
+    assert candidate(40) == 36877489824
+    assert candidate(2) == 2
+    assert candidate(57) == 2581685349984862
+    assert candidate(35) == 1385860764
+    assert candidate(44) == 509090219810
+    assert candidate(10) == 104
+    assert candidate(9) == 54
+    assert candidate(60) == 18489636016979440
+    assert candidate(69) == 6792091318702389286
+    assert candidate(28) == 14017196
+    assert candidate(73) == 93764171013545442488
+    assert candidate(63) == 132419948094134672
+    assert candidate(46) == 1891522252456
+    assert candidate(32) == 193506050
+    assert candidate(13) == 744
+    assert candidate(70) == 13092176959938404696
+    assert candidate(8) == 28
+    assert candidate(84) == 127976071307031301941314
+
+if __name__ == '__main__':
+    check(fib4)

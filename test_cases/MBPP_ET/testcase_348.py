@@ -1,0 +1,109 @@
+from case_MBPP_348 import power_base_sum
+
+
+def check(candidate):
+    assert candidate(2,100)==115
+    assert candidate(8,10)==37
+    assert candidate(8,15)==62
+    assert candidate(3, 103) == 225
+    assert candidate(6, 101) == 351
+    assert candidate(2, 96) == 127
+    assert candidate(5, 100) == 283
+    assert candidate(5, 103) == 338
+    assert candidate(2, 103) == 110
+    assert candidate(7, 95) == 364
+    assert candidate(6, 105) == 369
+    assert candidate(3, 103) == 225
+    assert candidate(4, 99) == 262
+    assert candidate(2, 97) == 137
+    assert candidate(5, 100) == 283
+    assert candidate(2, 96) == 127
+    assert candidate(6, 101) == 351
+    assert candidate(2, 98) == 112
+    assert candidate(2, 104) == 121
+    assert candidate(4, 103) == 283
+    assert candidate(3, 103) == 225
+    assert candidate(6, 101) == 351
+    assert candidate(2, 102) == 118
+    assert candidate(3, 100) == 153
+    assert candidate(4, 102) == 253
+    assert candidate(1, 100) == 1
+    assert candidate(1, 100) == 1
+    assert candidate(2, 99) == 107
+    assert candidate(2, 96) == 127
+    assert candidate(4, 98) == 241
+    assert candidate(5, 105) == 350
+    assert candidate(6, 103) == 306
+    assert candidate(2, 98) == 112
+    assert candidate(1, 96) == 1
+    assert candidate(1, 103) == 1
+    assert candidate(6, 100) == 342
+    assert candidate(10, 5) == 1
+    assert candidate(3, 14) == 45
+    assert candidate(11, 10) == 43
+    assert candidate(4, 10) == 31
+    assert candidate(4, 7) == 22
+    assert candidate(4, 14) == 43
+    assert candidate(3, 15) == 36
+    assert candidate(4, 14) == 43
+    assert candidate(7, 15) == 64
+    assert candidate(13, 11) == 52
+    assert candidate(7, 9) == 28
+    assert candidate(9, 15) == 63
+    assert candidate(8, 7) == 26
+    assert candidate(5, 12) == 28
+    assert candidate(8, 10) == 37
+    assert candidate(5, 9) == 26
+    assert candidate(7, 7) == 25
+    assert candidate(9, 7) == 45
+    assert candidate(12, 6) == 45
+    assert candidate(11, 6) == 28
+    assert candidate(3, 14) == 45
+    assert candidate(5, 10) == 40
+    assert candidate(5, 6) == 19
+    assert candidate(9, 11) == 45
+    assert candidate(9, 15) == 63
+    assert candidate(4, 15) == 37
+    assert candidate(11, 14) == 76
+    assert candidate(13, 5) == 25
+    assert candidate(3, 14) == 45
+    assert candidate(6, 12) == 45
+    assert candidate(8, 8) == 37
+    assert candidate(10, 10) == 1
+    assert candidate(10, 10) == 1
+    assert candidate(3, 10) == 27
+    assert candidate(9, 19) == 90
+    assert candidate(3, 12) == 18
+    assert candidate(10, 13) == 1
+    assert candidate(12, 17) == 72
+    assert candidate(8, 16) == 73
+    assert candidate(3, 15) == 36
+    assert candidate(11, 19) == 83
+    assert candidate(10, 15) == 1
+    assert candidate(3, 19) == 36
+    assert candidate(9, 19) == 90
+    assert candidate(8, 14) == 46
+    assert candidate(11, 10) == 43
+    assert candidate(8, 11) == 62
+    assert candidate(11, 16) == 88
+    assert candidate(11, 19) == 83
+    assert candidate(11, 13) == 47
+    assert candidate(9, 16) == 63
+    assert candidate(9, 17) == 99
+    assert candidate(12, 18) == 81
+    assert candidate(7, 15) == 64
+    assert candidate(5, 14) == 34
+    assert candidate(12, 15) == 72
+    assert candidate(4, 10) == 31
+    assert candidate(5, 12) == 28
+    assert candidate(7, 13) == 52
+    assert candidate(4, 10) == 31
+    assert candidate(13, 16) == 85
+    assert candidate(13, 18) == 91
+    assert candidate(7, 16) == 52
+    assert candidate(8, 17) == 80
+    assert candidate(5, 12) == 28
+    assert candidate(9, 17) == 99
+
+if __name__ == '__main__':
+    check(power_base_sum)

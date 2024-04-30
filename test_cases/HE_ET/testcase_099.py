@@ -1,0 +1,139 @@
+from case_HE_099 import closest_integer
+
+
+def check(candidate):
+    assert candidate("396630.07482315193744715") == 396630
+    assert candidate("400421550.6045760047304053") == 400421551
+    assert candidate("7474101960.9946621112548985") == 7474101961
+    assert candidate("20.2284164882780635") == 20
+    assert candidate("79430.17924732795127563") == 79430
+    assert candidate("79.29738") == 79
+    assert candidate("281040.6070070426978076") == 281041
+    assert candidate("-10.7668049208854797") == -11
+    assert candidate("70.7148103668424428") == 71
+    assert candidate("7752780.5410381165130523") == 7752781
+    assert candidate("7170.16745005290685966") == 7170
+    assert candidate("170.6921985077015881") == 171
+    assert candidate("54538150.6638877369321192") == 54538151
+    assert candidate("810.05084880400338965") == 810
+    assert candidate("5510.8938181386660865") == 5511
+    assert candidate("5589713.") == 5589713
+    assert candidate("0.9093998495250931") == 1
+    assert candidate("90050.4404481408550571") == 90050
+    assert candidate(".55") == 1
+    assert candidate("20.9952573487089358") == 21
+    assert candidate("4.1") == 4
+    assert candidate("304510.07731976168722998") == 304510
+    assert candidate("920.5503068267302647") == 921
+    assert candidate("50.5108701326835627") == 51
+    assert candidate("8090.2130747773426992") == 8090
+    assert candidate("5420.6753885072984122") == 5421
+    assert candidate("2127780.6194993537705912") == 2127781
+    assert candidate(".23") == 0
+    assert candidate("58720.6576278790833077") == 58721
+    assert candidate("6130.863753701502481") == 6131
+    assert candidate("9556050.7817362719643586") == 9556051
+    assert candidate("20.287830685087748") == 20
+    assert candidate("2002770.9156885375054495") == 2002771
+    assert candidate("60.4151789292601701") == 60
+    assert candidate("188164680.8625164010892828") == 188164681
+    assert candidate("2510.8534760249415141") == 2511
+    assert candidate("-15.5") == -16, "Test 3"
+    assert candidate("396.") == 396
+    assert candidate("80.18362563426599365") == 80
+    assert candidate("965180090.27865264317516414") == 965180090
+    assert candidate("32950.12731759775110685") == 32950
+    assert candidate("335640.43815039154886604") == 335640
+    assert candidate("20.") == 20
+    assert candidate("184964420.27548611693624514") == 184964420
+    assert candidate("9682550.8652164441655846") == 9682551
+    assert candidate("60.6541701356105623") == 61
+    assert candidate(".917694") == 1
+    assert candidate("420.3730741094554919") == 420
+    assert candidate(".73") == 1
+    assert candidate("8.26") == 8
+    assert candidate("568882230.3460506747741575") == 568882230
+    assert candidate("9909140.22019882247107447") == 9909140
+    assert candidate("15.3") == 15, "Test 3"
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate("8588230.0004916487098123312") == 8588230
+    assert candidate("79050.9507930940642703") == 79051
+    assert candidate("3370.20175253216166456") == 3370
+    assert candidate("2750.9171920354992185") == 2751
+    assert candidate("80.7127796045265017") == 81
+    assert candidate("807720.6176298175605032") == 807721
+    assert candidate("50.06568006872727938") == 50
+    assert candidate("18030.8511815378525301") == 18031
+    assert candidate("93539740.8429573417816859") == 93539741
+    assert candidate("0.08050974009664802") == 0
+    assert candidate("8667431660.1773809642921491") == 8667431660
+    assert candidate("4560.07986037903944365") == 4560
+    assert candidate("90.8718389292538408") == 91
+    assert candidate("58720470.3151774565803682") == 58720470
+    assert candidate("219670.3814735103021585") == 219670
+    assert candidate("3550.3795035988000094") == 3550
+    assert candidate("4930.8578331989039943") == 4931
+    assert candidate("1187974430.6396705049308593") == 1187974431
+    assert candidate("3840583540.8121445801379602") == 3840583541
+    assert candidate("643190.9074997847487993") == 643191
+    assert candidate("90.41784910359843574") == 90
+    assert candidate("8647610.19615183923123347") == 8647610
+    assert candidate("5.9") == 6
+    assert candidate("49530.9923686605409962") == 49531
+    assert candidate("60.3982054790544489") == 60
+    assert candidate("9120.7857264964633935") == 9121
+    assert candidate("90.310328840125088") == 90
+    assert candidate("80.9081244975972714") == 81
+    assert candidate("30.4875496675711467") == 30
+    assert candidate("96830.7798358829352927") == 96831
+    assert candidate("473120.6040377644717714") == 473121
+    assert candidate(".10826") == 0
+    assert candidate("4870.7514635289854439") == 4871
+    assert candidate("42850.9135283560202653") == 42851
+    assert candidate("70.9074597640722244") == 71
+    assert candidate("105759420.7092501708226783") == 105759421
+    assert candidate("3250.6874339166783494") == 3251
+    assert candidate("58340.27521511057002124") == 58340
+    assert candidate("0") == 0, "Test 0"
+    assert candidate("+740.7675428815072424") == 741
+    assert candidate("-9.") == -9
+    assert candidate("9376920.32484597586363007") == 9376920
+    assert candidate("90.754166") == 91
+    assert candidate("20.9560740535157867") == 21
+    assert candidate("30651380.06269969697942035") == 30651380
+    assert candidate("50.6846461124165827") == 51
+    assert candidate("0910.38918638690228935") == 910
+    assert candidate("25270.26236878929945096") == 25270
+    assert candidate("5956430.2031336848206573") == 5956430
+    assert candidate("14.5") == 15, "Test 2"
+    assert candidate("21095172.") == 21095172
+    assert candidate("36490.19589678824090695") == 36490
+    assert candidate("7284790.9387083108844197") == 7284791
+    assert candidate("14550.36803024128148376") == 14550
+    assert candidate("716986380.8908632298127022") == 716986381
+    assert candidate("2920.2909064116656561") == 2920
+    assert candidate("4.3") == 4
+    assert candidate("95630.00899682001984714") == 95630
+    assert candidate("6277620.047448415643293274") == 6277620
+    assert candidate("80.5093924567968169") == 81
+    assert candidate("7180.08904084585638494") == 7180
+    assert candidate("234430.8213641009547066") == 234431
+    assert candidate("9830.2887871019878405") == 9830
+    assert candidate("10") == 10, "Test 1"
+    assert candidate("40.4775205107302265") == 40
+    assert candidate("4790.3957977986146939") == 4790
+    assert candidate("87061.2") == 87061
+    assert candidate("0.47356705599235294") == 0
+    assert candidate("29540.8266023455315558") == 29541
+    assert candidate("387460.9626228213640998") == 387461
+    assert candidate("349.7") == 350
+    assert candidate("70.1069369965509347") == 70
+    assert candidate("35730.009102915382992016") == 35730
+    assert candidate("90.19186788324286208") == 90
+    assert candidate("720.33604724999783553") == 720
+    assert candidate("8450.5441516861955107") == 8451
+    assert candidate("9470.5170825437128881") == 9471
+
+if __name__ == '__main__':
+    check(closest_integer)

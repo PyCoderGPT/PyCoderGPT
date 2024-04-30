@@ -1,0 +1,109 @@
+from case_MBPP_381 import is_decimal
+
+
+def check(candidate):
+    assert candidate('123.11')==True
+    assert candidate('e666.86')==False
+    assert candidate('3.124587')==False
+    assert candidate("710") == True
+    assert candidate("8.7873") == False
+    assert candidate("56049") == True
+    assert candidate("82689924163") == True
+    assert candidate("875") == True
+    assert candidate("5128.") == False
+    assert candidate("0.71.887.04") == False
+    assert candidate("28.0951157") == False
+    assert candidate("8027.") == False
+    assert candidate("68848.608") == False
+    assert candidate("1543136") == True
+    assert candidate("2.249.0") == False
+    assert candidate("5718.") == False
+    assert candidate("037233100292") == True
+    assert candidate("759") == True
+    assert candidate("36.6643100") == False
+    assert candidate("07026") == True
+    assert candidate("441933207") == True
+    assert candidate("045.4815346") == False
+    assert candidate("941376029") == True
+    assert candidate("4850545.6") == True
+    assert candidate("651829") == True
+    assert candidate("5769490.8") == True
+    assert candidate("074275") == True
+    assert candidate("3829775545") == True
+    assert candidate("738197051") == True
+    assert candidate("4.991009194") == False
+    assert candidate("84045.3") == True
+    assert candidate("18.140.917") == False
+    assert candidate("62946190291") == True
+    assert candidate("4331178527") == True
+    assert candidate("78294207") == True
+    assert candidate("09793") == True
+    assert candidate("r12o.9dzadrd") == False
+    assert candidate("b1sw1.") == False
+    assert candidate("vilasc8kqx") == False
+    assert candidate("1ed0c0bvr") == False
+    assert candidate("a64kieg") == False
+    assert candidate("5.c4") == False
+    assert candidate("d9rwjpzh") == False
+    assert candidate("picclhqcm5ng") == False
+    assert candidate("o.2gw") == False
+    assert candidate("s.vd18") == False
+    assert candidate("girakkupl7") == False
+    assert candidate("e4xo6l") == False
+    assert candidate("q8fhjjth6q") == False
+    assert candidate("7sfsm") == False
+    assert candidate("i7k") == False
+    assert candidate("de7dyuvrq.") == False
+    assert candidate("7y0zdsw25g") == False
+    assert candidate("lwa6e0ribab") == False
+    assert candidate("89u49") == False
+    assert candidate("b40l4ntk52") == False
+    assert candidate("53l06xt") == False
+    assert candidate("b.sykaqpn2") == False
+    assert candidate("w45z1xu636sd") == False
+    assert candidate("4otvnh0p") == False
+    assert candidate("macyz4r6") == False
+    assert candidate("vzi") == False
+    assert candidate(".owmr7wu00") == False
+    assert candidate("kwd") == False
+    assert candidate("iew5xsym") == False
+    assert candidate("ms0.0woyjlp") == False
+    assert candidate("nw4gk2huew") == False
+    assert candidate("ln8nku8j98ax") == False
+    assert candidate("mgj44zw") == False
+    assert candidate("945") == True
+    assert candidate("826") == True
+    assert candidate("224") == True
+    assert candidate("9434") == True
+    assert candidate("2670918") == True
+    assert candidate("44.423454") == False
+    assert candidate(".151.") == False
+    assert candidate("48365081") == True
+    assert candidate("101811.234.") == False
+    assert candidate("438") == True
+    assert candidate("468.519478") == False
+    assert candidate("320543737") == True
+    assert candidate("2.4.47.30") == False
+    assert candidate("4424931") == True
+    assert candidate("6.5") == True
+    assert candidate("113..") == False
+    assert candidate("17.593") == False
+    assert candidate("01861614") == True
+    assert candidate("1602078..") == False
+    assert candidate("82651020728") == True
+    assert candidate("273.27") == True
+    assert candidate("83.2481") == False
+    assert candidate("89803941748") == True
+    assert candidate("018624.3186") == False
+    assert candidate("2.4109452970") == False
+    assert candidate("752.2.36") == False
+    assert candidate("37580") == True
+    assert candidate("0022") == True
+    assert candidate(".9.1") == False
+    assert candidate("09491.5906") == False
+    assert candidate("9985...4") == False
+    assert candidate("218") == True
+    assert candidate("5056386") == True
+
+if __name__ == '__main__':
+    check(is_decimal)

@@ -1,0 +1,109 @@
+from case_MBPP_163 import otherside_rightangle
+
+
+def check(candidate):
+    assert candidate(7,8)==10.63014581273465
+    assert candidate(3,4)==5
+    assert candidate(7,15)==16.55294535724685
+    assert candidate(8, 7) == 10.63014581273465
+    assert candidate(10, 3) == 10.44030650891055
+    assert candidate(6, 9) == 10.816653826391969
+    assert candidate(11, 4) == 11.704699910719626
+    assert candidate(4, 10) == 10.770329614269007
+    assert candidate(10, 13) == 16.401219466856727
+    assert candidate(9, 4) == 9.848857801796104
+    assert candidate(6, 13) == 14.317821063276353
+    assert candidate(7, 9) == 11.40175425099138
+    assert candidate(9, 3) == 9.486832980505138
+    assert candidate(6, 7) == 9.219544457292887
+    assert candidate(8, 6) == 10.0
+    assert candidate(3, 4) == 5.0
+    assert candidate(7, 9) == 11.40175425099138
+    assert candidate(3, 9) == 9.486832980505138
+    assert candidate(6, 11) == 12.529964086141668
+    assert candidate(9, 11) == 14.212670403551895
+    assert candidate(4, 5) == 6.4031242374328485
+    assert candidate(3, 9) == 9.486832980505138
+    assert candidate(4, 7) == 8.06225774829855
+    assert candidate(8, 9) == 12.041594578792296
+    assert candidate(7, 4) == 8.06225774829855
+    assert candidate(4, 12) == 12.649110640673518
+    assert candidate(2, 10) == 10.198039027185569
+    assert candidate(11, 9) == 14.212670403551895
+    assert candidate(4, 10) == 10.770329614269007
+    assert candidate(12, 6) == 13.416407864998739
+    assert candidate(11, 11) == 15.556349186104045
+    assert candidate(9, 5) == 10.295630140987
+    assert candidate(8, 10) == 12.806248474865697
+    assert candidate(2, 9) == 9.219544457292887
+    assert candidate(12, 3) == 12.36931687685298
+    assert candidate(2, 5) == 5.385164807134504
+    assert candidate(8, 8) == 11.313708498984761
+    assert candidate(6, 3) == 6.708203932499369
+    assert candidate(5, 9) == 10.295630140987
+    assert candidate(5, 2) == 5.385164807134504
+    assert candidate(5, 1) == 5.0990195135927845
+    assert candidate(2, 6) == 6.324555320336759
+    assert candidate(3, 9) == 9.486832980505138
+    assert candidate(4, 5) == 6.4031242374328485
+    assert candidate(5, 8) == 9.433981132056603
+    assert candidate(5, 7) == 8.602325267042627
+    assert candidate(5, 2) == 5.385164807134504
+    assert candidate(4, 6) == 7.211102550927978
+    assert candidate(1, 9) == 9.055385138137417
+    assert candidate(1, 2) == 2.23606797749979
+    assert candidate(5, 3) == 5.830951894845301
+    assert candidate(8, 5) == 9.433981132056603
+    assert candidate(4, 2) == 4.47213595499958
+    assert candidate(6, 2) == 6.324555320336759
+    assert candidate(5, 4) == 6.4031242374328485
+    assert candidate(8, 6) == 10.0
+    assert candidate(3, 9) == 9.486832980505138
+    assert candidate(1, 3) == 3.1622776601683795
+    assert candidate(3, 2) == 3.605551275463989
+    assert candidate(2, 3) == 3.605551275463989
+    assert candidate(5, 2) == 5.385164807134504
+    assert candidate(1, 5) == 5.0990195135927845
+    assert candidate(1, 2) == 2.23606797749979
+    assert candidate(6, 9) == 10.816653826391969
+    assert candidate(4, 3) == 5.0
+    assert candidate(1, 4) == 4.123105625617661
+    assert candidate(7, 1) == 7.0710678118654755
+    assert candidate(2, 7) == 7.280109889280518
+    assert candidate(8, 3) == 8.54400374531753
+    assert candidate(4, 11) == 11.704699910719626
+    assert candidate(5, 18) == 18.681541692269406
+    assert candidate(4, 16) == 16.492422502470642
+    assert candidate(3, 10) == 10.44030650891055
+    assert candidate(11, 14) == 17.804493814764857
+    assert candidate(6, 19) == 19.924858845171276
+    assert candidate(11, 14) == 17.804493814764857
+    assert candidate(12, 13) == 17.69180601295413
+    assert candidate(3, 17) == 17.26267650163207
+    assert candidate(12, 14) == 18.439088914585774
+    assert candidate(7, 10) == 12.206555615733702
+    assert candidate(7, 10) == 12.206555615733702
+    assert candidate(7, 16) == 17.46424919657298
+    assert candidate(3, 14) == 14.317821063276353
+    assert candidate(11, 10) == 14.866068747318506
+    assert candidate(7, 14) == 15.652475842498529
+    assert candidate(11, 20) == 22.825424421026653
+    assert candidate(12, 19) == 22.47220505424423
+    assert candidate(3, 14) == 14.317821063276353
+    assert candidate(2, 20) == 20.09975124224178
+    assert candidate(12, 11) == 16.278820596099706
+    assert candidate(12, 17) == 20.808652046684813
+    assert candidate(5, 16) == 16.76305461424021
+    assert candidate(8, 11) == 13.601470508735444
+    assert candidate(9, 14) == 16.64331697709324
+    assert candidate(7, 19) == 20.248456731316587
+    assert candidate(10, 18) == 20.591260281974
+    assert candidate(10, 18) == 20.591260281974
+    assert candidate(7, 17) == 18.384776310850235
+    assert candidate(11, 20) == 22.825424421026653
+    assert candidate(8, 11) == 13.601470508735444
+    assert candidate(3, 17) == 17.26267650163207
+    assert candidate(6, 20) == 20.8806130178211
+
+if __name__ == '__main__':
+    check(otherside_rightangle)

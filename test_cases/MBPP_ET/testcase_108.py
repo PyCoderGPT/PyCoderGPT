@@ -1,0 +1,109 @@
+from case_MBPP_108 import all_Bits_Set_In_The_Given_Range
+
+
+def check(candidate):
+    assert candidate(4,1,2) == True
+    assert candidate(17,2,4) == True
+    assert candidate(39,4,6) == False
+    assert candidate(7, 2, 7) == False
+    assert candidate(5, 3, 2) == True
+    assert candidate(6, 3, 2) == True
+    assert candidate(2, 3, 7) == True
+    assert candidate(4, 2, 1) == True
+    assert candidate(4, 4, 1) == False
+    assert candidate(3, 3, 3) == True
+    assert candidate(8, 4, 7) == False
+    assert candidate(7, 3, 2) == True
+    assert candidate(2, 3, 7) == True
+    assert candidate(1, 4, 7) == True
+    assert candidate(8, 5, 3) == False
+    assert candidate(9, 5, 5) == True
+    assert candidate(6, 3, 7) == False
+    assert candidate(7, 4, 6) == True
+    assert candidate(8, 3, 3) == True
+    assert candidate(1, 3, 4) == True
+    assert candidate(5, 1, 5) == False
+    assert candidate(3, 4, 1) == False
+    assert candidate(2, 6, 1) == False
+    assert candidate(3, 5, 2) == True
+    assert candidate(7, 6, 2) == False
+    assert candidate(9, 3, 3) == True
+    assert candidate(4, 4, 5) == True
+    assert candidate(9, 1, 7) == False
+    assert candidate(2, 6, 6) == True
+    assert candidate(8, 6, 3) == False
+    assert candidate(3, 3, 1) == False
+    assert candidate(2, 2, 1) == True
+    assert candidate(8, 1, 1) == True
+    assert candidate(7, 6, 2) == False
+    assert candidate(1, 4, 3) == True
+    assert candidate(7, 3, 3) == False
+    assert candidate(15, 5, 9) == True
+    assert candidate(14, 4, 6) == False
+    assert candidate(14, 3, 3) == False
+    assert candidate(13, 2, 5) == False
+    assert candidate(20, 5, 9) == False
+    assert candidate(19, 3, 9) == False
+    assert candidate(22, 5, 6) == False
+    assert candidate(15, 3, 8) == False
+    assert candidate(17, 1, 7) == False
+    assert candidate(19, 2, 4) == False
+    assert candidate(14, 5, 3) == False
+    assert candidate(22, 7, 6) == True
+    assert candidate(20, 4, 2) == False
+    assert candidate(13, 6, 6) == True
+    assert candidate(18, 4, 6) == False
+    assert candidate(20, 2, 4) == False
+    assert candidate(22, 6, 3) == False
+    assert candidate(22, 1, 4) == False
+    assert candidate(17, 7, 3) == False
+    assert candidate(21, 7, 4) == False
+    assert candidate(22, 7, 6) == True
+    assert candidate(22, 6, 7) == True
+    assert candidate(20, 2, 2) == True
+    assert candidate(14, 7, 6) == True
+    assert candidate(18, 6, 3) == False
+    assert candidate(22, 4, 5) == False
+    assert candidate(22, 7, 5) == True
+    assert candidate(13, 2, 4) == False
+    assert candidate(12, 5, 5) == True
+    assert candidate(14, 3, 1) == False
+    assert candidate(13, 6, 5) == True
+    assert candidate(17, 5, 6) == False
+    assert candidate(16, 5, 2) == True
+    assert candidate(37, 4, 6) == False
+    assert candidate(41, 7, 10) == True
+    assert candidate(34, 6, 1) == False
+    assert candidate(44, 7, 5) == False
+    assert candidate(43, 1, 3) == False
+    assert candidate(43, 1, 5) == False
+    assert candidate(43, 4, 3) == True
+    assert candidate(38, 3, 1) == False
+    assert candidate(43, 7, 9) == True
+    assert candidate(41, 7, 7) == True
+    assert candidate(37, 8, 6) == True
+    assert candidate(38, 2, 11) == False
+    assert candidate(37, 9, 1) == False
+    assert candidate(43, 3, 11) == False
+    assert candidate(37, 3, 4) == False
+    assert candidate(34, 5, 1) == False
+    assert candidate(44, 6, 8) == False
+    assert candidate(38, 7, 7) == True
+    assert candidate(39, 2, 6) == False
+    assert candidate(40, 8, 10) == True
+    assert candidate(39, 2, 7) == False
+    assert candidate(43, 8, 7) == True
+    assert candidate(36, 3, 1) == True
+    assert candidate(43, 3, 4) == False
+    assert candidate(37, 8, 9) == True
+    assert candidate(44, 3, 7) == False
+    assert candidate(37, 7, 1) == False
+    assert candidate(39, 2, 5) == False
+    assert candidate(39, 7, 5) == False
+    assert candidate(38, 3, 5) == False
+    assert candidate(41, 6, 9) == False
+    assert candidate(41, 5, 2) == False
+    assert candidate(36, 8, 6) == True
+
+if __name__ == '__main__':
+    check(all_Bits_Set_In_The_Given_Range)

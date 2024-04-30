@@ -1,0 +1,109 @@
+from case_MBPP_289 import catalan_number
+
+
+def check(candidate):
+    assert candidate(10)==16796
+    assert candidate(9)==4862
+    assert candidate(7)==429
+    assert candidate(13) == 742900
+    assert candidate(6) == 132
+    assert candidate(15) == 9694845
+    assert candidate(15) == 9694845
+    assert candidate(15) == 9694845
+    assert candidate(7) == 429
+    assert candidate(6) == 132
+    assert candidate(13) == 742900
+    assert candidate(11) == 58786
+    assert candidate(7) == 429
+    assert candidate(12) == 208012
+    assert candidate(12) == 208012
+    assert candidate(5) == 42
+    assert candidate(14) == 2674440
+    assert candidate(11) == 58786
+    assert candidate(13) == 742900
+    assert candidate(11) == 58786
+    assert candidate(10) == 16796
+    assert candidate(5) == 42
+    assert candidate(13) == 742900
+    assert candidate(9) == 4862
+    assert candidate(10) == 16796
+    assert candidate(5) == 42
+    assert candidate(11) == 58786
+    assert candidate(7) == 429
+    assert candidate(15) == 9694845
+    assert candidate(5) == 42
+    assert candidate(7) == 429
+    assert candidate(15) == 9694845
+    assert candidate(5) == 42
+    assert candidate(12) == 208012
+    assert candidate(12) == 208012
+    assert candidate(8) == 1430
+    assert candidate(6) == 132
+    assert candidate(7) == 429
+    assert candidate(10) == 16796
+    assert candidate(4) == 14
+    assert candidate(13) == 742900
+    assert candidate(9) == 4862
+    assert candidate(9) == 4862
+    assert candidate(14) == 2674440
+    assert candidate(10) == 16796
+    assert candidate(4) == 14
+    assert candidate(4) == 14
+    assert candidate(6) == 132
+    assert candidate(4) == 14
+    assert candidate(5) == 42
+    assert candidate(11) == 58786
+    assert candidate(5) == 42
+    assert candidate(12) == 208012
+    assert candidate(7) == 429
+    assert candidate(7) == 429
+    assert candidate(13) == 742900
+    assert candidate(11) == 58786
+    assert candidate(6) == 132
+    assert candidate(9) == 4862
+    assert candidate(5) == 42
+    assert candidate(5) == 42
+    assert candidate(7) == 429
+    assert candidate(14) == 2674440
+    assert candidate(14) == 2674440
+    assert candidate(5) == 42
+    assert candidate(8) == 1430
+    assert candidate(11) == 58786
+    assert candidate(6) == 132
+    assert candidate(8) == 1430
+    assert candidate(9) == 4862
+    assert candidate(11) == 58786
+    assert candidate(12) == 208012
+    assert candidate(3) == 5
+    assert candidate(10) == 16796
+    assert candidate(8) == 1430
+    assert candidate(3) == 5
+    assert candidate(2) == 2
+    assert candidate(11) == 58786
+    assert candidate(5) == 42
+    assert candidate(7) == 429
+    assert candidate(6) == 132
+    assert candidate(5) == 42
+    assert candidate(3) == 5
+    assert candidate(10) == 16796
+    assert candidate(8) == 1430
+    assert candidate(9) == 4862
+    assert candidate(11) == 58786
+    assert candidate(9) == 4862
+    assert candidate(5) == 42
+    assert candidate(9) == 4862
+    assert candidate(8) == 1430
+    assert candidate(12) == 208012
+    assert candidate(8) == 1430
+    assert candidate(9) == 4862
+    assert candidate(7) == 429
+    assert candidate(2) == 2
+    assert candidate(6) == 132
+    assert candidate(2) == 2
+    assert candidate(5) == 42
+    assert candidate(9) == 4862
+    assert candidate(11) == 58786
+    assert candidate(11) == 58786
+
+if __name__ == '__main__':
+    check(catalan_number)

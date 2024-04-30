@@ -1,0 +1,109 @@
+from case_MBPP_036 import volume_sphere
+
+
+def check(candidate):
+    assert candidate(10)==4188.790204786391
+    assert candidate(25)==65449.84694978735
+    assert candidate(20)==33510.32163829113
+    assert candidate(13) == 9202.7720799157
+    assert candidate(7) == 1436.755040241732
+    assert candidate(6) == 904.7786842338604
+    assert candidate(12) == 7238.229473870883
+    assert candidate(10) == 4188.790204786391
+    assert candidate(6) == 904.7786842338604
+    assert candidate(13) == 9202.7720799157
+    assert candidate(7) == 1436.755040241732
+    assert candidate(6) == 904.7786842338604
+    assert candidate(6) == 904.7786842338604
+    assert candidate(8) == 2144.660584850632
+    assert candidate(7) == 1436.755040241732
+    assert candidate(15) == 14137.166941154068
+    assert candidate(10) == 4188.790204786391
+    assert candidate(10) == 4188.790204786391
+    assert candidate(8) == 2144.660584850632
+    assert candidate(15) == 14137.166941154068
+    assert candidate(7) == 1436.755040241732
+    assert candidate(12) == 7238.229473870883
+    assert candidate(8) == 2144.660584850632
+    assert candidate(11) == 5575.279762570686
+    assert candidate(10) == 4188.790204786391
+    assert candidate(5) == 523.5987755982989
+    assert candidate(5) == 523.5987755982989
+    assert candidate(7) == 1436.755040241732
+    assert candidate(15) == 14137.166941154068
+    assert candidate(15) == 14137.166941154068
+    assert candidate(9) == 3053.628059289279
+    assert candidate(10) == 4188.790204786391
+    assert candidate(6) == 904.7786842338604
+    assert candidate(11) == 5575.279762570686
+    assert candidate(13) == 9202.7720799157
+    assert candidate(9) == 3053.628059289279
+    assert candidate(24) == 57905.83579096707
+    assert candidate(22) == 44602.23810056549
+    assert candidate(23) == 50965.01042163601
+    assert candidate(29) == 102160.40430453527
+    assert candidate(22) == 44602.23810056549
+    assert candidate(20) == 33510.32163829113
+    assert candidate(22) == 44602.23810056549
+    assert candidate(21) == 38792.38608652677
+    assert candidate(24) == 57905.83579096707
+    assert candidate(23) == 50965.01042163601
+    assert candidate(24) == 57905.83579096707
+    assert candidate(29) == 102160.40430453527
+    assert candidate(29) == 102160.40430453527
+    assert candidate(24) == 57905.83579096707
+    assert candidate(29) == 102160.40430453527
+    assert candidate(25) == 65449.84694978735
+    assert candidate(22) == 44602.23810056549
+    assert candidate(26) == 73622.1766393256
+    assert candidate(30) == 113097.33552923254
+    assert candidate(21) == 38792.38608652677
+    assert candidate(27) == 82447.95760081052
+    assert candidate(28) == 91952.32257547085
+    assert candidate(30) == 113097.33552923254
+    assert candidate(30) == 113097.33552923254
+    assert candidate(24) == 57905.83579096707
+    assert candidate(30) == 113097.33552923254
+    assert candidate(28) == 91952.32257547085
+    assert candidate(21) == 38792.38608652677
+    assert candidate(26) == 73622.1766393256
+    assert candidate(25) == 65449.84694978735
+    assert candidate(30) == 113097.33552923254
+    assert candidate(26) == 73622.1766393256
+    assert candidate(26) == 73622.1766393256
+    assert candidate(19) == 28730.912014629856
+    assert candidate(24) == 57905.83579096707
+    assert candidate(23) == 50965.01042163601
+    assert candidate(19) == 28730.912014629856
+    assert candidate(18) == 24429.024474314232
+    assert candidate(18) == 24429.024474314232
+    assert candidate(15) == 14137.166941154068
+    assert candidate(25) == 65449.84694978735
+    assert candidate(16) == 17157.284678805056
+    assert candidate(18) == 24429.024474314232
+    assert candidate(25) == 65449.84694978735
+    assert candidate(20) == 33510.32163829113
+    assert candidate(16) == 17157.284678805056
+    assert candidate(23) == 50965.01042163601
+    assert candidate(17) == 20579.526276115535
+    assert candidate(25) == 65449.84694978735
+    assert candidate(21) == 38792.38608652677
+    assert candidate(17) == 20579.526276115535
+    assert candidate(16) == 17157.284678805056
+    assert candidate(16) == 17157.284678805056
+    assert candidate(17) == 20579.526276115535
+    assert candidate(15) == 14137.166941154068
+    assert candidate(18) == 24429.024474314232
+    assert candidate(17) == 20579.526276115535
+    assert candidate(16) == 17157.284678805056
+    assert candidate(19) == 28730.912014629856
+    assert candidate(18) == 24429.024474314232
+    assert candidate(19) == 28730.912014629856
+    assert candidate(16) == 17157.284678805056
+    assert candidate(18) == 24429.024474314232
+    assert candidate(17) == 20579.526276115535
+    assert candidate(23) == 50965.01042163601
+    assert candidate(22) == 44602.23810056549
+
+if __name__ == '__main__':
+    check(volume_sphere)

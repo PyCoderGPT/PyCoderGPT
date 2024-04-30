@@ -1,0 +1,109 @@
+from case_MBPP_176 import maximum
+
+
+def check(candidate):
+    assert candidate(5,10) == 10
+    assert candidate(-1,-2) == -1
+    assert candidate(9,7) == 9
+    assert candidate(1, 9) == 9
+    assert candidate(6, 10) == 10
+    assert candidate(6, 15) == 15
+    assert candidate(1, 12) == 12
+    assert candidate(6, 9) == 9
+    assert candidate(3, 13) == 13
+    assert candidate(1, 9) == 9
+    assert candidate(9, 12) == 12
+    assert candidate(8, 9) == 9
+    assert candidate(2, 13) == 13
+    assert candidate(4, 7) == 7
+    assert candidate(4, 5) == 5
+    assert candidate(1, 5) == 5
+    assert candidate(9, 13) == 13
+    assert candidate(2, 6) == 6
+    assert candidate(2, 5) == 5
+    assert candidate(3, 7) == 7
+    assert candidate(9, 15) == 15
+    assert candidate(5, 10) == 10
+    assert candidate(9, 12) == 12
+    assert candidate(5, 6) == 6
+    assert candidate(3, 6) == 6
+    assert candidate(10, 9) == 10
+    assert candidate(7, 5) == 7
+    assert candidate(10, 8) == 10
+    assert candidate(8, 15) == 15
+    assert candidate(2, 14) == 14
+    assert candidate(1, 5) == 5
+    assert candidate(6, 13) == 13
+    assert candidate(8, 9) == 9
+    assert candidate(6, 8) == 8
+    assert candidate(9, 7) == 9
+    assert candidate(10, 14) == 14
+    assert candidate(-1, -3) == -1
+    assert candidate(-6, 0) == 0
+    assert candidate(-5, 2) == 2
+    assert candidate(1, 2) == 2
+    assert candidate(1, 1) == 1
+    assert candidate(1, 1) == 1
+    assert candidate(2, 1) == 2
+    assert candidate(0, -6) == 0
+    assert candidate(0, -4) == 0
+    assert candidate(4, -4) == 4
+    assert candidate(-2, -2) == -2
+    assert candidate(1, 1) == 1
+    assert candidate(2, 2) == 2
+    assert candidate(-3, -2) == -2
+    assert candidate(-2, 2) == 2
+    assert candidate(3, 3) == 3
+    assert candidate(0, 1) == 1
+    assert candidate(-5, -7) == -5
+    assert candidate(4, -2) == 4
+    assert candidate(1, -5) == 1
+    assert candidate(3, -7) == 3
+    assert candidate(-4, -4) == -4
+    assert candidate(-2, -7) == -2
+    assert candidate(-5, -7) == -5
+    assert candidate(-2, 0) == 0
+    assert candidate(-3, -3) == -3
+    assert candidate(-4, -7) == -4
+    assert candidate(4, -6) == 4
+    assert candidate(-6, -3) == -3
+    assert candidate(3, -1) == 3
+    assert candidate(-6, 0) == 0
+    assert candidate(-5, -4) == -4
+    assert candidate(-2, 1) == 1
+    assert candidate(13, 8) == 13
+    assert candidate(7, 4) == 7
+    assert candidate(4, 2) == 4
+    assert candidate(4, 7) == 7
+    assert candidate(12, 7) == 12
+    assert candidate(11, 7) == 11
+    assert candidate(11, 7) == 11
+    assert candidate(8, 8) == 8
+    assert candidate(4, 3) == 4
+    assert candidate(10, 7) == 10
+    assert candidate(10, 2) == 10
+    assert candidate(8, 11) == 11
+    assert candidate(7, 3) == 7
+    assert candidate(5, 3) == 5
+    assert candidate(9, 7) == 9
+    assert candidate(9, 5) == 9
+    assert candidate(14, 3) == 14
+    assert candidate(5, 12) == 12
+    assert candidate(7, 4) == 7
+    assert candidate(13, 3) == 13
+    assert candidate(14, 5) == 14
+    assert candidate(7, 4) == 7
+    assert candidate(9, 11) == 11
+    assert candidate(13, 4) == 13
+    assert candidate(12, 3) == 12
+    assert candidate(5, 7) == 7
+    assert candidate(11, 5) == 11
+    assert candidate(9, 7) == 9
+    assert candidate(12, 11) == 12
+    assert candidate(6, 5) == 6
+    assert candidate(12, 7) == 12
+    assert candidate(9, 5) == 9
+    assert candidate(4, 9) == 9
+
+if __name__ == '__main__':
+    check(maximum)

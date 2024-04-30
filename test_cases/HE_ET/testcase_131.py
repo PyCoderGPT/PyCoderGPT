@@ -1,0 +1,111 @@
+from case_HE_131 import digits
+
+
+def check(candidate):
+    assert candidate(98765) == 315
+    assert candidate(98743) == 189
+    assert candidate(57) == 35
+    assert candidate(4223) == 3
+    assert candidate(5576821) == 175
+    assert candidate(2687) == 7
+    assert candidate(5139) == 135
+    assert candidate(125) == 5
+    assert candidate(5576543) == 2625
+
+    # Check some edge cases that are easy to work out by hand.
+    assert candidate(7) == 7
+    assert candidate(54) == 5
+    assert candidate(2621) == 1
+    assert candidate(10) == 1
+    assert candidate(3256) == 15
+    assert candidate(99643) == 243
+    assert candidate(99499) == 6561
+    assert candidate(5575618) == 875
+    assert candidate(5631) == 15
+    assert candidate(5575999) == 637875
+    assert candidate(5577171) == 8575
+    assert candidate(3019) == 27
+    assert candidate(4282) == 0
+    assert candidate(55) == 25
+    assert candidate(5576554) == 4375
+    assert candidate(99250) == 405
+    assert candidate(120) ==1
+    assert candidate(2646) == 0
+    assert candidate(4) == 0
+    assert candidate(5576876) == 1225
+    assert candidate(5) == 5
+    assert candidate(5515) == 125
+    assert candidate(98196) == 81
+    assert candidate(1414) == 1
+    assert candidate(4995) == 405
+    assert candidate(2779) == 441
+    assert candidate(6) == 0
+    assert candidate(120) == 1
+    assert candidate(5575549) == 39375
+    assert candidate(2992) == 81
+    assert candidate(98952) == 405
+    assert candidate(99681) == 81
+    assert candidate(5576828) == 175
+    assert candidate(4783) == 21
+    assert candidate(4212) == 1
+    assert candidate(5577451) == 6125
+    assert candidate(98537) == 945
+    assert candidate(5732) == 105
+    assert candidate(58) == 5
+    assert candidate(99366) == 243
+    assert candidate(5576806) == 175
+    assert candidate(5867) == 35
+    assert candidate(5519) == 225
+    assert candidate(4822) == 0
+    assert candidate(121) == 1
+    assert candidate(3059) == 135
+    assert candidate(50) == 5
+    assert candidate(1494) == 9
+    assert candidate(118) == 1
+    assert candidate(99476) == 567
+    assert candidate(5576669) == 1575
+    assert candidate(97733) == 3969
+    assert candidate(56) == 5
+    assert candidate(5960) == 45
+    assert candidate(98656) == 45
+    assert candidate(2654) == 5
+    assert candidate(5576864) == 175
+    assert candidate(99493) == 2187
+    assert candidate(123) == 3
+    assert candidate(4703) == 21
+    assert candidate(99055) == 2025
+    assert candidate(49) == 9
+    assert candidate(59) == 45
+    assert candidate(2222) == 0
+    assert candidate(3) == 3
+    assert candidate(115) == 5
+    assert candidate(2195) == 45
+    assert candidate(117) == 7
+    assert candidate(5577115) == 6125
+    assert candidate(122) == 1
+    assert candidate(2255) == 25
+    assert candidate(5576251) == 875
+    assert candidate(5120) == 5
+    assert candidate(5575856) == 4375
+    assert candidate(9) == 9
+    assert candidate(1950) == 45
+    assert candidate(52) == 5
+    assert candidate(3194) == 27
+    assert candidate(5576832) == 525
+    assert candidate(53) == 15
+    assert candidate(99378) == 1701
+    assert candidate(3097) == 189
+    assert candidate(98819) == 81
+    assert candidate(5575868) == 875
+    assert candidate(2468) == 0
+    assert candidate(99109) == 729
+    assert candidate(5576507) == 6125
+    assert candidate(4115) == 5
+    assert candidate(5054) == 25
+    assert candidate(98995) == 3645
+    assert candidate(1583) == 15
+    assert candidate(5014) == 5
+    assert candidate(124) == 1
+
+if __name__ == '__main__':
+    check(digits)

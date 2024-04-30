@@ -1,0 +1,109 @@
+from case_MBPP_287 import surface_Area
+
+
+def check(candidate):
+    assert candidate(3,4) == 33
+    assert candidate(4,5) == 56
+    assert candidate(1,2) == 5
+    assert candidate(7, 1) == 63
+    assert candidate(4, 1) == 24
+    assert candidate(8, 3) == 112
+    assert candidate(4, 1) == 24
+    assert candidate(1, 7) == 15
+    assert candidate(3, 8) == 57
+    assert candidate(6, 1) == 48
+    assert candidate(8, 6) == 160
+    assert candidate(6, 7) == 120
+    assert candidate(4, 2) == 32
+    assert candidate(3, 8) == 57
+    assert candidate(6, 7) == 120
+    assert candidate(1, 7) == 15
+    assert candidate(2, 5) == 24
+    assert candidate(1, 8) == 17
+    assert candidate(2, 9) == 40
+    assert candidate(5, 2) == 45
+    assert candidate(7, 1) == 63
+    assert candidate(2, 7) == 32
+    assert candidate(7, 5) == 119
+    assert candidate(8, 1) == 80
+    assert candidate(7, 8) == 161
+    assert candidate(4, 6) == 64
+    assert candidate(3, 3) == 27
+    assert candidate(6, 2) == 60
+    assert candidate(3, 5) == 39
+    assert candidate(6, 8) == 132
+    assert candidate(5, 7) == 95
+    assert candidate(3, 6) == 45
+    assert candidate(4, 3) == 40
+    assert candidate(6, 5) == 96
+    assert candidate(7, 7) == 147
+    assert candidate(6, 2) == 60
+    assert candidate(6, 3) == 72
+    assert candidate(9, 10) == 261
+    assert candidate(2, 4) == 20
+    assert candidate(8, 6) == 160
+    assert candidate(1, 8) == 17
+    assert candidate(4, 5) == 56
+    assert candidate(9, 4) == 153
+    assert candidate(9, 6) == 189
+    assert candidate(7, 3) == 91
+    assert candidate(9, 8) == 225
+    assert candidate(9, 4) == 153
+    assert candidate(4, 8) == 80
+    assert candidate(6, 10) == 156
+    assert candidate(7, 5) == 119
+    assert candidate(8, 1) == 80
+    assert candidate(7, 8) == 161
+    assert candidate(6, 5) == 96
+    assert candidate(6, 6) == 108
+    assert candidate(9, 7) == 207
+    assert candidate(9, 5) == 171
+    assert candidate(1, 6) == 13
+    assert candidate(9, 5) == 171
+    assert candidate(6, 5) == 96
+    assert candidate(7, 5) == 119
+    assert candidate(1, 2) == 5
+    assert candidate(1, 9) == 19
+    assert candidate(8, 5) == 144
+    assert candidate(2, 8) == 36
+    assert candidate(3, 7) == 51
+    assert candidate(7, 5) == 119
+    assert candidate(4, 6) == 64
+    assert candidate(4, 8) == 80
+    assert candidate(4, 3) == 40
+    assert candidate(3, 3) == 27
+    assert candidate(5, 4) == 65
+    assert candidate(4, 1) == 24
+    assert candidate(1, 1) == 3
+    assert candidate(2, 4) == 20
+    assert candidate(4, 2) == 32
+    assert candidate(2, 2) == 12
+    assert candidate(4, 4) == 48
+    assert candidate(3, 5) == 39
+    assert candidate(4, 2) == 32
+    assert candidate(1, 3) == 7
+    assert candidate(5, 4) == 65
+    assert candidate(6, 7) == 120
+    assert candidate(1, 2) == 5
+    assert candidate(4, 7) == 72
+    assert candidate(5, 3) == 55
+    assert candidate(2, 1) == 8
+    assert candidate(5, 1) == 35
+    assert candidate(4, 7) == 72
+    assert candidate(2, 7) == 32
+    assert candidate(6, 2) == 60
+    assert candidate(5, 4) == 65
+    assert candidate(5, 7) == 95
+    assert candidate(3, 6) == 45
+    assert candidate(4, 3) == 40
+    assert candidate(4, 3) == 40
+    assert candidate(6, 1) == 48
+    assert candidate(2, 3) == 16
+    assert candidate(3, 5) == 39
+    assert candidate(3, 2) == 21
+    assert candidate(1, 4) == 9
+    assert candidate(3, 6) == 45
+    assert candidate(5, 7) == 95
+
+if __name__ == '__main__':
+    check(surface_Area)

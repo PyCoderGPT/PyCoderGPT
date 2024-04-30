@@ -1,0 +1,109 @@
+from case_MBPP_288 import my_dict
+
+
+def check(candidate):
+    assert candidate({10})==False
+    assert candidate({11})==False
+    assert candidate({})==True
+    assert candidate({6}) == False
+    assert candidate({11}) == False
+    assert candidate({9}) == False
+    assert candidate({12}) == False
+    assert candidate({7}) == False
+    assert candidate({12}) == False
+    assert candidate({11}) == False
+    assert candidate({13}) == False
+    assert candidate({5}) == False
+    assert candidate({12}) == False
+    assert candidate({6}) == False
+    assert candidate({14}) == False
+    assert candidate({15}) == False
+    assert candidate({7}) == False
+    assert candidate({7}) == False
+    assert candidate({12}) == False
+    assert candidate({12}) == False
+    assert candidate({12}) == False
+    assert candidate({13}) == False
+    assert candidate({11}) == False
+    assert candidate({12}) == False
+    assert candidate({13}) == False
+    assert candidate({11}) == False
+    assert candidate({8}) == False
+    assert candidate({6}) == False
+    assert candidate({8}) == False
+    assert candidate({7}) == False
+    assert candidate({9}) == False
+    assert candidate({14}) == False
+    assert candidate({11}) == False
+    assert candidate({15}) == False
+    assert candidate({9}) == False
+    assert candidate({12}) == False
+    assert candidate({6}) == False
+    assert candidate({11}) == False
+    assert candidate({14}) == False
+    assert candidate({7}) == False
+    assert candidate({16}) == False
+    assert candidate({13}) == False
+    assert candidate({14}) == False
+    assert candidate({11}) == False
+    assert candidate({15}) == False
+    assert candidate({9}) == False
+    assert candidate({7}) == False
+    assert candidate({14}) == False
+    assert candidate({6}) == False
+    assert candidate({16}) == False
+    assert candidate({11}) == False
+    assert candidate({13}) == False
+    assert candidate({10}) == False
+    assert candidate({12}) == False
+    assert candidate({16}) == False
+    assert candidate({7}) == False
+    assert candidate({16}) == False
+    assert candidate({14}) == False
+    assert candidate({6}) == False
+    assert candidate({10}) == False
+    assert candidate({7}) == False
+    assert candidate({16}) == False
+    assert candidate({15}) == False
+    assert candidate({8}) == False
+    assert candidate({8}) == False
+    assert candidate({14}) == False
+    assert candidate({8}) == False
+    assert candidate({12}) == False
+    assert candidate({12}) == False
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+    assert candidate({}) == True
+
+if __name__ == '__main__':
+    check(my_dict)

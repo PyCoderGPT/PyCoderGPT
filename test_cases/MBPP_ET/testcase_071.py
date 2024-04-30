@@ -1,0 +1,109 @@
+from case_MBPP_071 import amicable_numbers_sum
+
+
+def check(candidate):
+    assert candidate(999)==504
+    assert candidate(9999)==31626
+    assert candidate(99)==0
+    assert candidate(997) == 504
+    assert candidate(999) == 504
+    assert candidate(998) == 504
+    assert candidate(995) == 504
+    assert candidate(994) == 504
+    assert candidate(998) == 504
+    assert candidate(1001) == 504
+    assert candidate(1000) == 504
+    assert candidate(1004) == 504
+    assert candidate(994) == 504
+    assert candidate(997) == 504
+    assert candidate(1003) == 504
+    assert candidate(1004) == 504
+    assert candidate(994) == 504
+    assert candidate(997) == 504
+    assert candidate(1003) == 504
+    assert candidate(1001) == 504
+    assert candidate(1001) == 504
+    assert candidate(994) == 504
+    assert candidate(994) == 504
+    assert candidate(1002) == 504
+    assert candidate(996) == 504
+    assert candidate(997) == 504
+    assert candidate(994) == 504
+    assert candidate(1003) == 504
+    assert candidate(1004) == 504
+    assert candidate(994) == 504
+    assert candidate(1003) == 504
+    assert candidate(998) == 504
+    assert candidate(1001) == 504
+    assert candidate(1000) == 504
+    assert candidate(995) == 504
+    assert candidate(995) == 504
+    assert candidate(10106) == 31626
+    assert candidate(10465) == 31626
+    assert candidate(9063) == 31626
+    assert candidate(10085) == 31626
+    assert candidate(10694) == 31626
+    assert candidate(9085) == 31626
+    assert candidate(10769) == 42370
+    assert candidate(9553) == 31626
+    assert candidate(8951) == 31626
+    assert candidate(9393) == 31626
+    assert candidate(10611) == 31626
+    assert candidate(10259) == 31626
+    assert candidate(10565) == 31626
+    assert candidate(9375) == 31626
+    assert candidate(9011) == 31626
+    assert candidate(9714) == 31626
+    assert candidate(9721) == 31626
+    assert candidate(10431) == 31626
+    assert candidate(9299) == 31626
+    assert candidate(9081) == 31626
+    assert candidate(10028) == 31626
+    assert candidate(10673) == 31626
+    assert candidate(9992) == 31626
+    assert candidate(9137) == 31626
+    assert candidate(9403) == 31626
+    assert candidate(10549) == 31626
+    assert candidate(10296) == 31626
+    assert candidate(9720) == 31626
+    assert candidate(10664) == 31626
+    assert candidate(9618) == 31626
+    assert candidate(9546) == 31626
+    assert candidate(9050) == 31626
+    assert candidate(10267) == 31626
+    assert candidate(94) == 0
+    assert candidate(94) == 0
+    assert candidate(103) == 0
+    assert candidate(94) == 0
+    assert candidate(102) == 0
+    assert candidate(102) == 0
+    assert candidate(98) == 0
+    assert candidate(103) == 0
+    assert candidate(96) == 0
+    assert candidate(102) == 0
+    assert candidate(104) == 0
+    assert candidate(103) == 0
+    assert candidate(102) == 0
+    assert candidate(102) == 0
+    assert candidate(95) == 0
+    assert candidate(95) == 0
+    assert candidate(98) == 0
+    assert candidate(98) == 0
+    assert candidate(101) == 0
+    assert candidate(95) == 0
+    assert candidate(96) == 0
+    assert candidate(97) == 0
+    assert candidate(100) == 0
+    assert candidate(98) == 0
+    assert candidate(95) == 0
+    assert candidate(94) == 0
+    assert candidate(99) == 0
+    assert candidate(96) == 0
+    assert candidate(98) == 0
+    assert candidate(100) == 0
+    assert candidate(95) == 0
+    assert candidate(102) == 0
+    assert candidate(102) == 0
+
+if __name__ == '__main__':
+    check(amicable_numbers_sum)

@@ -1,0 +1,109 @@
+from case_MBPP_220 import median_trapezium
+
+
+def check(candidate):
+    assert candidate(15,25,35)==20
+    assert candidate(10,20,30)==15
+    assert candidate(6,9,4)==7.5
+    assert candidate(20, 25, 31) == 22.5
+    assert candidate(12, 30, 31) == 21.0
+    assert candidate(19, 22, 30) == 20.5
+    assert candidate(13, 20, 37) == 16.5
+    assert candidate(13, 30, 40) == 21.5
+    assert candidate(17, 23, 38) == 20.0
+    assert candidate(10, 23, 39) == 16.5
+    assert candidate(12, 21, 40) == 16.5
+    assert candidate(19, 30, 39) == 24.5
+    assert candidate(11, 29, 30) == 20.0
+    assert candidate(10, 28, 31) == 19.0
+    assert candidate(16, 25, 32) == 20.5
+    assert candidate(12, 23, 38) == 17.5
+    assert candidate(15, 29, 34) == 22.0
+    assert candidate(20, 30, 32) == 25.0
+    assert candidate(20, 24, 30) == 22.0
+    assert candidate(15, 22, 35) == 18.5
+    assert candidate(18, 29, 32) == 23.5
+    assert candidate(11, 29, 31) == 20.0
+    assert candidate(13, 24, 30) == 18.5
+    assert candidate(13, 30, 35) == 21.5
+    assert candidate(17, 27, 32) == 22.0
+    assert candidate(16, 30, 30) == 23.0
+    assert candidate(13, 20, 34) == 16.5
+    assert candidate(15, 22, 36) == 18.5
+    assert candidate(12, 20, 34) == 16.0
+    assert candidate(16, 24, 39) == 20.0
+    assert candidate(13, 28, 30) == 20.5
+    assert candidate(15, 21, 33) == 18.0
+    assert candidate(13, 27, 40) == 20.0
+    assert candidate(13, 26, 31) == 19.5
+    assert candidate(17, 23, 36) == 20.0
+    assert candidate(13, 30, 38) == 21.5
+    assert candidate(13, 15, 32) == 14.0
+    assert candidate(5, 24, 33) == 14.5
+    assert candidate(5, 15, 35) == 10.0
+    assert candidate(9, 25, 28) == 17.0
+    assert candidate(10, 25, 34) == 17.5
+    assert candidate(9, 18, 35) == 13.5
+    assert candidate(15, 18, 33) == 16.5
+    assert candidate(6, 21, 28) == 13.5
+    assert candidate(8, 21, 31) == 14.5
+    assert candidate(13, 21, 30) == 17.0
+    assert candidate(11, 23, 29) == 17.0
+    assert candidate(8, 23, 35) == 15.5
+    assert candidate(12, 17, 25) == 14.5
+    assert candidate(12, 20, 34) == 16.0
+    assert candidate(13, 18, 32) == 15.5
+    assert candidate(8, 15, 27) == 11.5
+    assert candidate(14, 20, 26) == 17.0
+    assert candidate(14, 21, 25) == 17.5
+    assert candidate(9, 18, 32) == 13.5
+    assert candidate(5, 15, 32) == 10.0
+    assert candidate(15, 19, 30) == 17.0
+    assert candidate(14, 21, 30) == 17.5
+    assert candidate(7, 15, 32) == 11.0
+    assert candidate(15, 23, 25) == 19.0
+    assert candidate(9, 16, 34) == 12.5
+    assert candidate(14, 20, 26) == 17.0
+    assert candidate(10, 23, 33) == 16.5
+    assert candidate(11, 21, 34) == 16.0
+    assert candidate(7, 20, 29) == 13.5
+    assert candidate(15, 16, 27) == 15.5
+    assert candidate(11, 17, 25) == 14.0
+    assert candidate(7, 24, 25) == 15.5
+    assert candidate(10, 22, 28) == 16.0
+    assert candidate(9, 4, 4) == 6.5
+    assert candidate(11, 6, 6) == 8.5
+    assert candidate(7, 6, 2) == 6.5
+    assert candidate(1, 5, 7) == 3.0
+    assert candidate(9, 13, 5) == 11.0
+    assert candidate(4, 12, 9) == 8.0
+    assert candidate(10, 4, 5) == 7.0
+    assert candidate(3, 13, 2) == 8.0
+    assert candidate(3, 10, 4) == 6.5
+    assert candidate(3, 5, 1) == 4.0
+    assert candidate(5, 13, 9) == 9.0
+    assert candidate(2, 10, 8) == 6.0
+    assert candidate(8, 8, 5) == 8.0
+    assert candidate(11, 8, 8) == 9.5
+    assert candidate(2, 11, 6) == 6.5
+    assert candidate(2, 14, 8) == 8.0
+    assert candidate(7, 7, 8) == 7.0
+    assert candidate(4, 8, 3) == 6.0
+    assert candidate(8, 9, 7) == 8.5
+    assert candidate(5, 4, 3) == 4.5
+    assert candidate(2, 7, 8) == 4.5
+    assert candidate(10, 8, 3) == 9.0
+    assert candidate(9, 12, 7) == 10.5
+    assert candidate(11, 7, 9) == 9.0
+    assert candidate(6, 11, 2) == 8.5
+    assert candidate(8, 14, 1) == 11.0
+    assert candidate(5, 12, 5) == 8.5
+    assert candidate(1, 9, 4) == 5.0
+    assert candidate(7, 6, 8) == 6.5
+    assert candidate(2, 12, 2) == 7.0
+    assert candidate(4, 9, 9) == 6.5
+    assert candidate(6, 6, 6) == 6.0
+    assert candidate(4, 8, 4) == 6.0
+
+if __name__ == '__main__':
+    check(median_trapezium)

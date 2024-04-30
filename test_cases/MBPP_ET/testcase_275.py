@@ -1,0 +1,109 @@
+from case_MBPP_275 import sum_digits
+
+
+def check(candidate):
+    assert candidate(345)==12
+    assert candidate(12)==3
+    assert candidate(97)==16
+    assert candidate(344) == 11
+    assert candidate(350) == 8
+    assert candidate(342) == 9
+    assert candidate(342) == 9
+    assert candidate(341) == 8
+    assert candidate(347) == 14
+    assert candidate(345) == 12
+    assert candidate(343) == 10
+    assert candidate(341) == 8
+    assert candidate(345) == 12
+    assert candidate(340) == 7
+    assert candidate(345) == 12
+    assert candidate(347) == 14
+    assert candidate(350) == 8
+    assert candidate(344) == 11
+    assert candidate(343) == 10
+    assert candidate(344) == 11
+    assert candidate(340) == 7
+    assert candidate(341) == 8
+    assert candidate(350) == 8
+    assert candidate(344) == 11
+    assert candidate(343) == 10
+    assert candidate(347) == 14
+    assert candidate(349) == 16
+    assert candidate(348) == 15
+    assert candidate(347) == 14
+    assert candidate(341) == 8
+    assert candidate(343) == 10
+    assert candidate(343) == 10
+    assert candidate(346) == 13
+    assert candidate(350) == 8
+    assert candidate(340) == 7
+    assert candidate(349) == 16
+    assert candidate(15) == 6
+    assert candidate(9) == 9
+    assert candidate(10) == 1
+    assert candidate(12) == 3
+    assert candidate(11) == 2
+    assert candidate(15) == 6
+    assert candidate(10) == 1
+    assert candidate(14) == 5
+    assert candidate(17) == 8
+    assert candidate(10) == 1
+    assert candidate(13) == 4
+    assert candidate(7) == 7
+    assert candidate(9) == 9
+    assert candidate(16) == 7
+    assert candidate(15) == 6
+    assert candidate(16) == 7
+    assert candidate(9) == 9
+    assert candidate(13) == 4
+    assert candidate(10) == 1
+    assert candidate(16) == 7
+    assert candidate(16) == 7
+    assert candidate(7) == 7
+    assert candidate(13) == 4
+    assert candidate(10) == 1
+    assert candidate(10) == 1
+    assert candidate(9) == 9
+    assert candidate(14) == 5
+    assert candidate(17) == 8
+    assert candidate(12) == 3
+    assert candidate(16) == 7
+    assert candidate(7) == 7
+    assert candidate(8) == 8
+    assert candidate(13) == 4
+    assert candidate(100) == 1
+    assert candidate(98) == 17
+    assert candidate(94) == 13
+    assert candidate(92) == 11
+    assert candidate(101) == 2
+    assert candidate(102) == 3
+    assert candidate(93) == 12
+    assert candidate(98) == 17
+    assert candidate(101) == 2
+    assert candidate(92) == 11
+    assert candidate(95) == 14
+    assert candidate(102) == 3
+    assert candidate(96) == 15
+    assert candidate(93) == 12
+    assert candidate(96) == 15
+    assert candidate(98) == 17
+    assert candidate(92) == 11
+    assert candidate(102) == 3
+    assert candidate(100) == 1
+    assert candidate(95) == 14
+    assert candidate(93) == 12
+    assert candidate(98) == 17
+    assert candidate(102) == 3
+    assert candidate(92) == 11
+    assert candidate(98) == 17
+    assert candidate(97) == 16
+    assert candidate(95) == 14
+    assert candidate(101) == 2
+    assert candidate(97) == 16
+    assert candidate(100) == 1
+    assert candidate(92) == 11
+    assert candidate(97) == 16
+    assert candidate(93) == 12
+
+if __name__ == '__main__':
+    check(sum_digits)

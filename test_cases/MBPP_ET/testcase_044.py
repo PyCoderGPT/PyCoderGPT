@@ -1,0 +1,109 @@
+from case_MBPP_044 import len_log
+
+
+def check(candidate):
+    assert candidate(["python","PHP","bigdata"]) == 7
+    assert candidate(["a","ab","abc"]) == 3
+    assert candidate(["small","big","tall"]) == 5
+    assert candidate(['kazad', 'UVLBD', 'tyoougvztcej']) == 12
+    assert candidate(['axrrbnjwhzlo', 'FMWSNU', 'kplglu']) == 12
+    assert candidate(['imyd', 'BOHHFHADJ', 'dbvr']) == 9
+    assert candidate(['spwgrrticyp', 'CWNTWGYQ', 'bwopvjjmhuyf']) == 12
+    assert candidate(['cffxx', 'BQWGRLV', 'ezu']) == 7
+    assert candidate(['gsto', 'ICOVN', 'iggnfr']) == 6
+    assert candidate(['myzexmpbtbi', 'QNJIHT', 'xxw']) == 11
+    assert candidate(['erknf', 'HHGYW', 'pxdoenedr']) == 9
+    assert candidate(['ytbwvx', 'FTM', 'mowct']) == 6
+    assert candidate(['bqaxcpltxskn', 'KRGXUU', 'uthsyaidut']) == 12
+    assert candidate(['jadd', 'DZKASJC', 'ptu']) == 7
+    assert candidate(['pbeyngj', 'VZJEIRVN', 'igj']) == 8
+    assert candidate(['srwiq', 'CNUPFVHS', 'kerz']) == 8
+    assert candidate(['vjmaovdi', 'BTKFQ', 'tiikcscr']) == 8
+    assert candidate(['ztflwvljmsg', 'TNBOIUZTK', 'qpqgpsxfpac']) == 11
+    assert candidate(['tvnubsreparf', 'PDBQXUS', 'qbnqrso']) == 12
+    assert candidate(['lzjefb', 'DIJWKW', 'vcserkr']) == 7
+    assert candidate(['sjoze', 'TDIHORQAJ', 'hnj']) == 9
+    assert candidate(['ewcjcg', 'DGI', 'fpx']) == 6
+    assert candidate(['flgbegu', 'TBWGBID', 'rnolq']) == 7
+    assert candidate(['naog', 'KZDOBJC', 'wtkgves']) == 7
+    assert candidate(['nup', 'EFLUZCDKJ', 'blmpgoftngdr']) == 12
+    assert candidate(['bmolhaxhsel', 'DUHBNR', 'krwsrfhfxb']) == 11
+    assert candidate(['sjtpkwj', 'ISS', 'pacu']) == 7
+    assert candidate(['ajilqtqiq', 'KLMRVZE', 'zqmpuu']) == 9
+    assert candidate(['yrtn', 'CNAZL', 'rgadcrd']) == 7
+    assert candidate(['eilq', 'XJQITZGZK', 'wvfdahdice']) == 10
+    assert candidate(['phmobjkcf', 'XVYZR', 'nuepjny']) == 9
+    assert candidate(['myfetfgub', 'DZFIZQ', 'urzwgzptl']) == 9
+    assert candidate(['xrtrtx', 'GMZZCIY', 'olqrmri']) == 7
+    assert candidate(['rnlrdmsmry', 'RUEW', 'jupdjz']) == 10
+    assert candidate(['nxewm', 'ZJWG', 'nhflmuyze']) == 9
+    assert candidate(['gktxi', 'DITONNDR', 'dxw']) == 8
+    assert candidate(['b', 'rngve', 'iewa']) == 5
+    assert candidate(['m', 'aqkov', 'fvav']) == 5
+    assert candidate(['e', 'crpw', 'qqc']) == 4
+    assert candidate(['b', 'heeoh', 'tzm']) == 5
+    assert candidate(['e', 'wgrn', 'uxefj']) == 5
+    assert candidate(['e', 'ckrhca', 'sta']) == 6
+    assert candidate(['q', 'kskam', 'lxehdgg']) == 7
+    assert candidate(['c', 'okgp', 'lebom']) == 5
+    assert candidate(['m', 'byqz', 'pid']) == 4
+    assert candidate(['w', 'gbzk', 'iplkw']) == 5
+    assert candidate(['n', 'drga', 'lisknufw']) == 8
+    assert candidate(['x', 'eprm', 'gzwllxjfj']) == 9
+    assert candidate(['l', 'acuyqx', 'tjf']) == 6
+    assert candidate(['q', 'inuuw', 'vffib']) == 5
+    assert candidate(['w', 'tsrf', 'bgpwuf']) == 6
+    assert candidate(['l', 'mser', 'pbwe']) == 4
+    assert candidate(['t', 'hucajv', 'umqfas']) == 6
+    assert candidate(['x', 'omukkp', 'ptlmkjfpl']) == 9
+    assert candidate(['a', 'afbl', 'ifco']) == 4
+    assert candidate(['o', 'arm', 'qkupfbk']) == 7
+    assert candidate(['a', 'hglcd', 'jwylni']) == 6
+    assert candidate(['q', 'ettg', 'jkqtybxe']) == 8
+    assert candidate(['h', 'oxe', 'skpro']) == 5
+    assert candidate(['j', 'upvjht', 'ucdthaik']) == 8
+    assert candidate(['t', 'hwnxn', 'hochak']) == 6
+    assert candidate(['o', 'jyb', 'ekmwv']) == 5
+    assert candidate(['g', 'mqbr', 'oyjk']) == 4
+    assert candidate(['g', 'xcrrxd', 'wwgnjyhl']) == 8
+    assert candidate(['m', 'owwfg', 'rzshksw']) == 7
+    assert candidate(['x', 'cjref', 'shpwezby']) == 8
+    assert candidate(['j', 'aycy', 'dcnc']) == 4
+    assert candidate(['g', 'dirz', 'rcled']) == 5
+    assert candidate(['j', 'tzaig', 'aymnnxl']) == 7
+    assert candidate(['boduvlb', 'ghdc', 'dis']) == 7
+    assert candidate(['vahjy', 'ddc', 'snjia']) == 5
+    assert candidate(['quxeni', 'luzjjw', 'drdxanor']) == 8
+    assert candidate(['vsq', 'jgqen', 'fxzppka']) == 7
+    assert candidate(['jtbjfbo', 'omhvewa', 'glleksf']) == 7
+    assert candidate(['nppgprzb', 'nworcufsb', 'fbysphcv']) == 9
+    assert candidate(['gmnx', 'yxvuu', 'jcozlpk']) == 7
+    assert candidate(['imue', 'exgngihi', 'hmkdes']) == 8
+    assert candidate(['qvjk', 'trvjkrjxa', 'iudfofji']) == 9
+    assert candidate(['muej', 'sda', 'ijsgvoysx']) == 9
+    assert candidate(['tbsw', 'dxgrrrmhc', 'hwodgukik']) == 9
+    assert candidate(['unibawwpx', 'mxaa', 'bxegooq']) == 9
+    assert candidate(['qkndiqk', 'peky', 'dwd']) == 7
+    assert candidate(['qtv', 'zylutdyfv', 'frfo']) == 9
+    assert candidate(['ckeer', 'hno', 'iixhp']) == 5
+    assert candidate(['wwbhwaaoh', 'dgav', 'cbjltpke']) == 9
+    assert candidate(['dezbdaq', 'trffver', 'jhkkj']) == 7
+    assert candidate(['eathacgx', 'ksmaiemwj', 'trk']) == 9
+    assert candidate(['rob', 'pabbcg', 'rpfnliz']) == 7
+    assert candidate(['lcnkwgxf', 'ozxiucpu', 'cgjkuomy']) == 8
+    assert candidate(['ddpwhq', 'nbberbv', 'pkmnll']) == 7
+    assert candidate(['eqxbhea', 'xwb', 'layjs']) == 7
+    assert candidate(['bejux', 'ozewl', 'qhfwdrw']) == 7
+    assert candidate(['atwcepltd', 'xttalbl', 'qqbwijznf']) == 9
+    assert candidate(['bsilw', 'bzifrn', 'glbeykv']) == 7
+    assert candidate(['gerszqgi', 'lyv', 'zlynqltk']) == 8
+    assert candidate(['kzgk', 'fte', 'pfmyernkz']) == 9
+    assert candidate(['rcb', 'aslt', 'fxkhvsxhq']) == 9
+    assert candidate(['avheyg', 'vpqhvobo', 'tfefazyxr']) == 9
+    assert candidate(['fpditrv', 'invpnqa', 'qutga']) == 7
+    assert candidate(['zevwz', 'hrzjctbvz', 'fvopjo']) == 9
+    assert candidate(['maijv', 'vsiz', 'kdeopbly']) == 8
+    assert candidate(['zxznanfzs', 'vzw', 'wbofibaxl']) == 9
+
+if __name__ == '__main__':
+    check(len_log)

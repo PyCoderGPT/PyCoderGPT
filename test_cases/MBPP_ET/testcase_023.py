@@ -1,0 +1,109 @@
+from case_MBPP_023 import recursive_list_sum
+
+
+def check(candidate):
+    assert candidate(([1, 2, [3,4],[5,6]]))==21
+    assert candidate(([7, 10, [15,14],[19,41]]))==106
+    assert candidate(([10, 20, [30,40],[50,60]]))==210
+    assert candidate([3, 1, [7, 2], [1, 1]]) == 15
+    assert candidate([5, 7, [5, 7], [7, 2]]) == 33
+    assert candidate([4, 4, [1, 5], [9, 6]]) == 29
+    assert candidate([1, 5, [5, 8], [2, 1]]) == 22
+    assert candidate([1, 3, [3, 8], [2, 4]]) == 21
+    assert candidate([4, 2, [8, 3], [3, 2]]) == 22
+    assert candidate([1, 5, [8, 1], [7, 11]]) == 33
+    assert candidate([5, 6, [2, 8], [7, 5]]) == 33
+    assert candidate([4, 4, [3, 3], [10, 2]]) == 26
+    assert candidate([1, 3, [2, 2], [10, 1]]) == 19
+    assert candidate([3, 1, [7, 9], [2, 1]]) == 23
+    assert candidate([6, 7, [4, 8], [7, 10]]) == 42
+    assert candidate([2, 7, [5, 7], [1, 5]]) == 27
+    assert candidate([3, 3, [1, 9], [1, 11]]) == 28
+    assert candidate([2, 5, [5, 8], [10, 7]]) == 37
+    assert candidate([3, 2, [3, 6], [7, 6]]) == 27
+    assert candidate([4, 7, [1, 5], [4, 4]]) == 25
+    assert candidate([5, 4, [7, 4], [4, 7]]) == 31
+    assert candidate([1, 2, [5, 8], [4, 1]]) == 21
+    assert candidate([1, 1, [4, 8], [8, 8]]) == 30
+    assert candidate([4, 2, [3, 9], [8, 11]]) == 37
+    assert candidate([6, 5, [1, 7], [8, 4]]) == 31
+    assert candidate([5, 7, [2, 7], [8, 4]]) == 33
+    assert candidate([1, 3, [2, 6], [9, 4]]) == 25
+    assert candidate([6, 7, [1, 8], [9, 11]]) == 42
+    assert candidate([1, 1, [1, 9], [10, 6]]) == 28
+    assert candidate([1, 4, [8, 8], [8, 6]]) == 35
+    assert candidate([6, 4, [2, 6], [6, 2]]) == 26
+    assert candidate([1, 5, [4, 8], [5, 4]]) == 27
+    assert candidate([3, 6, [1, 1], [4, 5]]) == 20
+    assert candidate([5, 4, [3, 9], [10, 9]]) == 40
+    assert candidate([6, 6, [8, 9], [5, 3]]) == 37
+    assert candidate([2, 2, [7, 1], [5, 9]]) == 26
+    assert candidate([2, 8, [13, 14], [23, 46]]) == 106
+    assert candidate([8, 13, [16, 14], [14, 36]]) == 101
+    assert candidate([2, 14, [19, 15], [16, 40]]) == 106
+    assert candidate([7, 12, [13, 18], [21, 41]]) == 112
+    assert candidate([7, 8, [14, 12], [23, 43]]) == 107
+    assert candidate([12, 12, [18, 12], [20, 36]]) == 110
+    assert candidate([12, 9, [14, 12], [24, 39]]) == 110
+    assert candidate([7, 11, [17, 12], [15, 41]]) == 103
+    assert candidate([10, 12, [19, 15], [19, 46]]) == 121
+    assert candidate([12, 12, [14, 19], [15, 38]]) == 110
+    assert candidate([9, 8, [13, 15], [18, 38]]) == 101
+    assert candidate([8, 11, [15, 13], [17, 40]]) == 104
+    assert candidate([10, 15, [19, 10], [17, 42]]) == 113
+    assert candidate([6, 12, [11, 12], [21, 46]]) == 108
+    assert candidate([8, 10, [13, 15], [24, 45]]) == 115
+    assert candidate([2, 13, [12, 19], [15, 43]]) == 104
+    assert candidate([7, 8, [19, 11], [15, 44]]) == 104
+    assert candidate([5, 13, [19, 18], [16, 45]]) == 116
+    assert candidate([11, 6, [17, 16], [16, 39]]) == 105
+    assert candidate([11, 13, [20, 14], [21, 46]]) == 125
+    assert candidate([6, 9, [16, 15], [20, 45]]) == 111
+    assert candidate([5, 8, [11, 16], [23, 45]]) == 108
+    assert candidate([9, 11, [11, 10], [16, 41]]) == 98
+    assert candidate([11, 5, [18, 10], [18, 40]]) == 102
+    assert candidate([4, 6, [12, 13], [21, 46]]) == 102
+    assert candidate([12, 10, [15, 9], [18, 38]]) == 102
+    assert candidate([5, 13, [20, 9], [22, 39]]) == 108
+    assert candidate([4, 7, [16, 15], [21, 39]]) == 102
+    assert candidate([9, 9, [15, 19], [19, 45]]) == 116
+    assert candidate([7, 13, [18, 19], [17, 39]]) == 113
+    assert candidate([6, 15, [19, 18], [21, 37]]) == 116
+    assert candidate([12, 5, [13, 19], [15, 38]]) == 102
+    assert candidate([12, 10, [10, 9], [17, 40]]) == 98
+    assert candidate([11, 15, [31, 43], [47, 56]]) == 203
+    assert candidate([15, 19, [32, 41], [54, 64]]) == 225
+    assert candidate([8, 22, [28, 35], [55, 59]]) == 207
+    assert candidate([8, 23, [35, 40], [54, 60]]) == 220
+    assert candidate([6, 20, [32, 42], [45, 57]]) == 202
+    assert candidate([9, 17, [26, 44], [55, 60]]) == 211
+    assert candidate([13, 20, [35, 45], [51, 62]]) == 226
+    assert candidate([7, 20, [35, 37], [49, 60]]) == 208
+    assert candidate([9, 25, [27, 43], [54, 55]]) == 213
+    assert candidate([15, 17, [34, 38], [49, 58]]) == 211
+    assert candidate([5, 21, [26, 44], [52, 56]]) == 204
+    assert candidate([7, 20, [29, 43], [46, 61]]) == 206
+    assert candidate([14, 25, [34, 42], [48, 57]]) == 220
+    assert candidate([11, 25, [32, 40], [49, 61]]) == 218
+    assert candidate([6, 16, [34, 36], [49, 55]]) == 196
+    assert candidate([11, 23, [26, 35], [49, 57]]) == 201
+    assert candidate([9, 19, [25, 42], [49, 60]]) == 204
+    assert candidate([13, 19, [29, 41], [55, 57]]) == 214
+    assert candidate([13, 18, [32, 37], [49, 55]]) == 204
+    assert candidate([10, 23, [28, 36], [46, 57]]) == 200
+    assert candidate([12, 16, [32, 43], [53, 58]]) == 214
+    assert candidate([11, 16, [29, 45], [51, 57]]) == 209
+    assert candidate([13, 15, [27, 44], [54, 57]]) == 210
+    assert candidate([15, 23, [28, 38], [52, 62]]) == 218
+    assert candidate([14, 16, [34, 42], [53, 62]]) == 221
+    assert candidate([7, 19, [25, 43], [48, 65]]) == 207
+    assert candidate([9, 25, [35, 37], [51, 58]]) == 215
+    assert candidate([8, 22, [33, 41], [51, 63]]) == 218
+    assert candidate([6, 21, [30, 36], [45, 61]]) == 199
+    assert candidate([12, 24, [27, 42], [46, 56]]) == 207
+    assert candidate([12, 21, [33, 41], [48, 63]]) == 218
+    assert candidate([12, 25, [32, 41], [45, 61]]) == 216
+    assert candidate([13, 20, [35, 35], [49, 61]]) == 213
+
+if __name__ == '__main__':
+    check(recursive_list_sum)

@@ -1,0 +1,109 @@
+from case_MBPP_299 import removezero_ip
+
+
+def check(candidate):
+    assert candidate("216.08.094.196")==('216.8.94.196') 
+    assert candidate("12.01.024")==('12.1.24') 
+    assert candidate("216.08.094.0196")==('216.8.94.196') 
+    assert candidate("296123.6..7772") == "296123.6..7772"
+    assert candidate("2..6.284989982") == "2..6.284989982"
+    assert candidate(".495001507801") == .495001507801
+    assert candidate("8012580.50.851") == "8012580.50.851"
+    assert candidate("9389.0250") == 9389.250
+    assert candidate("24701042380") == 24701042380
+    assert candidate("3219496359") == 3219496359
+    assert candidate("42016909.") == 42016909.
+    assert candidate("4367762035059") == 4367762035059
+    assert candidate(".533630107413534") == .533630107413534
+    assert candidate("83883538334205832") == 83883538334205832
+    assert candidate("8056097.82565473") == 8056097.82565473
+    assert candidate("9.1960722858243516") == 9.1960722858243516
+    assert candidate("537989.427.7034357") == "537989.427.7034357"
+    assert candidate("0.994451620") == 0.994451620
+    assert candidate("139.90498") == 139.90498
+    assert candidate("6570063.0.797") == "6570063..797"
+    assert candidate(".14250850672") == .14250850672
+    assert candidate("177520599.20206811") == 177520599.20206811
+    assert candidate("61.9359039") == 61.9359039
+    assert candidate("01343472419") == "01343472419"
+    assert candidate("29653..76") == "29653..76"
+    assert candidate("8506359.998191") == 8506359.998191
+    assert candidate("6109982802991973") == 6109982802991973
+    assert candidate("13.43672251807") == 13.43672251807
+    assert candidate("713230.7.798") == "713230.7.798"
+    assert candidate("6156.9.4.17820676") == "6156.9.4.17820676"
+    assert candidate("168223857..0312300") == "168223857..312300"
+    assert candidate("4181504.72") == 4181504.72
+    assert candidate("7658529659") == 7658529659
+    assert candidate("38.782819339") == 38.782819339
+    assert candidate("186040525") == 186040525
+    assert candidate("99299.213") == 99299.213
+    assert candidate("1226754581783") == 1226754581783
+    assert candidate("99121720160401") == 99121720160401
+    assert candidate(".694618") == .694618
+    assert candidate("972056") == 972056
+    assert candidate("6393538.05201") == 6393538.5201
+    assert candidate("4615389963") == 4615389963
+    assert candidate("96206.5") == 96206.5
+    assert candidate("39279301") == 39279301
+    assert candidate("517275321583317") == 517275321583317
+    assert candidate("16.200.9486055") == "16.200.9486055"
+    assert candidate("344660490") == 344660490
+    assert candidate("5969979573546") == 5969979573546
+    assert candidate("62496.9") == 62496.9
+    assert candidate("291075077484914") == 291075077484914
+    assert candidate("80083047099") == 80083047099
+    assert candidate("781217.953") == 781217.953
+    assert candidate("801957") == 801957
+    assert candidate("775091729.") == 775091729.
+    assert candidate("123780") == 123780
+    assert candidate("74.90.8718.8") == "74.90.8718.8"
+    assert candidate("059.88765473") == 059.88765473
+    assert candidate("49.25727620255.") == "49.25727620255."
+    assert candidate("52044689.5") == 52044689.5
+    assert candidate("260291") == 260291
+    assert candidate("576561599.623") == 576561599.623
+    assert candidate(".4674369.66.") == ".4674369.66."
+    assert candidate("4863060.14075") == 4863060.14075
+    assert candidate("8804.422175.") == "8804.422175."
+    assert candidate("470.02.70545626") == "470.2.70545626"
+    assert candidate("3.87005.29") == "3.87005.29"
+    assert candidate("305573707867104") == 305573707867104
+    assert candidate("64165.02456") == 64165.2456
+    assert candidate("138012.") == 138012.
+    assert candidate("41978943.869410117") == 41978943.869410117
+    assert candidate("398581..10171") == "398581..10171"
+    assert candidate("51421...825.8") == "51421...825.8"
+    assert candidate("371.88677330.1162") == "371.88677330.1162"
+    assert candidate("9243020805..94") == "9243020805..94"
+    assert candidate("9762.28881557293110") == 9762.28881557293110
+    assert candidate("735.44.449584509427") == "735.44.449584509427"
+    assert candidate("8035.322470.676558094") == "8035.322470.676558094"
+    assert candidate("26961.93589.95795550") == "26961.93589.95795550"
+    assert candidate("17128.647.48404.8126") == "17128.647.48404.8126"
+    assert candidate("5144397594342348") == 5144397594342348
+    assert candidate("59651375661523367") == 59651375661523367
+    assert candidate("180.29853.031") == "180.29853.31"
+    assert candidate("6450842943..318962") == "6450842943..318962"
+    assert candidate("7249.75690374") == 7249.75690374
+    assert candidate("5.96.767.253881") == "5.96.767.253881"
+    assert candidate("6197246005671") == 6197246005671
+    assert candidate("758247221887495.79") == 758247221887495.79
+    assert candidate("97186757792.905") == 97186757792.905
+    assert candidate("9779983062384") == 9779983062384
+    assert candidate("0900680878729401209") == "0900680878729401209"
+    assert candidate("78233801248641.2") == 78233801248641.2
+    assert candidate("581025543.0290718") == 581025543.290718
+    assert candidate("170.550255617718") == 170.550255617718
+    assert candidate("354616148586667774") == 354616148586667774
+    assert candidate("306273949902.44") == 306273949902.44
+    assert candidate("0195205922309927473") == "0195205922309927473"
+    assert candidate("90276.224842111305982") == 90276.224842111305982
+    assert candidate("2940565257737.17") == 2940565257737.17
+    assert candidate("33333190934845539..") == "33333190934845539.."
+    assert candidate("320644.2460140110") == 320644.2460140110
+    assert candidate(".77968005995") == .77968005995
+    assert candidate("4.9395667.4114.5") == "4.9395667.4114.5"
+
+if __name__ == '__main__':
+    check(removezero_ip)

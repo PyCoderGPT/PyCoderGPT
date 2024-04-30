@@ -1,0 +1,109 @@
+from case_MBPP_229 import surfacearea_cube
+
+
+def check(candidate):
+    assert candidate(5)==150
+    assert candidate(3)==54
+    assert candidate(10)==600
+    assert candidate(10) == 600
+    assert candidate(4) == 96
+    assert candidate(3) == 54
+    assert candidate(2) == 24
+    assert candidate(10) == 600
+    assert candidate(10) == 600
+    assert candidate(1) == 6
+    assert candidate(10) == 600
+    assert candidate(9) == 486
+    assert candidate(10) == 600
+    assert candidate(7) == 294
+    assert candidate(3) == 54
+    assert candidate(4) == 96
+    assert candidate(6) == 216
+    assert candidate(6) == 216
+    assert candidate(1) == 6
+    assert candidate(4) == 96
+    assert candidate(1) == 6
+    assert candidate(1) == 6
+    assert candidate(3) == 54
+    assert candidate(6) == 216
+    assert candidate(5) == 150
+    assert candidate(8) == 384
+    assert candidate(7) == 294
+    assert candidate(1) == 6
+    assert candidate(4) == 96
+    assert candidate(1) == 6
+    assert candidate(5) == 150
+    assert candidate(8) == 384
+    assert candidate(10) == 600
+    assert candidate(4) == 96
+    assert candidate(7) == 294
+    assert candidate(9) == 486
+    assert candidate(6) == 216
+    assert candidate(4) == 96
+    assert candidate(1) == 6
+    assert candidate(3) == 54
+    assert candidate(1) == 6
+    assert candidate(2) == 24
+    assert candidate(7) == 294
+    assert candidate(8) == 384
+    assert candidate(7) == 294
+    assert candidate(2) == 24
+    assert candidate(1) == 6
+    assert candidate(3) == 54
+    assert candidate(3) == 54
+    assert candidate(8) == 384
+    assert candidate(7) == 294
+    assert candidate(1) == 6
+    assert candidate(3) == 54
+    assert candidate(6) == 216
+    assert candidate(2) == 24
+    assert candidate(5) == 150
+    assert candidate(7) == 294
+    assert candidate(2) == 24
+    assert candidate(4) == 96
+    assert candidate(2) == 24
+    assert candidate(4) == 96
+    assert candidate(5) == 150
+    assert candidate(7) == 294
+    assert candidate(2) == 24
+    assert candidate(2) == 24
+    assert candidate(2) == 24
+    assert candidate(5) == 150
+    assert candidate(4) == 96
+    assert candidate(7) == 294
+    assert candidate(12) == 864
+    assert candidate(5) == 150
+    assert candidate(14) == 1176
+    assert candidate(10) == 600
+    assert candidate(10) == 600
+    assert candidate(11) == 726
+    assert candidate(7) == 294
+    assert candidate(6) == 216
+    assert candidate(11) == 726
+    assert candidate(10) == 600
+    assert candidate(10) == 600
+    assert candidate(7) == 294
+    assert candidate(6) == 216
+    assert candidate(11) == 726
+    assert candidate(5) == 150
+    assert candidate(14) == 1176
+    assert candidate(13) == 1014
+    assert candidate(5) == 150
+    assert candidate(7) == 294
+    assert candidate(8) == 384
+    assert candidate(8) == 384
+    assert candidate(10) == 600
+    assert candidate(6) == 216
+    assert candidate(8) == 384
+    assert candidate(14) == 1176
+    assert candidate(5) == 150
+    assert candidate(12) == 864
+    assert candidate(12) == 864
+    assert candidate(12) == 864
+    assert candidate(12) == 864
+    assert candidate(8) == 384
+    assert candidate(8) == 384
+    assert candidate(9) == 486
+
+if __name__ == '__main__':
+    check(surfacearea_cube)

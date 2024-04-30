@@ -1,0 +1,109 @@
+from case_MBPP_224 import neg_nos
+
+
+def check(candidate):
+    assert candidate([-1,4,5,-6]) == -1,-6
+    assert candidate([-1,-2,3,4]) == -1,-2
+    assert candidate([-7,-6,8,9]) == -7,-6
+    assert candidate([-5, 7, 8, -1]) == -5
+    assert candidate([0, 2, 8, -7]) == -7
+    assert candidate([-1, 7, 5, -11]) == -1
+    assert candidate([2, 4, 6, -10]) == -10
+    assert candidate([-6, 6, 1, -5]) == -6
+    assert candidate([1, 6, 4, -1]) == -1
+    assert candidate([-2, 4, 2, -4]) == -2
+    assert candidate([1, 5, 4, -3]) == -3
+    assert candidate([4, 9, 9, -2]) == -2
+    assert candidate([-5, 2, 7, -11]) == -5
+    assert candidate([-2, 6, 9, -6]) == -2
+    assert candidate([0, 7, 7, -11]) == -11
+    assert candidate([-4, 6, 4, -5]) == -4
+    assert candidate([-4, 3, 9, -7]) == -4
+    assert candidate([0, 6, 3, -4]) == -4
+    assert candidate([-4, 5, 10, -8]) == -4
+    assert candidate([3, 7, 7, -4]) == -4
+    assert candidate([-4, 2, 2, -3]) == -4
+    assert candidate([1, 8, 7, -10]) == -10
+    assert candidate([-4, 2, 6, -9]) == -4
+    assert candidate([-5, 8, 7, -7]) == -5
+    assert candidate([-2, 3, 1, -5]) == -2
+    assert candidate([-3, 4, 3, -10]) == -3
+    assert candidate([-5, 7, 10, -7]) == -5
+    assert candidate([-5, 4, 6, -11]) == -5
+    assert candidate([-2, 3, 6, -11]) == -2
+    assert candidate([-2, 8, 2, -4]) == -2
+    assert candidate([-3, 6, 4, -4]) == -3
+    assert candidate([1, 7, 8, -5]) == -5
+    assert candidate([3, 1, 2, -3]) == -3
+    assert candidate([0, 2, 3, -11]) == -11
+    assert candidate([0, 6, 2, -3]) == -3
+    assert candidate([4, 7, 9, -11]) == -11
+    assert candidate([-5, 1, 5, 1]) == -5
+    assert candidate([-6, -3, 3, 1]) == -6
+    assert candidate([-3, -4, 4, 6]) == -3
+    assert candidate([-3, 0, 6, 5]) == -3
+    assert candidate([-4, -1, 7, 2]) == -4
+    assert candidate([0, -1, 2, 6]) == -1
+    assert candidate([-1, -4, 4, 3]) == -1
+    assert candidate([4, 2, 6, 8]) == None
+    assert candidate([-3, 2, 6, 5]) == -3
+    assert candidate([-2, 1, 3, 8]) == -2
+    assert candidate([-4, 1, 3, 2]) == -4
+    assert candidate([-5, 0, 7, 8]) == -5
+    assert candidate([0, -3, 4, 4]) == -3
+    assert candidate([-2, -1, 5, 7]) == -2
+    assert candidate([-5, -5, 4, 8]) == -5
+    assert candidate([1, -3, 1, 5]) == -3
+    assert candidate([-5, 2, 7, 6]) == -5
+    assert candidate([-5, 1, 7, 5]) == -5
+    assert candidate([0, -6, 7, 5]) == -6
+    assert candidate([1, 2, 6, 7]) == None
+    assert candidate([-2, 2, 3, 7]) == -2
+    assert candidate([-3, -7, 4, 8]) == -3
+    assert candidate([-4, -2, 6, 7]) == -4
+    assert candidate([-1, -5, 2, 9]) == -1
+    assert candidate([-5, -2, 7, 7]) == -5
+    assert candidate([3, -2, 4, 2]) == -2
+    assert candidate([3, 3, 6, 6]) == None
+    assert candidate([0, -6, 6, 3]) == -6
+    assert candidate([-6, -6, 5, 8]) == -6
+    assert candidate([-3, -1, 7, 6]) == -3
+    assert candidate([-2, 3, 2, 3]) == -2
+    assert candidate([-2, -6, 5, 6]) == -2
+    assert candidate([4, 2, 5, 8]) == None
+    assert candidate([-11, -4, 10, 13]) == -11
+    assert candidate([-3, -1, 9, 13]) == -3
+    assert candidate([-10, -3, 13, 7]) == -10
+    assert candidate([-6, -5, 5, 12]) == -6
+    assert candidate([-12, -3, 8, 9]) == -12
+    assert candidate([-2, -7, 7, 4]) == -2
+    assert candidate([-11, -2, 12, 4]) == -11
+    assert candidate([-3, -2, 4, 10]) == -3
+    assert candidate([-5, -4, 3, 13]) == -5
+    assert candidate([-2, -1, 9, 13]) == -2
+    assert candidate([-9, -7, 8, 8]) == -9
+    assert candidate([-10, -8, 8, 10]) == -10
+    assert candidate([-5, -9, 10, 10]) == -5
+    assert candidate([-3, -2, 4, 6]) == -3
+    assert candidate([-7, -6, 12, 14]) == -7
+    assert candidate([-7, -3, 9, 9]) == -7
+    assert candidate([-12, -3, 5, 7]) == -12
+    assert candidate([-12, -3, 3, 12]) == -12
+    assert candidate([-12, -3, 8, 7]) == -12
+    assert candidate([-10, -3, 3, 12]) == -10
+    assert candidate([-12, -1, 4, 7]) == -12
+    assert candidate([-7, -4, 9, 10]) == -7
+    assert candidate([-12, -2, 8, 14]) == -12
+    assert candidate([-6, -5, 13, 14]) == -6
+    assert candidate([-8, -9, 12, 12]) == -8
+    assert candidate([-2, -10, 6, 14]) == -2
+    assert candidate([-4, -1, 6, 5]) == -4
+    assert candidate([-5, -11, 13, 10]) == -5
+    assert candidate([-8, -4, 7, 12]) == -8
+    assert candidate([-12, -2, 4, 12]) == -12
+    assert candidate([-12, -8, 7, 12]) == -12
+    assert candidate([-12, -1, 11, 9]) == -12
+    assert candidate([-5, -3, 10, 9]) == -5
+
+if __name__ == '__main__':
+    check(neg_nos)

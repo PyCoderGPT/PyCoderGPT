@@ -1,0 +1,109 @@
+from case_MBPP_139 import lateralsurface_cube
+
+
+def check(candidate):
+    assert candidate(5)==100
+    assert candidate(9)==324
+    assert candidate(10)==400
+    assert candidate(9) == 324
+    assert candidate(5) == 100
+    assert candidate(10) == 400
+    assert candidate(10) == 400
+    assert candidate(5) == 100
+    assert candidate(4) == 64
+    assert candidate(10) == 400
+    assert candidate(8) == 256
+    assert candidate(5) == 100
+    assert candidate(7) == 196
+    assert candidate(3) == 36
+    assert candidate(1) == 4
+    assert candidate(4) == 64
+    assert candidate(8) == 256
+    assert candidate(9) == 324
+    assert candidate(7) == 196
+    assert candidate(5) == 100
+    assert candidate(6) == 144
+    assert candidate(7) == 196
+    assert candidate(10) == 400
+    assert candidate(1) == 4
+    assert candidate(4) == 64
+    assert candidate(3) == 36
+    assert candidate(5) == 100
+    assert candidate(8) == 256
+    assert candidate(9) == 324
+    assert candidate(2) == 16
+    assert candidate(4) == 64
+    assert candidate(9) == 324
+    assert candidate(7) == 196
+    assert candidate(9) == 324
+    assert candidate(10) == 400
+    assert candidate(6) == 144
+    assert candidate(11) == 484
+    assert candidate(10) == 400
+    assert candidate(9) == 324
+    assert candidate(10) == 400
+    assert candidate(9) == 324
+    assert candidate(11) == 484
+    assert candidate(7) == 196
+    assert candidate(9) == 324
+    assert candidate(6) == 144
+    assert candidate(14) == 784
+    assert candidate(8) == 256
+    assert candidate(14) == 784
+    assert candidate(14) == 784
+    assert candidate(11) == 484
+    assert candidate(8) == 256
+    assert candidate(14) == 784
+    assert candidate(14) == 784
+    assert candidate(8) == 256
+    assert candidate(14) == 784
+    assert candidate(5) == 100
+    assert candidate(7) == 196
+    assert candidate(7) == 196
+    assert candidate(11) == 484
+    assert candidate(8) == 256
+    assert candidate(4) == 64
+    assert candidate(11) == 484
+    assert candidate(10) == 400
+    assert candidate(11) == 484
+    assert candidate(9) == 324
+    assert candidate(10) == 400
+    assert candidate(11) == 484
+    assert candidate(4) == 64
+    assert candidate(10) == 400
+    assert candidate(10) == 400
+    assert candidate(7) == 196
+    assert candidate(9) == 324
+    assert candidate(13) == 676
+    assert candidate(5) == 100
+    assert candidate(10) == 400
+    assert candidate(14) == 784
+    assert candidate(13) == 676
+    assert candidate(6) == 144
+    assert candidate(13) == 676
+    assert candidate(10) == 400
+    assert candidate(12) == 576
+    assert candidate(13) == 676
+    assert candidate(14) == 784
+    assert candidate(12) == 576
+    assert candidate(12) == 576
+    assert candidate(8) == 256
+    assert candidate(7) == 196
+    assert candidate(14) == 784
+    assert candidate(5) == 100
+    assert candidate(12) == 576
+    assert candidate(7) == 196
+    assert candidate(6) == 144
+    assert candidate(14) == 784
+    assert candidate(12) == 576
+    assert candidate(8) == 256
+    assert candidate(5) == 100
+    assert candidate(8) == 256
+    assert candidate(13) == 676
+    assert candidate(13) == 676
+    assert candidate(9) == 324
+    assert candidate(8) == 256
+    assert candidate(13) == 676
+
+if __name__ == '__main__':
+    check(lateralsurface_cube)

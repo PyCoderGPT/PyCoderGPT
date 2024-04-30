@@ -1,0 +1,109 @@
+from case_MBPP_101 import perimeter_pentagon
+
+
+def check(candidate):
+    assert candidate(5)==25
+    assert candidate(10)==50
+    assert candidate(15)==75
+    assert candidate(9) == 45
+    assert candidate(2) == 10
+    assert candidate(5) == 25
+    assert candidate(4) == 20
+    assert candidate(9) == 45
+    assert candidate(9) == 45
+    assert candidate(2) == 10
+    assert candidate(7) == 35
+    assert candidate(2) == 10
+    assert candidate(4) == 20
+    assert candidate(7) == 35
+    assert candidate(7) == 35
+    assert candidate(7) == 35
+    assert candidate(8) == 40
+    assert candidate(8) == 40
+    assert candidate(9) == 45
+    assert candidate(4) == 20
+    assert candidate(5) == 25
+    assert candidate(7) == 35
+    assert candidate(7) == 35
+    assert candidate(3) == 15
+    assert candidate(5) == 25
+    assert candidate(7) == 35
+    assert candidate(5) == 25
+    assert candidate(4) == 20
+    assert candidate(3) == 15
+    assert candidate(6) == 30
+    assert candidate(9) == 45
+    assert candidate(5) == 25
+    assert candidate(2) == 10
+    assert candidate(2) == 10
+    assert candidate(1) == 5
+    assert candidate(7) == 35
+    assert candidate(9) == 45
+    assert candidate(10) == 50
+    assert candidate(7) == 35
+    assert candidate(14) == 70
+    assert candidate(9) == 45
+    assert candidate(5) == 25
+    assert candidate(14) == 70
+    assert candidate(11) == 55
+    assert candidate(11) == 55
+    assert candidate(15) == 75
+    assert candidate(9) == 45
+    assert candidate(11) == 55
+    assert candidate(14) == 70
+    assert candidate(15) == 75
+    assert candidate(10) == 50
+    assert candidate(8) == 40
+    assert candidate(6) == 30
+    assert candidate(7) == 35
+    assert candidate(13) == 65
+    assert candidate(13) == 65
+    assert candidate(5) == 25
+    assert candidate(12) == 60
+    assert candidate(8) == 40
+    assert candidate(15) == 75
+    assert candidate(12) == 60
+    assert candidate(8) == 40
+    assert candidate(12) == 60
+    assert candidate(13) == 65
+    assert candidate(9) == 45
+    assert candidate(10) == 50
+    assert candidate(10) == 50
+    assert candidate(5) == 25
+    assert candidate(13) == 65
+    assert candidate(13) == 65
+    assert candidate(18) == 90
+    assert candidate(20) == 100
+    assert candidate(16) == 80
+    assert candidate(19) == 95
+    assert candidate(18) == 90
+    assert candidate(12) == 60
+    assert candidate(13) == 65
+    assert candidate(11) == 55
+    assert candidate(14) == 70
+    assert candidate(10) == 50
+    assert candidate(13) == 65
+    assert candidate(11) == 55
+    assert candidate(17) == 85
+    assert candidate(18) == 90
+    assert candidate(17) == 85
+    assert candidate(16) == 80
+    assert candidate(20) == 100
+    assert candidate(20) == 100
+    assert candidate(11) == 55
+    assert candidate(11) == 55
+    assert candidate(10) == 50
+    assert candidate(14) == 70
+    assert candidate(19) == 95
+    assert candidate(15) == 75
+    assert candidate(19) == 95
+    assert candidate(16) == 80
+    assert candidate(12) == 60
+    assert candidate(12) == 60
+    assert candidate(12) == 60
+    assert candidate(16) == 80
+    assert candidate(13) == 65
+    assert candidate(20) == 100
+
+if __name__ == '__main__':
+    check(perimeter_pentagon)

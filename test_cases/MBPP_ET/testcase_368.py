@@ -1,0 +1,109 @@
+from case_MBPP_368 import sector_area
+
+
+def check(candidate):
+    assert candidate(4,45)==6.285714285714286
+    assert candidate(9,45)==31.82142857142857
+    assert candidate(9,360)==None
+    assert candidate(9, 44) == 31.11428571428571
+    assert candidate(1, 41) == 0.35793650793650794
+    assert candidate(2, 46) == 1.6063492063492062
+    assert candidate(7, 40) == 17.11111111111111
+    assert candidate(7, 44) == 18.822222222222223
+    assert candidate(6, 42) == 13.2
+    assert candidate(2, 50) == 1.746031746031746
+    assert candidate(1, 50) == 0.4365079365079365
+    assert candidate(8, 49) == 27.377777777777776
+    assert candidate(8, 48) == 26.81904761904762
+    assert candidate(2, 41) == 1.4317460317460318
+    assert candidate(8, 43) == 24.025396825396825
+    assert candidate(7, 48) == 20.53333333333333
+    assert candidate(8, 42) == 23.466666666666665
+    assert candidate(7, 46) == 19.677777777777777
+    assert candidate(5, 44) == 9.603174603174603
+    assert candidate(1, 40) == 0.3492063492063492
+    assert candidate(8, 41) == 22.90793650793651
+    assert candidate(7, 45) == 19.25
+    assert candidate(8, 46) == 25.7015873015873
+    assert candidate(3, 45) == 3.5357142857142856
+    assert candidate(8, 42) == 23.466666666666665
+    assert candidate(6, 46) == 14.457142857142856
+    assert candidate(9, 45) == 31.82142857142857
+    assert candidate(2, 40) == 1.3968253968253967
+    assert candidate(1, 45) == 0.39285714285714285
+    assert candidate(5, 47) == 10.257936507936508
+    assert candidate(1, 45) == 0.39285714285714285
+    assert candidate(4, 44) == 6.1460317460317455
+    assert candidate(7, 49) == 20.96111111111111
+    assert candidate(9, 49) == 34.64999999999999
+    assert candidate(6, 43) == 13.514285714285714
+    assert candidate(7, 50) == 21.38888888888889
+    assert candidate(13, 42) == 61.96666666666666
+    assert candidate(6, 41) == 12.885714285714284
+    assert candidate(11, 46) == 48.59206349206349
+    assert candidate(14, 40) == 68.44444444444444
+    assert candidate(10, 50) == 43.65079365079365
+    assert candidate(13, 47) == 69.3436507936508
+    assert candidate(10, 45) == 39.285714285714285
+    assert candidate(10, 40) == 34.92063492063492
+    assert candidate(9, 45) == 31.82142857142857
+    assert candidate(6, 43) == 13.514285714285714
+    assert candidate(6, 47) == 14.771428571428572
+    assert candidate(6, 41) == 12.885714285714284
+    assert candidate(11, 40) == 42.25396825396825
+    assert candidate(7, 44) == 18.822222222222223
+    assert candidate(12, 46) == 57.82857142857142
+    assert candidate(13, 45) == 66.39285714285714
+    assert candidate(12, 40) == 50.28571428571428
+    assert candidate(14, 46) == 78.71111111111111
+    assert candidate(4, 48) == 6.704761904761905
+    assert candidate(6, 47) == 14.771428571428572
+    assert candidate(10, 42) == 36.666666666666664
+    assert candidate(5, 41) == 8.948412698412698
+    assert candidate(6, 41) == 12.885714285714284
+    assert candidate(5, 42) == 9.166666666666666
+    assert candidate(12, 42) == 52.8
+    assert candidate(9, 42) == 29.7
+    assert candidate(8, 44) == 24.584126984126982
+    assert candidate(4, 49) == 6.844444444444444
+    assert candidate(6, 44) == 13.828571428571427
+    assert candidate(8, 44) == 24.584126984126982
+    assert candidate(10, 43) == 37.53968253968254
+    assert candidate(13, 45) == 66.39285714285714
+    assert candidate(10, 46) == 40.15873015873015
+    assert candidate(5, 362) == None
+    assert candidate(11, 356) == 376.0603174603175
+    assert candidate(13, 363) == None
+    assert candidate(14, 355) == 607.4444444444445
+    assert candidate(8, 360) == None
+    assert candidate(13, 359) == 529.6674603174603
+    assert candidate(14, 365) == None
+    assert candidate(14, 356) == 609.1555555555556
+    assert candidate(12, 355) == 446.2857142857143
+    assert candidate(5, 361) == None
+    assert candidate(5, 358) == 78.13492063492063
+    assert candidate(7, 360) == None
+    assert candidate(7, 364) == None
+    assert candidate(8, 363) == None
+    assert candidate(5, 355) == 77.48015873015873
+    assert candidate(4, 360) == None
+    assert candidate(5, 356) == 77.6984126984127
+    assert candidate(8, 359) == 200.58412698412698
+    assert candidate(11, 358) == 378.17301587301586
+    assert candidate(8, 356) == 198.9079365079365
+    assert candidate(4, 364) == None
+    assert candidate(9, 365) == None
+    assert candidate(10, 363) == None
+    assert candidate(8, 362) == None
+    assert candidate(5, 361) == None
+    assert candidate(5, 362) == None
+    assert candidate(11, 355) == 375.00396825396825
+    assert candidate(9, 356) == 251.74285714285713
+    assert candidate(9, 357) == 252.45
+    assert candidate(12, 355) == 446.2857142857143
+    assert candidate(7, 358) == 153.14444444444445
+    assert candidate(11, 363) == None
+    assert candidate(8, 362) == None
+
+if __name__ == '__main__':
+    check(sector_area)

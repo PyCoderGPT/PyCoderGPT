@@ -1,0 +1,109 @@
+from case_MBPP_320 import min_Jumps
+
+
+def check(candidate):
+    assert candidate(3,4,11)==3.5
+    assert candidate(3,4,0)==0
+    assert candidate(11,14,11)==1
+    assert candidate(3, 1, 6) == 2.6666666666666665
+    assert candidate(5, 7, 13) == 2.7142857142857144
+    assert candidate(3, 8, 12) == 2.375
+    assert candidate(3, 5, 12) == 3.2
+    assert candidate(4, 7, 10) == 2.2857142857142856
+    assert candidate(7, 1, 16) == 3.142857142857143
+    assert candidate(7, 7, 7) == 1.8571428571428572
+    assert candidate(2, 6, 9) == 2.3333333333333335
+    assert candidate(2, 1, 15) == 8.0
+    assert candidate(3, 4, 7) == 2.5
+    assert candidate(1, 2, 15) == 8.0
+    assert candidate(8, 7, 9) == 2.0
+    assert candidate(4, 4, 6) == 2.25
+    assert candidate(7, 8, 7) == 1
+    assert candidate(6, 6, 16) == 3.5
+    assert candidate(2, 8, 12) == 2.375
+    assert candidate(5, 9, 15) == 2.5555555555555554
+    assert candidate(3, 5, 15) == 3.8
+    assert candidate(1, 9, 6) == 2
+    assert candidate(7, 1, 12) == 2.5714285714285716
+    assert candidate(8, 3, 7) == 2
+    assert candidate(2, 9, 6) == 2
+    assert candidate(4, 5, 12) == 3.2
+    assert candidate(7, 4, 14) == 2.857142857142857
+    assert candidate(7, 5, 10) == 2.2857142857142856
+    assert candidate(7, 7, 14) == 2.857142857142857
+    assert candidate(4, 1, 14) == 4.25
+    assert candidate(4, 5, 16) == 4.0
+    assert candidate(3, 2, 9) == 3.6666666666666665
+    assert candidate(2, 1, 12) == 6.5
+    assert candidate(6, 1, 16) == 3.5
+    assert candidate(3, 2, 15) == 5.666666666666667
+    assert candidate(2, 1, 10) == 5.5
+    assert candidate(2, 9, 1) == 2
+    assert candidate(5, 3, 5) == 1.8
+    assert candidate(2, 8, 4) == 2
+    assert candidate(5, 1, 3) == 2
+    assert candidate(6, 3, 3) == 1
+    assert candidate(3, 6, 2) == 2
+    assert candidate(7, 1, 2) == 2
+    assert candidate(3, 6, 3) == 1
+    assert candidate(5, 3, 4) == 2
+    assert candidate(4, 6, 4) == 1
+    assert candidate(4, 1, 5) == 2.0
+    assert candidate(5, 7, 3) == 2
+    assert candidate(7, 5, 1) == 2
+    assert candidate(6, 9, 2) == 2
+    assert candidate(8, 5, 2) == 2
+    assert candidate(1, 3, 3) == 1.6666666666666667
+    assert candidate(2, 4, 3) == 2
+    assert candidate(5, 1, 1) == 1
+    assert candidate(1, 7, 3) == 2
+    assert candidate(6, 8, 1) == 2
+    assert candidate(6, 9, 1) == 2
+    assert candidate(8, 5, 4) == 2
+    assert candidate(8, 6, 3) == 2
+    assert candidate(1, 9, 3) == 2
+    assert candidate(8, 2, 1) == 2
+    assert candidate(1, 7, 4) == 2
+    assert candidate(1, 5, 3) == 2
+    assert candidate(1, 3, 3) == 1.6666666666666667
+    assert candidate(2, 5, 2) == 1
+    assert candidate(5, 8, 5) == 1
+    assert candidate(2, 6, 1) == 2
+    assert candidate(2, 5, 5) == 1.8
+    assert candidate(6, 8, 3) == 2
+    assert candidate(12, 19, 13) == 2
+    assert candidate(13, 9, 12) == 2
+    assert candidate(8, 16, 9) == 2
+    assert candidate(14, 16, 8) == 2
+    assert candidate(16, 15, 10) == 2
+    assert candidate(6, 19, 16) == 2
+    assert candidate(8, 10, 8) == 1
+    assert candidate(6, 13, 10) == 2
+    assert candidate(8, 13, 11) == 2
+    assert candidate(16, 16, 15) == 2
+    assert candidate(16, 13, 16) == 1.9375
+    assert candidate(15, 11, 6) == 2
+    assert candidate(10, 14, 6) == 2
+    assert candidate(15, 16, 10) == 2
+    assert candidate(13, 13, 14) == 2.0
+    assert candidate(8, 9, 15) == 2.5555555555555554
+    assert candidate(12, 15, 12) == 1
+    assert candidate(11, 17, 14) == 2
+    assert candidate(14, 17, 12) == 2
+    assert candidate(12, 16, 16) == 1.9375
+    assert candidate(16, 13, 6) == 2
+    assert candidate(6, 17, 14) == 2
+    assert candidate(10, 14, 8) == 2
+    assert candidate(10, 15, 14) == 2
+    assert candidate(13, 15, 7) == 2
+    assert candidate(11, 11, 8) == 2
+    assert candidate(13, 9, 12) == 2
+    assert candidate(6, 9, 16) == 2.6666666666666665
+    assert candidate(7, 12, 9) == 2
+    assert candidate(15, 17, 13) == 2
+    assert candidate(16, 10, 10) == 1
+    assert candidate(13, 13, 16) == 2.1538461538461537
+    assert candidate(10, 12, 13) == 2.0
+
+if __name__ == '__main__':
+    check(min_Jumps)

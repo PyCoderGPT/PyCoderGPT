@@ -1,0 +1,16 @@
+*.pyc
+.DS_Store
+.idea
+.vscode
+
+# env
+.env/
+.venv/
+env/
+venv/
+
+# cache
+__pycache__/
+
+# openai api
+api_key

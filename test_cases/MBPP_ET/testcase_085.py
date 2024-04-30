@@ -1,0 +1,109 @@
+from case_MBPP_085 import circle_circumference
+
+
+def check(candidate):
+    assert candidate(10)==62.830000000000005
+    assert candidate(5)==31.415000000000003
+    assert candidate(4)==25.132
+    assert candidate(7) == 43.981
+    assert candidate(7) == 43.981
+    assert candidate(13) == 81.679
+    assert candidate(9) == 56.547000000000004
+    assert candidate(6) == 37.698
+    assert candidate(7) == 43.981
+    assert candidate(12) == 75.396
+    assert candidate(7) == 43.981
+    assert candidate(7) == 43.981
+    assert candidate(5) == 31.415000000000003
+    assert candidate(5) == 31.415000000000003
+    assert candidate(5) == 31.415000000000003
+    assert candidate(5) == 31.415000000000003
+    assert candidate(11) == 69.113
+    assert candidate(8) == 50.264
+    assert candidate(14) == 87.962
+    assert candidate(6) == 37.698
+    assert candidate(8) == 50.264
+    assert candidate(8) == 50.264
+    assert candidate(7) == 43.981
+    assert candidate(14) == 87.962
+    assert candidate(8) == 50.264
+    assert candidate(10) == 62.830000000000005
+    assert candidate(8) == 50.264
+    assert candidate(6) == 37.698
+    assert candidate(6) == 37.698
+    assert candidate(15) == 94.245
+    assert candidate(9) == 56.547000000000004
+    assert candidate(8) == 50.264
+    assert candidate(8) == 50.264
+    assert candidate(8) == 50.264
+    assert candidate(5) == 31.415000000000003
+    assert candidate(12) == 75.396
+    assert candidate(2) == 12.566
+    assert candidate(1) == 6.283
+    assert candidate(2) == 12.566
+    assert candidate(5) == 31.415000000000003
+    assert candidate(3) == 18.849
+    assert candidate(3) == 18.849
+    assert candidate(7) == 43.981
+    assert candidate(5) == 31.415000000000003
+    assert candidate(4) == 25.132
+    assert candidate(1) == 6.283
+    assert candidate(6) == 37.698
+    assert candidate(10) == 62.830000000000005
+    assert candidate(6) == 37.698
+    assert candidate(4) == 25.132
+    assert candidate(4) == 25.132
+    assert candidate(8) == 50.264
+    assert candidate(2) == 12.566
+    assert candidate(9) == 56.547000000000004
+    assert candidate(9) == 56.547000000000004
+    assert candidate(9) == 56.547000000000004
+    assert candidate(4) == 25.132
+    assert candidate(3) == 18.849
+    assert candidate(9) == 56.547000000000004
+    assert candidate(9) == 56.547000000000004
+    assert candidate(5) == 31.415000000000003
+    assert candidate(8) == 50.264
+    assert candidate(8) == 50.264
+    assert candidate(4) == 25.132
+    assert candidate(4) == 25.132
+    assert candidate(3) == 18.849
+    assert candidate(10) == 62.830000000000005
+    assert candidate(6) == 37.698
+    assert candidate(6) == 37.698
+    assert candidate(4) == 25.132
+    assert candidate(6) == 37.698
+    assert candidate(2) == 12.566
+    assert candidate(3) == 18.849
+    assert candidate(2) == 12.566
+    assert candidate(3) == 18.849
+    assert candidate(5) == 31.415000000000003
+    assert candidate(3) == 18.849
+    assert candidate(8) == 50.264
+    assert candidate(8) == 50.264
+    assert candidate(5) == 31.415000000000003
+    assert candidate(1) == 6.283
+    assert candidate(7) == 43.981
+    assert candidate(7) == 43.981
+    assert candidate(2) == 12.566
+    assert candidate(2) == 12.566
+    assert candidate(1) == 6.283
+    assert candidate(3) == 18.849
+    assert candidate(3) == 18.849
+    assert candidate(7) == 43.981
+    assert candidate(9) == 56.547000000000004
+    assert candidate(9) == 56.547000000000004
+    assert candidate(8) == 50.264
+    assert candidate(3) == 18.849
+    assert candidate(4) == 25.132
+    assert candidate(2) == 12.566
+    assert candidate(3) == 18.849
+    assert candidate(5) == 31.415000000000003
+    assert candidate(7) == 43.981
+    assert candidate(5) == 31.415000000000003
+    assert candidate(2) == 12.566
+    assert candidate(3) == 18.849
+    assert candidate(9) == 56.547000000000004
+
+if __name__ == '__main__':
+    check(circle_circumference)

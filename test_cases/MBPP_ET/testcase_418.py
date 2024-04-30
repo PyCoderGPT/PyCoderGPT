@@ -1,0 +1,109 @@
+from case_MBPP_418 import test_three_equal
+
+
+def check(candidate):
+    assert candidate(1,1,1) == 3
+    assert candidate(-1,-2,-3) == 0
+    assert candidate(1,2,2) == 2
+    assert candidate(3, 3, 5) == 2
+    assert candidate(1, 5, 3) == 0
+    assert candidate(5, 6, 4) == 0
+    assert candidate(4, 1, 4) == 2
+    assert candidate(6, 2, 6) == 2
+    assert candidate(6, 4, 6) == 2
+    assert candidate(2, 6, 4) == 0
+    assert candidate(5, 1, 3) == 0
+    assert candidate(4, 3, 1) == 0
+    assert candidate(1, 6, 3) == 0
+    assert candidate(5, 2, 3) == 0
+    assert candidate(2, 6, 6) == 2
+    assert candidate(2, 4, 3) == 0
+    assert candidate(2, 2, 6) == 2
+    assert candidate(1, 6, 3) == 0
+    assert candidate(5, 6, 3) == 0
+    assert candidate(1, 4, 6) == 0
+    assert candidate(3, 1, 1) == 2
+    assert candidate(3, 5, 6) == 0
+    assert candidate(5, 4, 6) == 0
+    assert candidate(4, 1, 3) == 0
+    assert candidate(4, 6, 6) == 2
+    assert candidate(6, 4, 5) == 0
+    assert candidate(4, 2, 4) == 2
+    assert candidate(1, 3, 5) == 0
+    assert candidate(5, 3, 2) == 0
+    assert candidate(2, 3, 5) == 0
+    assert candidate(4, 3, 3) == 2
+    assert candidate(3, 3, 5) == 2
+    assert candidate(3, 5, 6) == 0
+    assert candidate(3, 4, 2) == 0
+    assert candidate(4, 6, 5) == 0
+    assert candidate(1, 5, 1) == 2
+    assert candidate(2, -1, -2) == 0
+    assert candidate(2, -5, -5) == 2
+    assert candidate(1, 0, 0) == 2
+    assert candidate(3, -5, 2) == 0
+    assert candidate(-2, -2, -1) == 2
+    assert candidate(-1, -3, 2) == 0
+    assert candidate(-6, -4, 0) == 0
+    assert candidate(1, 2, -7) == 0
+    assert candidate(1, -3, -1) == 0
+    assert candidate(2, -4, -7) == 0
+    assert candidate(2, 3, -3) == 0
+    assert candidate(0, -1, -6) == 0
+    assert candidate(3, -1, -3) == 0
+    assert candidate(3, -3, -1) == 0
+    assert candidate(4, 1, -6) == 0
+    assert candidate(0, 2, 0) == 2
+    assert candidate(-5, -5, -1) == 2
+    assert candidate(-5, -1, 0) == 0
+    assert candidate(4, 0, 0) == 2
+    assert candidate(3, 3, 0) == 2
+    assert candidate(2, -1, -5) == 0
+    assert candidate(-6, -3, -2) == 0
+    assert candidate(-1, -2, 2) == 0
+    assert candidate(0, -6, -5) == 0
+    assert candidate(4, 3, -8) == 0
+    assert candidate(-5, 1, -1) == 0
+    assert candidate(2, 0, -5) == 0
+    assert candidate(3, 3, -2) == 2
+    assert candidate(4, 1, 2) == 0
+    assert candidate(-2, -5, -1) == 0
+    assert candidate(4, -2, -6) == 0
+    assert candidate(3, -6, -4) == 0
+    assert candidate(-5, -2, -8) == 0
+    assert candidate(6, 6, 6) == 3
+    assert candidate(4, 5, 7) == 0
+    assert candidate(5, 3, 1) == 0
+    assert candidate(2, 3, 6) == 0
+    assert candidate(2, 4, 6) == 0
+    assert candidate(1, 2, 3) == 0
+    assert candidate(3, 3, 2) == 2
+    assert candidate(2, 2, 5) == 2
+    assert candidate(4, 1, 7) == 0
+    assert candidate(3, 1, 7) == 0
+    assert candidate(3, 6, 4) == 0
+    assert candidate(2, 6, 1) == 0
+    assert candidate(5, 3, 1) == 0
+    assert candidate(1, 3, 3) == 2
+    assert candidate(1, 4, 1) == 2
+    assert candidate(3, 1, 3) == 2
+    assert candidate(3, 5, 6) == 0
+    assert candidate(3, 5, 7) == 0
+    assert candidate(5, 6, 7) == 0
+    assert candidate(2, 4, 6) == 0
+    assert candidate(3, 5, 2) == 0
+    assert candidate(1, 2, 1) == 2
+    assert candidate(5, 1, 3) == 0
+    assert candidate(4, 4, 2) == 2
+    assert candidate(6, 2, 7) == 0
+    assert candidate(4, 3, 3) == 2
+    assert candidate(1, 2, 6) == 0
+    assert candidate(6, 6, 4) == 2
+    assert candidate(2, 5, 4) == 0
+    assert candidate(6, 3, 5) == 0
+    assert candidate(1, 6, 3) == 0
+    assert candidate(6, 6, 3) == 2
+    assert candidate(3, 4, 7) == 0
+
+if __name__ == '__main__':
+    check(test_three_equal)

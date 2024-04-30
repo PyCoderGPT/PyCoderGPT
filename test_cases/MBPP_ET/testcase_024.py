@@ -1,0 +1,109 @@
+from case_MBPP_024 import pos_count
+
+
+def check(candidate):
+    assert candidate([1,-2,3,-4]) == 2
+    assert candidate([3,4,5,-1]) == 3
+    assert candidate([1,2,3,4]) == 4
+    assert candidate([3, -7, 1, -2]) == 2
+    assert candidate([1, 0, 2, -5]) == 3
+    assert candidate([4, 1, 2, -1]) == 3
+    assert candidate([6, 3, 8, -4]) == 3
+    assert candidate([2, -6, 4, -7]) == 2
+    assert candidate([1, 2, 8, -7]) == 3
+    assert candidate([6, -6, 5, -2]) == 2
+    assert candidate([2, -1, 3, -4]) == 2
+    assert candidate([2, -3, 8, 1]) == 3
+    assert candidate([1, 3, 8, -1]) == 3
+    assert candidate([2, -6, 8, 0]) == 3
+    assert candidate([5, -5, 5, 1]) == 3
+    assert candidate([6, 2, 6, -1]) == 3
+    assert candidate([4, -7, 1, -5]) == 2
+    assert candidate([5, 3, 7, -8]) == 3
+    assert candidate([2, -2, 4, 0]) == 3
+    assert candidate([3, 2, 4, -3]) == 3
+    assert candidate([6, -6, 5, 0]) == 3
+    assert candidate([6, -7, 1, -4]) == 2
+    assert candidate([6, -5, 1, 1]) == 3
+    assert candidate([6, 2, 1, 1]) == 4
+    assert candidate([6, -3, 2, -6]) == 2
+    assert candidate([2, 0, 2, -3]) == 3
+    assert candidate([6, -7, 3, 0]) == 3
+    assert candidate([5, -5, 2, -6]) == 2
+    assert candidate([4, -1, 8, 1]) == 3
+    assert candidate([5, -6, 7, -2]) == 2
+    assert candidate([2, 0, 8, -7]) == 3
+    assert candidate([6, -7, 2, 0]) == 3
+    assert candidate([3, 0, 3, 0]) == 4
+    assert candidate([4, -2, 7, 1]) == 3
+    assert candidate([3, 3, 8, -8]) == 3
+    assert candidate([2, 0, 7, -6]) == 3
+    assert candidate([3, 7, 1, 4]) == 4
+    assert candidate([1, 6, 8, 1]) == 4
+    assert candidate([2, 3, 5, -5]) == 3
+    assert candidate([1, 7, 7, 0]) == 4
+    assert candidate([5, 4, 5, -3]) == 3
+    assert candidate([2, 7, 10, 0]) == 4
+    assert candidate([2, 6, 9, 0]) == 4
+    assert candidate([3, 6, 3, -2]) == 3
+    assert candidate([5, 3, 6, 0]) == 4
+    assert candidate([2, 3, 2, 1]) == 4
+    assert candidate([6, 3, 7, 1]) == 4
+    assert candidate([1, 5, 6, -2]) == 3
+    assert candidate([5, 6, 3, -4]) == 3
+    assert candidate([8, 8, 7, -1]) == 3
+    assert candidate([4, 3, 1, -1]) == 3
+    assert candidate([3, 4, 2, 1]) == 4
+    assert candidate([3, 4, 3, 0]) == 4
+    assert candidate([2, 4, 10, 2]) == 4
+    assert candidate([5, 9, 3, 0]) == 4
+    assert candidate([3, 6, 5, 4]) == 4
+    assert candidate([4, 3, 9, -6]) == 3
+    assert candidate([7, 2, 4, 2]) == 4
+    assert candidate([4, 1, 7, 0]) == 4
+    assert candidate([7, 2, 8, 4]) == 4
+    assert candidate([5, 8, 8, 2]) == 4
+    assert candidate([4, 1, 1, 4]) == 4
+    assert candidate([3, 8, 5, 4]) == 4
+    assert candidate([2, 3, 1, -4]) == 3
+    assert candidate([8, 2, 4, -4]) == 3
+    assert candidate([2, 6, 8, -3]) == 3
+    assert candidate([3, 6, 7, -6]) == 3
+    assert candidate([3, 8, 6, -4]) == 3
+    assert candidate([3, 8, 1, -6]) == 3
+    assert candidate([3, 7, 7, 8]) == 4
+    assert candidate([3, 4, 4, 1]) == 4
+    assert candidate([2, 3, 1, 4]) == 4
+    assert candidate([4, 6, 2, 1]) == 4
+    assert candidate([5, 2, 8, 3]) == 4
+    assert candidate([1, 4, 8, 2]) == 4
+    assert candidate([2, 2, 6, 9]) == 4
+    assert candidate([5, 3, 2, 1]) == 4
+    assert candidate([5, 5, 4, 1]) == 4
+    assert candidate([1, 3, 2, 6]) == 4
+    assert candidate([4, 6, 2, 8]) == 4
+    assert candidate([6, 5, 4, 5]) == 4
+    assert candidate([6, 4, 1, 5]) == 4
+    assert candidate([6, 1, 7, 5]) == 4
+    assert candidate([4, 2, 8, 2]) == 4
+    assert candidate([6, 2, 2, 1]) == 4
+    assert candidate([4, 6, 8, 3]) == 4
+    assert candidate([5, 2, 6, 4]) == 4
+    assert candidate([6, 7, 7, 1]) == 4
+    assert candidate([1, 4, 6, 6]) == 4
+    assert candidate([3, 6, 5, 6]) == 4
+    assert candidate([3, 6, 1, 6]) == 4
+    assert candidate([1, 6, 4, 7]) == 4
+    assert candidate([5, 2, 6, 4]) == 4
+    assert candidate([4, 5, 1, 8]) == 4
+    assert candidate([2, 1, 3, 3]) == 4
+    assert candidate([2, 5, 4, 9]) == 4
+    assert candidate([4, 3, 8, 5]) == 4
+    assert candidate([6, 4, 1, 9]) == 4
+    assert candidate([4, 4, 4, 6]) == 4
+    assert candidate([2, 1, 3, 3]) == 4
+    assert candidate([5, 7, 8, 7]) == 4
+    assert candidate([3, 6, 2, 1]) == 4
+
+if __name__ == '__main__':
+    check(pos_count)

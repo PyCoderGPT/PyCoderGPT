@@ -1,0 +1,109 @@
+from case_MBPP_009 import find_Volume
+
+
+def check(candidate):
+    assert candidate(10,8,6) == 240
+    assert candidate(3,2,2) == 6
+    assert candidate(1,2,1) == 1
+    assert candidate(8, 6, 3) == 72.0
+    assert candidate(14, 3, 6) == 126.0
+    assert candidate(15, 5, 1) == 37.5
+    assert candidate(5, 6, 8) == 120.0
+    assert candidate(14, 9, 8) == 504.0
+    assert candidate(5, 10, 7) == 175.0
+    assert candidate(7, 3, 4) == 42.0
+    assert candidate(5, 7, 2) == 35.0
+    assert candidate(12, 12, 10) == 720.0
+    assert candidate(5, 6, 11) == 165.0
+    assert candidate(10, 8, 10) == 400.0
+    assert candidate(11, 4, 10) == 220.0
+    assert candidate(7, 9, 6) == 189.0
+    assert candidate(7, 5, 5) == 87.5
+    assert candidate(10, 4, 7) == 140.0
+    assert candidate(9, 12, 4) == 216.0
+    assert candidate(6, 5, 2) == 30.0
+    assert candidate(10, 11, 10) == 550.0
+    assert candidate(14, 9, 3) == 189.0
+    assert candidate(14, 13, 6) == 546.0
+    assert candidate(7, 9, 10) == 315.0
+    assert candidate(9, 13, 5) == 292.5
+    assert candidate(11, 11, 5) == 302.5
+    assert candidate(11, 9, 10) == 495.0
+    assert candidate(11, 7, 2) == 77.0
+    assert candidate(14, 3, 1) == 21.0
+    assert candidate(8, 4, 6) == 96.0
+    assert candidate(8, 4, 9) == 144.0
+    assert candidate(9, 12, 7) == 378.0
+    assert candidate(6, 5, 10) == 150.0
+    assert candidate(6, 8, 6) == 144.0
+    assert candidate(6, 3, 6) == 54.0
+    assert candidate(6, 5, 2) == 30.0
+    assert candidate(7, 3, 2) == 21.0
+    assert candidate(7, 4, 1) == 14.0
+    assert candidate(2, 2, 4) == 8.0
+    assert candidate(1, 3, 5) == 7.5
+    assert candidate(1, 5, 3) == 7.5
+    assert candidate(2, 4, 2) == 8.0
+    assert candidate(3, 1, 6) == 9.0
+    assert candidate(1, 6, 7) == 21.0
+    assert candidate(6, 2, 6) == 36.0
+    assert candidate(4, 3, 3) == 18.0
+    assert candidate(2, 5, 5) == 25.0
+    assert candidate(7, 6, 3) == 63.0
+    assert candidate(3, 2, 3) == 9.0
+    assert candidate(8, 6, 5) == 120.0
+    assert candidate(1, 3, 1) == 1.5
+    assert candidate(3, 2, 4) == 12.0
+    assert candidate(6, 5, 5) == 75.0
+    assert candidate(5, 6, 4) == 60.0
+    assert candidate(3, 5, 3) == 22.5
+    assert candidate(3, 6, 3) == 27.0
+    assert candidate(7, 4, 4) == 56.0
+    assert candidate(8, 2, 7) == 56.0
+    assert candidate(2, 2, 5) == 10.0
+    assert candidate(6, 1, 5) == 15.0
+    assert candidate(4, 7, 3) == 42.0
+    assert candidate(6, 3, 1) == 9.0
+    assert candidate(1, 7, 2) == 7.0
+    assert candidate(7, 2, 2) == 14.0
+    assert candidate(7, 4, 1) == 14.0
+    assert candidate(5, 1, 7) == 17.5
+    assert candidate(8, 5, 1) == 20.0
+    assert candidate(8, 4, 7) == 112.0
+    assert candidate(8, 4, 7) == 112.0
+    assert candidate(1, 7, 2) == 7.0
+    assert candidate(5, 3, 3) == 22.5
+    assert candidate(3, 7, 6) == 63.0
+    assert candidate(6, 2, 4) == 24.0
+    assert candidate(1, 7, 3) == 10.5
+    assert candidate(3, 3, 3) == 13.5
+    assert candidate(4, 5, 5) == 50.0
+    assert candidate(5, 1, 3) == 7.5
+    assert candidate(4, 7, 2) == 28.0
+    assert candidate(2, 3, 5) == 15.0
+    assert candidate(6, 1, 3) == 9.0
+    assert candidate(1, 7, 3) == 10.5
+    assert candidate(2, 1, 2) == 2.0
+    assert candidate(1, 1, 6) == 3.0
+    assert candidate(4, 4, 6) == 48.0
+    assert candidate(4, 4, 1) == 8.0
+    assert candidate(5, 5, 5) == 62.5
+    assert candidate(5, 4, 3) == 30.0
+    assert candidate(2, 3, 5) == 15.0
+    assert candidate(6, 1, 4) == 12.0
+    assert candidate(1, 6, 4) == 12.0
+    assert candidate(1, 7, 6) == 21.0
+    assert candidate(3, 5, 6) == 45.0
+    assert candidate(5, 1, 1) == 2.5
+    assert candidate(3, 2, 3) == 9.0
+    assert candidate(1, 7, 4) == 14.0
+    assert candidate(5, 5, 6) == 75.0
+    assert candidate(1, 6, 4) == 12.0
+    assert candidate(5, 4, 3) == 30.0
+    assert candidate(5, 3, 1) == 7.5
+    assert candidate(1, 6, 4) == 12.0
+    assert candidate(3, 6, 2) == 18.0
+    assert candidate(2, 6, 4) == 24.0
+
+if __name__ == '__main__':
+    check(find_Volume)

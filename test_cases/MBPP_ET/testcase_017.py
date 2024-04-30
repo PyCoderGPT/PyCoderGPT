@@ -1,0 +1,109 @@
+from case_MBPP_017 import opposite_Signs
+
+
+def check(candidate):
+    assert candidate(1,-2) == True
+    assert candidate(3,2) == False
+    assert candidate(-10,-10) == False
+    assert candidate(5, -4) == True
+    assert candidate(4, -3) == True
+    assert candidate(4, 0) == False
+    assert candidate(6, 0) == False
+    assert candidate(6, -4) == True
+    assert candidate(5, 1) == False
+    assert candidate(6, -4) == True
+    assert candidate(6, -2) == True
+    assert candidate(4, -2) == True
+    assert candidate(4, 0) == False
+    assert candidate(4, -5) == True
+    assert candidate(1, -6) == True
+    assert candidate(4, 2) == False
+    assert candidate(3, 1) == False
+    assert candidate(1, -1) == True
+    assert candidate(5, -1) == True
+    assert candidate(1, -5) == True
+    assert candidate(2, -6) == True
+    assert candidate(1, 0) == False
+    assert candidate(4, 0) == False
+    assert candidate(4, -3) == True
+    assert candidate(1, 2) == False
+    assert candidate(2, 1) == False
+    assert candidate(3, -6) == True
+    assert candidate(5, 2) == False
+    assert candidate(4, 3) == False
+    assert candidate(4, 1) == False
+    assert candidate(3, -7) == True
+    assert candidate(5, -1) == True
+    assert candidate(1, -5) == True
+    assert candidate(1, -3) == True
+    assert candidate(1, -1) == True
+    assert candidate(3, -6) == True
+    assert candidate(2, 6) == False
+    assert candidate(8, 4) == False
+    assert candidate(6, 2) == False
+    assert candidate(8, 3) == False
+    assert candidate(8, 6) == False
+    assert candidate(5, 5) == False
+    assert candidate(1, 1) == False
+    assert candidate(1, 1) == False
+    assert candidate(8, 2) == False
+    assert candidate(4, 1) == False
+    assert candidate(2, 3) == False
+    assert candidate(1, 2) == False
+    assert candidate(6, 4) == False
+    assert candidate(2, 4) == False
+    assert candidate(8, 1) == False
+    assert candidate(7, 7) == False
+    assert candidate(6, 5) == False
+    assert candidate(5, 7) == False
+    assert candidate(6, 2) == False
+    assert candidate(8, 4) == False
+    assert candidate(7, 2) == False
+    assert candidate(3, 4) == False
+    assert candidate(2, 5) == False
+    assert candidate(4, 2) == False
+    assert candidate(5, 2) == False
+    assert candidate(1, 3) == False
+    assert candidate(2, 7) == False
+    assert candidate(2, 7) == False
+    assert candidate(1, 1) == False
+    assert candidate(3, 7) == False
+    assert candidate(7, 3) == False
+    assert candidate(6, 2) == False
+    assert candidate(5, 6) == False
+    assert candidate(-8, -6) == False
+    assert candidate(-12, -5) == False
+    assert candidate(-15, -11) == False
+    assert candidate(-12, -9) == False
+    assert candidate(-7, -15) == False
+    assert candidate(-6, -11) == False
+    assert candidate(-12, -14) == False
+    assert candidate(-6, -7) == False
+    assert candidate(-9, -10) == False
+    assert candidate(-6, -14) == False
+    assert candidate(-12, -14) == False
+    assert candidate(-14, -12) == False
+    assert candidate(-5, -7) == False
+    assert candidate(-15, -8) == False
+    assert candidate(-10, -9) == False
+    assert candidate(-15, -7) == False
+    assert candidate(-14, -11) == False
+    assert candidate(-7, -11) == False
+    assert candidate(-14, -9) == False
+    assert candidate(-14, -8) == False
+    assert candidate(-15, -11) == False
+    assert candidate(-14, -14) == False
+    assert candidate(-9, -6) == False
+    assert candidate(-9, -12) == False
+    assert candidate(-8, -12) == False
+    assert candidate(-10, -12) == False
+    assert candidate(-9, -6) == False
+    assert candidate(-14, -9) == False
+    assert candidate(-12, -7) == False
+    assert candidate(-14, -12) == False
+    assert candidate(-6, -13) == False
+    assert candidate(-6, -7) == False
+    assert candidate(-13, -7) == False
+
+if __name__ == '__main__':
+    check(opposite_Signs)

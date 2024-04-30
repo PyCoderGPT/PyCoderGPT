@@ -1,0 +1,109 @@
+from case_MBPP_245 import rectangle_area
+
+
+def check(candidate):
+    assert candidate(10,20)==200
+    assert candidate(10,5)==50
+    assert candidate(4,2)==8
+    assert candidate(15, 21) == 315
+    assert candidate(7, 25) == 175
+    assert candidate(7, 25) == 175
+    assert candidate(5, 19) == 95
+    assert candidate(5, 22) == 110
+    assert candidate(7, 23) == 161
+    assert candidate(10, 16) == 160
+    assert candidate(10, 15) == 150
+    assert candidate(6, 16) == 96
+    assert candidate(8, 18) == 144
+    assert candidate(13, 24) == 312
+    assert candidate(8, 21) == 168
+    assert candidate(13, 22) == 286
+    assert candidate(10, 17) == 170
+    assert candidate(11, 22) == 242
+    assert candidate(12, 23) == 276
+    assert candidate(6, 24) == 144
+    assert candidate(7, 18) == 126
+    assert candidate(9, 23) == 207
+    assert candidate(14, 24) == 336
+    assert candidate(7, 20) == 140
+    assert candidate(6, 25) == 150
+    assert candidate(6, 21) == 126
+    assert candidate(8, 25) == 200
+    assert candidate(10, 20) == 200
+    assert candidate(14, 16) == 224
+    assert candidate(9, 25) == 225
+    assert candidate(11, 19) == 209
+    assert candidate(15, 15) == 225
+    assert candidate(6, 20) == 120
+    assert candidate(14, 15) == 210
+    assert candidate(14, 24) == 336
+    assert candidate(13, 24) == 312
+    assert candidate(12, 4) == 48
+    assert candidate(11, 1) == 11
+    assert candidate(13, 8) == 104
+    assert candidate(10, 10) == 100
+    assert candidate(15, 3) == 45
+    assert candidate(5, 6) == 30
+    assert candidate(9, 10) == 90
+    assert candidate(13, 10) == 130
+    assert candidate(13, 1) == 13
+    assert candidate(13, 8) == 104
+    assert candidate(15, 2) == 30
+    assert candidate(10, 6) == 60
+    assert candidate(7, 6) == 42
+    assert candidate(6, 2) == 12
+    assert candidate(6, 1) == 6
+    assert candidate(7, 5) == 35
+    assert candidate(8, 7) == 56
+    assert candidate(11, 9) == 99
+    assert candidate(11, 2) == 22
+    assert candidate(10, 5) == 50
+    assert candidate(6, 5) == 30
+    assert candidate(10, 7) == 70
+    assert candidate(5, 4) == 20
+    assert candidate(9, 1) == 9
+    assert candidate(7, 9) == 63
+    assert candidate(6, 5) == 30
+    assert candidate(15, 8) == 120
+    assert candidate(8, 3) == 24
+    assert candidate(5, 9) == 45
+    assert candidate(11, 3) == 33
+    assert candidate(14, 4) == 56
+    assert candidate(13, 6) == 78
+    assert candidate(7, 10) == 70
+    assert candidate(7, 7) == 49
+    assert candidate(8, 4) == 32
+    assert candidate(2, 3) == 6
+    assert candidate(7, 4) == 28
+    assert candidate(8, 4) == 32
+    assert candidate(5, 5) == 25
+    assert candidate(2, 5) == 10
+    assert candidate(2, 7) == 14
+    assert candidate(1, 2) == 2
+    assert candidate(8, 3) == 24
+    assert candidate(1, 5) == 5
+    assert candidate(4, 3) == 12
+    assert candidate(3, 1) == 3
+    assert candidate(1, 3) == 3
+    assert candidate(8, 2) == 16
+    assert candidate(4, 3) == 12
+    assert candidate(1, 1) == 1
+    assert candidate(7, 5) == 35
+    assert candidate(7, 2) == 14
+    assert candidate(5, 7) == 35
+    assert candidate(7, 5) == 35
+    assert candidate(2, 2) == 4
+    assert candidate(4, 5) == 20
+    assert candidate(5, 1) == 5
+    assert candidate(3, 5) == 15
+    assert candidate(7, 3) == 21
+    assert candidate(1, 5) == 5
+    assert candidate(1, 6) == 6
+    assert candidate(9, 2) == 18
+    assert candidate(7, 3) == 21
+    assert candidate(9, 1) == 9
+    assert candidate(3, 7) == 21
+    assert candidate(5, 4) == 20
+
+if __name__ == '__main__':
+    check(rectangle_area)

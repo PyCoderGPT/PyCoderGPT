@@ -1,0 +1,109 @@
+from case_MBPP_011 import square_perimeter
+
+
+def check(candidate):
+    assert candidate(10)==40
+    assert candidate(5)==20
+    assert candidate(4)==16
+    assert candidate(8) == 32
+    assert candidate(12) == 48
+    assert candidate(15) == 60
+    assert candidate(14) == 56
+    assert candidate(9) == 36
+    assert candidate(7) == 28
+    assert candidate(13) == 52
+    assert candidate(6) == 24
+    assert candidate(9) == 36
+    assert candidate(6) == 24
+    assert candidate(11) == 44
+    assert candidate(5) == 20
+    assert candidate(11) == 44
+    assert candidate(10) == 40
+    assert candidate(14) == 56
+    assert candidate(6) == 24
+    assert candidate(6) == 24
+    assert candidate(11) == 44
+    assert candidate(15) == 60
+    assert candidate(8) == 32
+    assert candidate(12) == 48
+    assert candidate(15) == 60
+    assert candidate(11) == 44
+    assert candidate(15) == 60
+    assert candidate(8) == 32
+    assert candidate(11) == 44
+    assert candidate(9) == 36
+    assert candidate(10) == 40
+    assert candidate(9) == 36
+    assert candidate(11) == 44
+    assert candidate(15) == 60
+    assert candidate(6) == 24
+    assert candidate(13) == 52
+    assert candidate(5) == 20
+    assert candidate(9) == 36
+    assert candidate(5) == 20
+    assert candidate(7) == 28
+    assert candidate(7) == 28
+    assert candidate(7) == 28
+    assert candidate(4) == 16
+    assert candidate(5) == 20
+    assert candidate(10) == 40
+    assert candidate(7) == 28
+    assert candidate(10) == 40
+    assert candidate(2) == 8
+    assert candidate(7) == 28
+    assert candidate(2) == 8
+    assert candidate(1) == 4
+    assert candidate(4) == 16
+    assert candidate(9) == 36
+    assert candidate(7) == 28
+    assert candidate(7) == 28
+    assert candidate(4) == 16
+    assert candidate(4) == 16
+    assert candidate(8) == 32
+    assert candidate(9) == 36
+    assert candidate(9) == 36
+    assert candidate(8) == 32
+    assert candidate(4) == 16
+    assert candidate(10) == 40
+    assert candidate(8) == 32
+    assert candidate(4) == 16
+    assert candidate(9) == 36
+    assert candidate(2) == 8
+    assert candidate(2) == 8
+    assert candidate(4) == 16
+    assert candidate(9) == 36
+    assert candidate(1) == 4
+    assert candidate(2) == 8
+    assert candidate(6) == 24
+    assert candidate(4) == 16
+    assert candidate(3) == 12
+    assert candidate(9) == 36
+    assert candidate(2) == 8
+    assert candidate(6) == 24
+    assert candidate(1) == 4
+    assert candidate(7) == 28
+    assert candidate(2) == 8
+    assert candidate(5) == 20
+    assert candidate(7) == 28
+    assert candidate(8) == 32
+    assert candidate(1) == 4
+    assert candidate(6) == 24
+    assert candidate(7) == 28
+    assert candidate(3) == 12
+    assert candidate(9) == 36
+    assert candidate(9) == 36
+    assert candidate(7) == 28
+    assert candidate(1) == 4
+    assert candidate(6) == 24
+    assert candidate(5) == 20
+    assert candidate(5) == 20
+    assert candidate(4) == 16
+    assert candidate(8) == 32
+    assert candidate(6) == 24
+    assert candidate(3) == 12
+    assert candidate(8) == 32
+    assert candidate(2) == 8
+    assert candidate(2) == 8
+
+if __name__ == '__main__':
+    check(square_perimeter)

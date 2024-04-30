@@ -1,0 +1,109 @@
+from case_MBPP_364 import area_tetrahedron
+
+
+def check(candidate):
+    assert candidate(3)==15.588457268119894
+    assert candidate(20)==692.8203230275509
+    assert candidate(10)==173.20508075688772
+    assert candidate(4) == 27.712812921102035
+    assert candidate(7) == 84.87048957087498
+    assert candidate(2) == 6.928203230275509
+    assert candidate(3) == 15.588457268119894
+    assert candidate(3) == 15.588457268119894
+    assert candidate(7) == 84.87048957087498
+    assert candidate(6) == 62.35382907247958
+    assert candidate(8) == 110.85125168440814
+    assert candidate(6) == 62.35382907247958
+    assert candidate(6) == 62.35382907247958
+    assert candidate(1) == 1.7320508075688772
+    assert candidate(6) == 62.35382907247958
+    assert candidate(4) == 27.712812921102035
+    assert candidate(7) == 84.87048957087498
+    assert candidate(6) == 62.35382907247958
+    assert candidate(7) == 84.87048957087498
+    assert candidate(5) == 43.30127018922193
+    assert candidate(4) == 27.712812921102035
+    assert candidate(3) == 15.588457268119894
+    assert candidate(7) == 84.87048957087498
+    assert candidate(4) == 27.712812921102035
+    assert candidate(5) == 43.30127018922193
+    assert candidate(7) == 84.87048957087498
+    assert candidate(3) == 15.588457268119894
+    assert candidate(8) == 110.85125168440814
+    assert candidate(7) == 84.87048957087498
+    assert candidate(7) == 84.87048957087498
+    assert candidate(1) == 1.7320508075688772
+    assert candidate(1) == 1.7320508075688772
+    assert candidate(6) == 62.35382907247958
+    assert candidate(2) == 6.928203230275509
+    assert candidate(5) == 43.30127018922193
+    assert candidate(8) == 110.85125168440814
+    assert candidate(24) == 997.6612651596732
+    assert candidate(19) == 625.2703415323647
+    assert candidate(18) == 561.1844616523163
+    assert candidate(18) == 561.1844616523163
+    assert candidate(24) == 997.6612651596732
+    assert candidate(25) == 1082.5317547305483
+    assert candidate(22) == 838.3125908633366
+    assert candidate(20) == 692.8203230275509
+    assert candidate(23) == 916.2548772039361
+    assert candidate(16) == 443.40500673763256
+    assert candidate(18) == 561.1844616523163
+    assert candidate(16) == 443.40500673763256
+    assert candidate(22) == 838.3125908633366
+    assert candidate(20) == 692.8203230275509
+    assert candidate(17) == 500.5626833874055
+    assert candidate(23) == 916.2548772039361
+    assert candidate(22) == 838.3125908633366
+    assert candidate(15) == 389.71143170299734
+    assert candidate(19) == 625.2703415323647
+    assert candidate(23) == 916.2548772039361
+    assert candidate(23) == 916.2548772039361
+    assert candidate(21) == 763.8344061378748
+    assert candidate(24) == 997.6612651596732
+    assert candidate(19) == 625.2703415323647
+    assert candidate(23) == 916.2548772039361
+    assert candidate(25) == 1082.5317547305483
+    assert candidate(23) == 916.2548772039361
+    assert candidate(21) == 763.8344061378748
+    assert candidate(15) == 389.71143170299734
+    assert candidate(21) == 763.8344061378748
+    assert candidate(15) == 389.71143170299734
+    assert candidate(20) == 692.8203230275509
+    assert candidate(18) == 561.1844616523163
+    assert candidate(7) == 84.87048957087498
+    assert candidate(12) == 249.4153162899183
+    assert candidate(13) == 292.71658647914023
+    assert candidate(9) == 140.29611541307906
+    assert candidate(12) == 249.4153162899183
+    assert candidate(11) == 209.57814771583415
+    assert candidate(8) == 110.85125168440814
+    assert candidate(12) == 249.4153162899183
+    assert candidate(6) == 62.35382907247958
+    assert candidate(8) == 110.85125168440814
+    assert candidate(8) == 110.85125168440814
+    assert candidate(14) == 339.4819582834999
+    assert candidate(5) == 43.30127018922193
+    assert candidate(10) == 173.20508075688772
+    assert candidate(10) == 173.20508075688772
+    assert candidate(8) == 110.85125168440814
+    assert candidate(8) == 110.85125168440814
+    assert candidate(9) == 140.29611541307906
+    assert candidate(6) == 62.35382907247958
+    assert candidate(12) == 249.4153162899183
+    assert candidate(15) == 389.71143170299734
+    assert candidate(7) == 84.87048957087498
+    assert candidate(14) == 339.4819582834999
+    assert candidate(7) == 84.87048957087498
+    assert candidate(7) == 84.87048957087498
+    assert candidate(11) == 209.57814771583415
+    assert candidate(10) == 173.20508075688772
+    assert candidate(13) == 292.71658647914023
+    assert candidate(15) == 389.71143170299734
+    assert candidate(12) == 249.4153162899183
+    assert candidate(8) == 110.85125168440814
+    assert candidate(11) == 209.57814771583415
+    assert candidate(7) == 84.87048957087498
+
+if __name__ == '__main__':
+    check(area_tetrahedron)

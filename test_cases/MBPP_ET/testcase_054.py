@@ -1,0 +1,109 @@
+from case_MBPP_054 import next_smallest_palindrome
+
+
+def check(candidate):
+    assert candidate(99)==101
+    assert candidate(1221)==1331
+    assert candidate(120)==121
+    assert candidate(103) == 111
+    assert candidate(95) == 99
+    assert candidate(97) == 99
+    assert candidate(104) == 111
+    assert candidate(101) == 111
+    assert candidate(102) == 111
+    assert candidate(98) == 99
+    assert candidate(99) == 101
+    assert candidate(104) == 111
+    assert candidate(101) == 111
+    assert candidate(96) == 99
+    assert candidate(97) == 99
+    assert candidate(94) == 99
+    assert candidate(102) == 111
+    assert candidate(94) == 99
+    assert candidate(102) == 111
+    assert candidate(94) == 99
+    assert candidate(101) == 111
+    assert candidate(102) == 111
+    assert candidate(103) == 111
+    assert candidate(103) == 111
+    assert candidate(103) == 111
+    assert candidate(98) == 99
+    assert candidate(103) == 111
+    assert candidate(97) == 99
+    assert candidate(97) == 99
+    assert candidate(101) == 111
+    assert candidate(99) == 101
+    assert candidate(95) == 99
+    assert candidate(102) == 111
+    assert candidate(104) == 111
+    assert candidate(104) == 111
+    assert candidate(103) == 111
+    assert candidate(1661) == 1771
+    assert candidate(725) == 727
+    assert candidate(1151) == 1221
+    assert candidate(1343) == 1441
+    assert candidate(217) == 222
+    assert candidate(1595) == 1661
+    assert candidate(1311) == 1331
+    assert candidate(1986) == 1991
+    assert candidate(2185) == 2222
+    assert candidate(897) == 898
+    assert candidate(721) == 727
+    assert candidate(1798) == 1881
+    assert candidate(1078) == 1111
+    assert candidate(571) == 575
+    assert candidate(1704) == 1771
+    assert candidate(1106) == 1111
+    assert candidate(1660) == 1661
+    assert candidate(712) == 717
+    assert candidate(2166) == 2222
+    assert candidate(790) == 797
+    assert candidate(1438) == 1441
+    assert candidate(1098) == 1111
+    assert candidate(1672) == 1771
+    assert candidate(1424) == 1441
+    assert candidate(1839) == 1881
+    assert candidate(513) == 515
+    assert candidate(1522) == 1551
+    assert candidate(238) == 242
+    assert candidate(1337) == 1441
+    assert candidate(365) == 373
+    assert candidate(1834) == 1881
+    assert candidate(858) == 868
+    assert candidate(903) == 909
+    assert candidate(122) == 131
+    assert candidate(119) == 121
+    assert candidate(119) == 121
+    assert candidate(125) == 131
+    assert candidate(122) == 131
+    assert candidate(124) == 131
+    assert candidate(120) == 121
+    assert candidate(116) == 121
+    assert candidate(115) == 121
+    assert candidate(116) == 121
+    assert candidate(118) == 121
+    assert candidate(124) == 131
+    assert candidate(120) == 121
+    assert candidate(120) == 121
+    assert candidate(117) == 121
+    assert candidate(121) == 131
+    assert candidate(124) == 131
+    assert candidate(125) == 131
+    assert candidate(119) == 121
+    assert candidate(116) == 121
+    assert candidate(122) == 131
+    assert candidate(121) == 131
+    assert candidate(119) == 121
+    assert candidate(117) == 121
+    assert candidate(124) == 131
+    assert candidate(118) == 121
+    assert candidate(123) == 131
+    assert candidate(118) == 121
+    assert candidate(116) == 121
+    assert candidate(123) == 131
+    assert candidate(124) == 131
+    assert candidate(115) == 121
+    assert candidate(116) == 121
+
+if __name__ == '__main__':
+    check(next_smallest_palindrome)

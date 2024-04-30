@@ -1,0 +1,1429 @@
+# 001
+def twoSum(nums: List[int], target: int) -> List[int]:
+	"""
+	Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+    
+    >>> twoSum([2,7,11,15], 9)
+    [0,1]
+    >>> twoSum([3,2,4], 6)
+    [1,2]
+    >>> twoSum([3,3], 6)
+    [0,1]
+    """
+    n = len(nums)
+
+    for i in range(n):
+        complement = target - nums[i]
+        if complement in numMap:
+            return [numMap[complement], i]
+        numMap[nums[i]] = i
+
+    return [] # No solution found
+    
+
+# 002
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+def addTwoNumbers(l1: ListNode, l2: ListNode) -> ListNode:
+    '''
+    You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+    >>> l1 = [2,4,3], l2 = [5,6,4]
+    [7,0,8]
+    >>> l1 = [0], l2 = [0]
+    [0]
+    >>> l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+    [8,9,9,9,0,0,0,1]
+    '''
+    tail = dummyHead
+    carry = 0
+
+    while l1 is not None or l2 is not None or carry != 0:
+        digit1 = l1.val if l1 is not None else 0
+        digit2 = l2.val if l2 is not None else 0
+
+        sum = digit1 + digit2 + carry
+        digit = sum % 10
+        carry = sum // 10
+
+        newNode = ListNode(digit)
+        tail.next = newNode
+        tail = tail.next
+
+        l1 = l1.next if l1 is not None else None
+        l2 = l2.next if l2 is not None else None
+
+    result = dummyHead.next
+    dummyHead.next = None
+    return result
+    
+
+# 003
+def lengthOfLongestSubstring(s: str) -> int:
+    """
+    Given a string s, find the length of the longest substring without repeating characters.
+    Examples:
+        lengthOfLongestSubstring("abcabcbb") == 3
+        lengthOfLongestSubstring("abcbabcd") == 4
+        lengthOfLongestSubstring("bbbb") = 1
+    """
+    start = result = 0
+    seen = {}
+    for i, letter in enumerate(s):
+        if seen.get(letter, -1) >= start:
+            start = seen[letter] + 1
+        result = max(result, i - start + 1)
+        seen[letter] = i
+    return result
+    
+
+# 004
+def findMedianSortedArrays(nums1: List[int], nums2: List[int]) -> float:
+    """
+    Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
+    >>> nums1 = [1,3], nums2 = [2]
+    2.00000
+    >>> nums1 = [1,2], nums2 = [3,4]
+    2.50000
+    """
+    n1 = len(nums1)
+    n2 = len(nums2)
+    
+    # Ensure nums1 is the smaller array for simplicity
+    if n1 > n2:
+        return findMedianSortedArrays(nums2, nums1)
+    
+    n = n1 + n2
+    left = (n1 + n2 + 1) // 2 # Calculate the left partition size
+    low = 0
+    high = n1
+    
+    while low <= high:
+        mid1 = (low + high) // 2 # Calculate mid index for nums1
+        mid2 = left - mid1 # Calculate mid index for nums2
+        
+        l1 = float('-inf')
+        l2 = float('-inf')
+        r1 = float('inf')
+        r2 = float('inf')
+        
+        # Determine values of l1, l2, r1, and r2
+        if mid1 < n1:
+            r1 = nums1[mid1]
+        if mid2 < n2:
+            r2 = nums2[mid2]
+        if mid1 - 1 >= 0:
+            l1 = nums1[mid1 - 1]
+        if mid2 - 1 >= 0:
+            l2 = nums2[mid2 - 1]
+        
+        if l1 <= r2 and l2 <= r1:
+            # The partition is correct, we found the median
+            if n % 2 == 1:
+                return max(l1, l2)
+            else:
+                return (max(l1, l2) + min(r1, r2)) / 2.0
+        elif l1 > r2:
+            # Move towards the left side of nums1
+            high = mid1 - 1
+        else:
+            # Move towards the right side of nums1
+            low = mid1 + 1
+    
+    return 0 # If the code reaches here, the input arrays were not sorted.
+
+
+# 005
+def longestPalindrome(s: str) -> str:
+    """
+    Given a string s, return the longest palindromic substring in s.
+    >>> longestPalindrome("babad")
+    "bab"
+    >>> longestPalindrome("cbbd")
+    "bb"
+    """
+    if len(s) <= 1:
+            return s
+        
+    Max_Len=1
+    Max_Str=s[0]
+    dp = [[False for _ in range(len(s))] for _ in range(len(s))]
+    for i in range(len(s)):
+        dp[i][i] = True
+        for j in range(i):
+            if s[j] == s[i] and (i-j <= 2 or dp[j+1][i-1]):
+                dp[j][i] = True
+                if i-j+1 > Max_Len:
+                    Max_Len = i-j+1
+                    Max_Str = s[j:i+1]
+    return Max_Str
+    
+
+# 006
+def convert(s: str, numRows: int) -> str:
+    """
+    The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: 
+    P   A   H   N
+    A P L S I I G
+    Y   I   R
+    And then read line by line: "PAHNAPLSIIGYIR"
+    Write the code that will take a string and make this conversion given a number of rows.
+    
+    Example 1:
+    Input: s = "PAYPALISHIRING", numRows = 3
+    Output: "PAHNAPLSIIGYIR"
+    Example 2:
+    Input: s = "PAYPALISHIRING", numRows = 4
+    Output: "PINALSIGYAHRPI"
+    """
+    if numRows == 1:
+        return s
+        
+    row_arr = [""] * numRows
+    row_idx = 1
+    going_up = True
+
+    for ch in s:
+        row_arr[row_idx-1] += ch
+        if row_idx == numRows:
+            going_up = False
+        elif row_idx == 1:
+            going_up = True
+        
+        if going_up:
+            row_idx += 1
+        else:
+            row_idx -= 1
+    
+    return "".join(row_arr)
+    
+
+# 007
+def reverse(x: int) -> int:
+    """
+    Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+    Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+    
+    examples:
+    >>> reverse(123)
+    321
+    >>> reverse(-123)
+    -321
+    >>> reverse(120)
+    21
+    """
+    rev = int(str(abs(x))[::-1])
+    return (-rev if x < 0 else rev) if rev.bit_length() < 32 else 0
+    
+    
+# 008
+def myAtoi(s: str) -> int:
+    """
+    Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer (similar to C/C++'s atoi function).
+
+    The algorithm for myAtoi(string s) is as follows:
+
+    1. Read in and ignore any leading whitespace.
+    2. Check if the next character (if not already at the end of the string) is '-' or '+'. Read this character in if it is either. This determines if the final result is negative or positive respectively. Assume the result is positive if neither is present.
+    3. Read in next the characters until the next non-digit character or the end of the input is reached. The rest of the string is ignored.
+    4. Convert these digits into an integer (i.e. "123" -> 123, "0032" -> 32). If no digits were read, then the integer is 0. Change the sign as necessary (from step 2).
+    5. If the integer is out of the 32-bit signed integer range [-231, 231 - 1], then clamp the integer so that it remains in the range. Specifically, integers less than -231 should be clamped to -231, and integers greater than 231 - 1 should be clamped to 231 - 1.
+    6. Return the integer as the final result.
+    
+    >>> myAtoi("42")
+    42
+    >>> myAtoi("   -42")
+    -42
+    >>> myAtoi("4193 with words")
+    4193
+    """
+    value, state, pos, sign = 0, 0, 0, 1
+
+    if len(s) == 0:
+        return 0
+
+    while pos < len(s):
+        current_char = s[pos]
+        if state == 0:
+            if current_char == " ":
+                state = 0
+            elif current_char == "+" or current_char == "-":
+                state = 1
+                sign = 1 if current_char == "+" else -1
+            elif current_char.isdigit():
+                state = 2
+                value = value * 10 + int(current_char)
+            else:
+                return 0
+        elif state == 1:
+            if current_char.isdigit():
+                state = 2
+                value = value * 10 + int(current_char)
+            else:
+                return 0
+        elif state == 2:
+            if current_char.isdigit():
+                state = 2
+                value = value * 10 + int(current_char)
+            else:
+                break
+        else:
+            return 0
+        pos += 1
+
+    value = sign * value
+    value = min(value, 2 ** 31 - 1)
+    value = max(-(2 ** 31), value)
+
+    return value
+    
+
+# 009
+def isPalindrome(x: int) -> bool:
+    """
+    Given an integer x, return true if x is a palindrome, and false otherwise.
+
+    Example 1:
+    Input: x = 121
+    Output: true
+    
+    Example 2:
+    Input: x = -121
+    Output: false
+    
+    Example 3:
+    Input: x = 10
+    Output: false
+    """
+    if x < 0 or (x != 0 and x % 10 == 0):
+        return False
+
+    reversed_num = 0
+    original = x
+
+    while x > reversed_num:
+        reversed_num = reversed_num * 10 + x % 10
+        x //= 10
+
+    return x == reversed_num or x == reversed_num // 10
+    
+
+# 010
+def isMatch(s: str, p: str) -> bool:
+    """
+    Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
+    '.' Matches any single character.​​​​
+    '*' Matches zero or more of the preceding element.
+    The matching should cover the entire input string (not partial).
+    
+    >>> isMatch("aa", "a")
+    False
+    >>> isMatch("aa", "a*")
+    True
+    >>> isMatch("ab", ".*")
+    True
+    """
+    i, j = len(s) - 1, len(p) - 1
+    return backtrack({}, s, p, i, j)
+def backtrack(cache, s, p, i, j):
+    key = (i, j)
+    if key in cache:
+        return cache[key]
+
+    if i == -1 and j == -1:
+        cache[key] = True
+        return True
+
+    if i != -1 and j == -1:
+        cache[key] = False
+        return cache[key]
+
+    if i == -1 and p[j] == '*':
+        k = j
+        while k != -1 and p[k] == '*':
+            k -= 2
+        
+        if k == -1:
+            cache[key] = True
+            return cache[key]
+        
+        cache[key] = False
+        return cache[key]
+    
+    if i == -1 and p[j] != '*':
+        cache[key] = False
+        return cache[key]
+
+    if p[j] == '*':
+        if backtrack(cache, s, p, i, j - 2):
+            cache[key] = True
+            return cache[key]
+        
+        if p[j - 1] == s[i] or p[j - 1] == '.':
+            if backtrack(cache, s, p, i - 1, j):
+                cache[key] = True
+                return cache[key]
+    
+    if p[j] == '.' or s[i] == p[j]:
+        if backtrack(cache, s, p, i - 1, j - 1):
+            cache[key] = True
+            return cache[key]
+
+        cache[key] = False
+        return cache[key]
+        
+
+# 011
+def longestCommonPrefix(strs: List[str]) -> str:
+    """
+    Write a function to find the longest common prefix string amongst an array of strings.
+    Example 1:
+    Input: strs = ["flower","flow","flight"]
+    Output: "fl"
+    
+    Example 2:
+    Input: strs = ["dog","racecar","car"]
+    Output: ""
+    """
+    ans=""
+    v=sorted(v)
+    first=v[0]
+    last=v[-1]
+    for i in range(min(len(first),len(last))):
+        if(first[i]!=last[i]):
+            return ans
+        ans+=first[i]
+    return ans 
+    
+
+# 012
+def threeSum(nums: List[int]) -> List[List[int]]:
+    """
+    Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+    
+    >>> threeSum([-1,0,1,2,-1,-4])
+    [[-1,-1,2],[-1,0,1]]
+    >>> threeSum([0,1,1])
+    []
+    >>> threeSum([0,0,0])
+    [0,0,0]
+    """
+    res = set()
+
+	#1. Split nums into three lists: negative numbers, positive numbers, and zeros
+	n, p, z = [], [], []
+	for num in nums:
+		if num > 0:
+			p.append(num)
+		elif num < 0: 
+			n.append(num)
+		else:
+			z.append(num)
+
+	#2. Create a separate set for negatives and positives for O(1) look-up times
+	N, P = set(n), set(p)
+
+	#3. If there is at least 1 zero in the list, add all cases where -num exists in N and num exists in P
+	#   i.e. (-3, 0, 3) = 0
+	if z:
+		for num in P:
+			if -1*num in N:
+				res.add((-1*num, 0, num))
+
+	#3. If there are at least 3 zeros in the list then also include (0, 0, 0) = 0
+	if len(z) >= 3:
+		res.add((0,0,0))
+
+	#4. For all pairs of negative numbers (-3, -1), check to see if their complement (4)
+	#   exists in the positive number set
+	for i in range(len(n)):
+		for j in range(i+1,len(n)):
+			target = -1*(n[i]+n[j])
+			if target in P:
+				res.add(tuple(sorted([n[i],n[j],target])))
+
+	#5. For all pairs of positive numbers (1, 1), check to see if their complement (-2)
+	#   exists in the negative number set
+	for i in range(len(p)):
+		for j in range(i+1,len(p)):
+			target = -1*(p[i]+p[j])
+			if target in N:
+				res.add(tuple(sorted([p[i],p[j],target])))
+
+	return res
+
+
+# 013
+def threeSumClosest(nums: List[int], target: int) -> int:
+    """
+    Given an integer array nums of length n and an integer target, find three integers in nums such that the sum is closest to target.
+
+    Return the sum of the three integers.
+    
+    Example 1:
+    >>> threeSumClosest(nums = [-1,2,1,-4], target = 1)
+    2
+    
+    Example 2:
+    >>> threeSumClosest(nums = [0,0,0], target = 1)
+    0
+    """
+    nums=sorted(nums)
+    diff=float('inf')
+    for i in range(len(nums)-1):
+        start=i+1
+        end=len(nums)-1
+        while(start<end):
+            sum=nums[i]+nums[start]+nums[end]
+            if sum==target:
+                return target
+            elif abs(target-sum)<diff:
+                diff=abs(target-sum)
+                ans=sum
+            if sum>target:
+                end-=1
+            else:
+                start+=1
+    return ans
+
+
+# 014
+def fourSum(nums: List[int], target: int) -> List[List[int]]:
+    """
+    Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
+    0 <= a, b, c, d < n
+    a, b, c, and d are distinct.
+    nums[a] + nums[b] + nums[c] + nums[d] == target
+    
+    Example 1:
+    Input: nums = [1,0,-1,0,-2,2], target = 0
+    Output: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+    
+    Example 2:
+    Input: nums = [2,2,2,2,2], target = 8
+    Output: [[2,2,2,2]]
+    """
+    nums.sort()
+    results = []
+    helper(nums, target, 4, [], results)
+    return results
+def helper(nums, target, N, res, results):
+    
+    if len(nums) < N or N < 2: #1
+        return
+    if N == 2: #2
+        output_2sum = twoSum(nums, target)
+        if output_2sum != []:
+            for idx in output_2sum:
+                results.append(res + idx)
+    
+    else: 
+        for i in range(len(nums) -N +1): #3
+            if nums[i]*N > target or nums[-1]*N < target: #4
+                break
+            if i == 0 or i > 0 and nums[i-1] != nums[i]: #5
+                helper(nums[i+1:], target-nums[i], N-1, res + [nums[i]], results)
+def twoSum(nums: List[int], target: int) -> List[int]:
+    res = []
+    left = 0
+    right = len(nums) - 1 
+    while left < right: 
+        temp_sum = nums[left] + nums[right] 
+
+        if temp_sum == target:
+            res.append([nums[left], nums[right]])
+            right -= 1
+            left += 1
+            while left < right and nums[left] == nums[left - 1]:
+                left += 1
+            while right > left and nums[right] == nums[right + 1]:
+                right -= 1
+                            
+        elif temp_sum < target: 
+            left +=1 
+        else: 
+            right -= 1
+                                    
+    return res
+
+
+# 015
+def isValid(s: str) -> bool:
+    """
+    Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+    An input string is valid if:
+        Open brackets must be closed by the same type of brackets.
+        Open brackets must be closed in the correct order.
+        Every close bracket has a corresponding open bracket of the same type.
+    
+    >>> isValid("()")
+    True
+    >>> isValid("()[]{}")
+    True
+    >>> isValid("(]")
+    False
+    """
+    d = {'(':')', '{':'}','[':']'}
+    stack = []
+    for i in s:
+        if i in d:  # 1
+            stack.append(i)
+        elif len(stack) == 0 or d[stack.pop()] != i:  # 2
+            return False
+    return len(stack) == 0 # 3
+    
+
+# 016
+def strStr(haystack: str, needle: str) -> int:
+    """
+    Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+    
+    Example 1:
+    Input: haystack = "sadbutsad", needle = "sad"
+    Output: 0
+    
+    Example 2:
+    Input: haystack = "leetcode", needle = "leeto"
+    Output: -1
+    """
+    # makes sure we don't iterate through a substring that is shorter than needle
+    for i in range(len(haystack) - len(needle) + 1):
+        # check if any substring of haystack with the same length as needle is equal to needle
+        if haystack[i : i+len(needle)] == needle:
+            # if yes, we return the first index of that substring
+            return i
+    # if we exit the loop, return -1        
+    return -1
+
+
+# 017
+def longestValidParentheses(s: str) -> int:
+    """
+    Given a string containing just the characters '(' and ')', return the length of the longest valid (well-formed) parentheses substring.
+    >>>longestValidParentheses("(()")
+    2
+    >>>longestValidParentheses(")()())")
+    4
+    """
+    max_length = 0
+    stck=[-1] # initialize with a start index
+    for i in range(len(s)):
+        if s[i] == '(':
+            stck.append(i)
+        else:
+            stck.pop()
+            if not stck: # if popped -1, add a new start index
+                stck.append(i)
+            else:
+                max_length=max(max_length, i-stck[-1]) # update the length of the valid substring
+    return max_length
+    
+
+# 018
+def searchRange(nums: List[int], target: int) -> List[int]:
+    """
+    Given an array of integers nums sorted in non-decreasing order, find the starting and ending position of a given target value.
+    
+    >>>searchRange([5,7,7,8,8,10], 8)
+    [3,4]
+    >>>searchRange([5,7,7,8,8,10], 6)
+    [-1,-1]
+    >>>searchRange([], 0)
+    [-1,-1]
+    """
+    first, last = -1, -1
+    for i in range(len(nums)):
+        if nums[i] == target:
+            if first == -1:
+                first = i
+            last = i
+    return [first, last]
+    
+
+# 019
+def searchInsert(nums: List[int], target: int) -> int:
+    """
+    Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+    
+    >>> searchInsert([1,3,5,6], 5)
+    2
+    >>> searchInsert([1,3,5,6], 2)
+    1
+    >>> searchInsert([1,3,5,6], 7)
+    4
+    """
+    if not nums:
+        return 0
+    
+    for i, num in enumerate(nums):
+        if num >= target:
+            return i
+    
+    return len(nums)
+    
+
+# 020
+def firstMissingPositive(nums: List[int]) -> int:
+    """
+    Given an unsorted integer array nums, return the smallest missing positive integer.
+    
+    >>> firstMissingPositive([1,2,0])
+    3
+    >>> firstMissingPositive([3,4,-1,1])
+    2
+    >>> firstMissingPositive([7,8,9,11,12])
+    1
+    """
+    '''Step 1 -> The main idea behind it is that the minimum number to be found will always be in the range [1....n]
+                 where 'n' is the length of list. So keep numbers in this range and mark others
+                 (here we are marking them with (n+1) value) in the list provided.'''
+    
+    n = len(nums)
+    for i in range(n):
+        if nums[i] < 1 or nums[i] > n:
+            nums[i] = n + 1
+    
+    '''Step 2 -> Ignoring the values greater than 'n', mark the indexes of the numbers in the range [1...n]
+                 so as to ensure that this values are present. To mark the indexes, 
+                 I am negating the value present at that index.'''
+    
+    for i in range(n):
+        val = abs(nums[i])
+        if val > n:
+            continue
+        val -= 1  #since the list is zero indexed,so every value will be at position val - 1
+        
+        if nums[val] > 0: 
+            # For similar numbers, it will keep on fluctuating between negative and positive 
+            # which is not our motive here.
+            
+            nums[val] = -1 * nums[val]
+    
+    '''Step 3 -> Return the first occurence of the non-negative numbers from the list'''
+    
+    for i in range(n):
+        if nums[i] >=0:
+            return (i + 1) # bcoz list is zero indexed
+    
+    '''Step 4 -> We will encounter this if no positives were found. This means that all the 
+                 numbers are in the range [1....n]. So the missing positive number will be n+1'''
+    
+    return (n + 1)
+    
+    
+# 021
+def divide(dividend: int, divisor: int) -> int:
+    """
+    Given two integers dividend and divisor, divide two integers without using multiplication, division, and mod operator.
+    
+    >>> divide(10, 3)
+    3
+    >>> divide(7, -3)
+    -2
+    """
+    sign = -1 if (dividend >= 0 and divisor < 0) or (dividend < 0 and divisor >= 0) else 1
+    dividend = abs(dividend)
+    divisor = abs(divisor)
+    result = len(range(0, dividend-divisor+1, divisor))
+    if sign == -1:
+        result = -result
+
+    return result
+    
+    
+# 022
+def spiralOrder(matrix: List[List[int]]) -> List[int]:
+    """
+    Given an m x n matrix, return all elements of the matrix in spiral order.
+    
+    Example 1:
+    Input: matrix = [[1,2,3],[4,5,6],[7,8,9]]
+    Output: [1,2,3,6,9,8,7,4,5]
+    
+    Example 2:
+    Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]]
+    Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+    
+    """
+    res = []
+    if len(matrix) == 0:
+        return res
+    row_begin = 0
+    col_begin = 0
+    row_end = len(matrix)-1 
+    col_end = len(matrix[0])-1
+    while (row_begin <= row_end and col_begin <= col_end):
+        for i in range(col_begin,col_end+1):
+            res.append(matrix[row_begin][i])
+        row_begin += 1
+        for i in range(row_begin,row_end+1):
+            res.append(matrix[i][col_end])
+        col_end -= 1
+        if (row_begin <= row_end):
+            for i in range(col_end,col_begin-1,-1):
+                res.append(matrix[row_end][i])
+            row_end -= 1
+        if (col_begin <= col_end):
+            for i in range(row_end,row_begin-1,-1):
+                res.append(matrix[i][col_begin])
+            col_begin += 1
+    return res
+    
+
+# 023
+def canJump(nums: List[int]) -> bool:
+    """
+    You are given an integer array nums. You are initially positioned at the array's first index, and each element in the array represents your maximum jump length at that position.
+    Return true if you can reach the last index, or false otherwise.
+    
+    >>> canJump([2,3,1,1,4])
+    True
+    >>> canJump([3,2,1,0,4])
+    False
+    """
+    # Take curr variable to keep the current maximum jump...
+    curr = nums[0]
+    # Traverse all the elements through loop...
+    for i in range(1,len(nums)):
+        # If the current index 'i' is less than current maximum jump 'curr'...
+        # It means there is no way to jump to current index...
+        # so we should return false...
+        if curr == 0:
+            return False
+        curr -= 1
+        # Update the current maximum jump...
+        curr = max(curr, nums[i])       # It’s possible to reach the end of the array...
+    return True
+    
+
+# 024
+def lengthOfLastWord(s: str) -> int:
+    """
+    Given a string s consisting of words and spaces, return the length of the last word in the string.
+    
+    >>> lengthOfLastWord("Hello World")
+    5
+    >>> lengthOfLastWord("   fly me   to   the moon  "
+    4
+    """
+    wordlist = s.split()
+    if wordlist:
+        return len(wordlist[-1])
+    return 0
+    
+
+# 025
+def plusOne(digits: List[int]) -> List[int]:
+    """
+    You are given a large integer represented as an integer array digits, where each digits[i] is the ith digit of the integer. The digits are ordered from most significant to least significant in left-to-right order. The large integer does not contain any leading 0's.
+    Increment the large integer by one and return the resulting array of digits.
+    >>> plusOne([1,2,3])
+    [1,2,4]
+    >>> plusOne([4,3,2,1])
+    [4,3,2,2]
+    >>> plusOne([9])
+    [1,0]
+    """
+    for i in range(len(digits)-1, -1, -1):
+        if digits[i] == 9:
+            digits[i] = 0
+        else:
+            digits[i] = digits[i] + 1
+            return digits
+    return [1] + digits 
+    
+
+# 026
+def addBinary(a: str, b: str) -> str:
+    """
+    Given two binary strings a and b, return their sum as a binary string.
+
+    Example 1:
+    Input: a = "11", b = "1"
+    Output: "100"
+
+    Example 2:
+    Input: a = "1010", b = "1011"
+    Output: "10101"
+    """
+    # List to store the result
+    result = []
+    # Variable to store the carry-over value
+    carry = 0
+
+    # Initialize two pointers to traverse the binary strings from right to left
+    i, j = len(a)-1, len(b)-1
+
+    # Loop until both pointers have reached the beginning of their respective strings and there is no carry-over value left
+    while i >= 0 or j >= 0 or carry:
+        total = carry
+        
+        # Add the current binary digit in string a, if the pointer is still within bounds
+        if i >= 0:
+            total += int(a[i])
+            i -= 1
+        
+        # Add the current binary digit in string b, if the pointer is still within bounds
+        if j >= 0:
+            total += int(b[j])
+            j -= 1
+        
+        # Calculate the next binary digit in the result by taking the remainder of the sum divided by 2
+        result.append(str(total % 2))
+        
+        # Calculate the next carry-over value by dividing the sum by 2
+        carry = total // 2
+        
+    # Reverse the result and join the elements to form a single string
+    return ''.join(reversed(result))
+
+
+# 027
+def mySqrt(x: int) -> int:
+    """
+    Given a non-negative integer x, return the square root of x rounded down to the nearest integer. The returned integer should be non-negative as well.
+
+    You must not use any built-in exponent function or operator.
+    >>> mySqrt(4)
+    2
+    >>> mySqrt(8)
+    2
+    """
+    if x == 0:
+        return 0
+    first, last = 1, x
+    while first <= last:
+        mid = first + (last - first) // 2
+        if mid == x // mid:
+            return mid
+        elif mid > x // mid:
+            last = mid - 1
+        else:
+            first = mid + 1
+    return last
+    
+
+# 028
+def climbStairs(n: int) -> int:
+    """
+    You are climbing a staircase. It takes n steps to reach the top.
+    Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+
+    >>> climbStairs(2)
+    2
+    >>> climbStairs(3)
+    3
+    """
+    if n == 0 or n == 1:
+        return 1
+    return climbStairs(n-1) + climbStairs(n-2)
+
+
+# 029
+def isPalindrome(s: str) -> bool:
+    """
+    A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.
+    Given a string s, return true if it is a palindrome, or false otherwise.
+
+    Example 1:
+    Input: s = "A man, a plan, a canal: Panama"
+    Output: True
+
+    Example 2:
+    Input: s = "race a car"
+    Output: True
+
+    Example 3:
+    Input: s = " "
+    Output: True
+    """
+    s = [i for i in s.lower() if i.isalnum()]
+    return s == s[::-1]
+    
+    
+# 030
+def partition(s: str) -> List[List[str]]:
+    """
+    Given a string s, partition s such that every substring of the partition is a palindrome. Return all possible palindrome partitioning of s.
+
+    >>> partition("aab")
+    [["a","a","b"],["aa","b"]]
+    >>> partition("a")
+    [["a"]]
+    """
+    if not s: return [[]]
+    ans = []
+    for i in range(1, len(s) + 1):
+        if s[:i] == s[:i][::-1]:  # prefix is a palindrome
+            for suf in partition(s[i:]):  # process suffix recursively
+                ans.append([s[:i]] + suf)
+    return ans
+    
+
+# 031
+def convertToTitle(columnNumber: int) -> str:
+    """
+    Given an integer columnNumber, return its corresponding column title as it appears in an Excel sheet.
+
+    Example 1:
+    Input: columnNumber = 1
+    Output: "A"
+
+    Example 2:
+    Input: columnNumber = 28
+    Output: "AB"
+
+    Example 3:
+    Input: columnNumber = 701
+    Output: "ZY"
+    """
+    # Create an empty string for storing the characters...
+    output = ""
+    # Run a while loop while columnNumber is positive...
+    while columnNumber > 0:
+        # Subtract 1 from columnNumber and get current character by doing modulo of columnNumber by 26...
+        output = chr(ord('A') + (columnNumber - 1) % 26) + output
+        # Divide columnNumber by 26...
+        columnNumber = (columnNumber - 1) // 26
+    # Return the output string.
+    return output
+    
+
+# 032
+def titleToNumber(columnTitle: str) -> int:
+    """
+    Given a string columnTitle that represents the column title as appears in an Excel sheet, return its corresponding column number.
+
+    Example 1:
+    Input: columnTitle = "A"
+    Output: 1
+
+    Example 2:
+    Input: columnTitle = "AB"
+    Output: 28
+
+    Example 3:
+    Input: columnTitle = "ZY"
+    Output: 701
+    """
+    ans, pos = 0, 0
+    for letter in reversed(columnTitle):
+        digit = ord(letter)-64
+        ans += digit * 26**pos
+        pos += 1
+        
+    return ans
+    
+
+# 033
+def largestNumber(nums: List[int]) -> str:
+    """
+    Given a list of non-negative integers nums, arrange them such that they form the largest number and return it.
+    Since the result may be very large, so you need to return a string instead of an integer.
+
+    >>> largestNumber([10,2])
+    "210"
+    >>> largestNumber([3,30,34,5,9])
+    "9534330"
+    """
+    if not any(map(bool, nums)):
+        return '0'
+
+    nums = list(map(str, nums))
+    if len(nums) < 2:
+        return "".join(nums)
+
+    def compare(x, y):
+        return (int(nums[x]+nums[y])) > (int(nums[y]+nums[x]))
+
+    for x in range(len(nums) - 1):
+        y = x + 1
+        while x < len(nums) and y < (len(nums)):
+            if not compare(x,y):
+                nums[y], nums[x] = nums[x], nums[y]
+            y+=1
+
+    return "".join(nums)  
+
+
+# 034
+def isIsomorphic(s: str, t: str) -> bool:
+    """
+    Given two strings s and t, determine if they are isomorphic.
+    Two strings s and t are isomorphic if the characters in s can be replaced to get t.
+
+    >>> isIsomorphic("egg", "add")
+    True
+    >>> isIsomorphic("foo", "bar")
+    False
+    """
+    return [*map(s.index, s)] == [*map(t.index, t)]
+    
+
+# 035
+def singleNumber(nums: List[int]) -> int:
+    """
+    Given a non-empty array of integers nums, every element appears twice except for one. Find that single one.
+
+    >>> singleNumber([2,2,1])
+    1
+    >>> singleNumber([4,1,2,1,2])
+    4
+    >>> singleNumber([1])
+    1
+    """
+    # Initialize the unique number...
+    uniqNum = 0;
+    # TRaverse all elements through the loop...
+    for idx in nums:
+        # Concept of XOR...
+        uniqNum ^= idx;
+    return uniqNum;       # Return the unique number...
+    
+    
+# 036
+def findPeakElement(nums: List[int]) -> int:
+    """
+    A peak element is an element that is strictly greater than its neighbors.
+    Given a 0-indexed integer array nums, find a peak element, and return its index. If the array contains multiple peaks, return the index to any of the peaks.
+
+    >>> findPeakElement([1,2,3,1])
+    2
+    >>> findPeakElement([1,2,1,3,5,6,4])
+    5
+    """
+    left =0
+    right = len(nums)-1
+    while left < right:
+        mid = left + (right - left + 1) //2 # Right biased mid as left = mid in else condition # prevent infinite loop
+        if nums[mid] > nums[mid-1]: # True condition # go right # inc function # Last True 
+            left = mid # mid is a potential elem
+        else:
+            right = mid -1
+    return left
+    
+
+# 037
+def majorityElement(nums: List[int]) -> int:
+    """
+    Given an array nums of size n, return the majority element.
+
+    >>> majorityElement([3,2,3])
+    3
+    >>> majorityElement([2,2,1,1,1,2,2])
+    2
+    """
+    n = len(nums)
+    m = defaultdict(int)
+
+    for num in nums:
+        m[num] += 1
+
+    n = n // 2
+    for key, value in m.items():
+        if value > n:
+            return key
+
+    return 0
+    
+
+# 038
+def findKthLargest(nums: List[int], k: int) -> int:
+    """
+    Given an integer array nums and an integer k, return the kth largest element in the array.
+
+    Example 1:
+    Input: nums = [3,2,1,5,6,4], k = 2
+    Output: 5
+
+    Example 2:
+    Input: nums = [3,2,3,1,2,4,5,5,6], k = 4
+    Output: 4
+    """
+    return sorted(nums, reverse=True)[k-1]
+    
+
+# 039
+def containsDuplicate(nums: List[int]) -> bool:
+    """
+    Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
+
+    Example 1:
+    Input: nums = [1,2,3,1]
+    Output: True
+
+    Example 2:
+    Input: nums = [1,2,3,4]
+    Output: False
+
+    Example 3:
+    Input: nums = [1,1,1,3,3,4,3,2,4,2]
+    Output: True
+    """
+    nums.sort()
+    n = len(nums)
+    for i in range(1, n):
+        if nums[i] == nums[i - 1]:
+            return True
+    return False
+    
+
+# 040
+def productExceptSelf(nums: List[int]) -> List[int]:
+    """
+    Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
+
+    >>> productExceptSelf([1,2,3,4]
+    [24,12,8,6]
+    >>> productExceptSelf([-1,1,0,-3,3])
+    [0,0,9,0,0]
+    """
+    length=len(nums)
+    sol=[1]*length
+    pre = 1
+    post = 1
+    for i in range(length):
+        sol[i] *= pre
+        pre = pre*nums[i]
+        sol[length-i-1] *= post
+        post = post*nums[length-i-1]
+    return(sol)
+    
+
+# 041
+def isPowerOfTwo(n: int) -> bool:
+    """
+    Given an integer n, return true if it is a power of two. Otherwise, return false.
+
+    >>> isPowerOfTwo(1)
+    True
+    >>> isPowerOfTwo(16)
+    True
+    >>> isPowerOfTwo(3)
+    False
+    """
+    # If n <= 0 that means its a negative hence not a power of 2...
+    if n <= 0:
+        return False
+    if n == 1:
+        return True
+    # Keep dividing the number by ‘2’ until it is not divisible by ‘2’ anymore.
+    while (n % 2 == 0):
+        n /= 2
+    # If n is equal to 1, The integer is a power of two otherwise false...
+    return n == 1
+    
+
+# 042
+def countDigitOne(n: int) -> int:
+    """
+    Given an integer n, count the total number of digit 1 appearing in all non-negative integers less than or equal to n.
+
+    >>> countDigitOne(13)
+    6
+    >>> countDigitOne(0
+    0
+    """
+    def count(add,n_digit):
+        c = 0
+        for d in range(0,n_digit+1):
+            c += (d+add)*math.comb(n_digit,d)*9**(n_digit-d)
+        return c
+    res = 0
+    n_list = [int(x) for x in str(n)]
+    count_1 = 0
+    for i in range(len(n_list)-1):
+        if n_list[i] == 1:
+            res += count(count_1,len(n_list)-i-1)
+            count_1 += 1
+        elif n_list[i] > 1:
+            leading = n_list[i]-1
+            res += count(count_1,len(n_list)-i-1)*leading+count(count_1+1,len(n_list)-i-1)
+    res += count_1*(n_list[-1]+1)
+    if n_list[-1] >= 1:
+        res += 1
+    return res
+    
+
+# 043
+def addDigits(num: int) -> int:
+    """
+    Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
+
+    Example 1:
+    Input: num = 38
+    Output: 2
+
+    Example 2:
+    Input: num = 0
+    Output: 0
+    """
+    while num > 9:
+        sum = 0
+        while num:
+            sum += num%10
+            num = num//10
+            
+        num = sum
+
+    return num
+    
+
+# 044
+def isPowerOfThree(n: int) -> bool:
+    """
+    Given an integer n, return true if it is a power of three. Otherwise, return false.
+
+    >>> isPowerOfThree(27)
+    True
+    >>> isPowerOfThree(0)
+    True
+    >>> isPowerOfThree(-1)
+    False
+    """
+    if n == 1:
+        return True
+    if n == 0:
+        return False
+    else:
+        return n % 3 == 0 and isPowerOfThree(n // 3)
+        
+
+# 045
+def isPerfectSquare(num: int) -> bool:
+    """
+    Given a positive integer num, return true if num is a perfect square or false otherwise.
+    A perfect square is an integer that is the square of an integer. In other words, it is the product of some integer with itself.
+
+    >>> isPerfectSquare(16)
+    True
+    >>> isPerfectSquare(14)
+    False
+    """
+    left, right = 1, num
+    while left <= right:
+        mid = (left + right) // 2
+        if mid * mid == num:
+            return True
+        elif mid * mid < num:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return False
+    
+
+# 046
+def wordPattern(pattern: str, s: str) -> bool:
+    """
+    Given a pattern and a string s, find if s follows the same pattern.
+
+    Example 1:
+    Input: pattern = "abba", s = "dog cat cat dog"
+    Output: True
+
+    Example 2:
+    Input: pattern = "abba", s = "dog cat cat fish"
+    Output: False
+
+    Example 3:
+    Input: pattern = "aaaa", s = "dog cat cat dog"
+    Output: False
+    """
+    words, w_to_p = s.split(' '), dict()
+
+    if len(p) != len(words): return False
+    if len(set(p)) != len(set(words)): return False # for the case w = ['dog', 'cat'] and p = 'aa'
+
+    for i in range(len(words)):
+        if words[i] not in w_to_p: 
+            w_to_p[words[i]] = p[i]
+        elif w_to_p[words[i]] != p[i]: 
+            return False
+
+    return True
+    
+
+# 047
+def topKFrequent(nums: List[int], k: int) -> List[int]:
+    """
+    Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
+    
+    >>> topKFrequent([1,1,1,2,2,3], 2)
+    [1, 2]
+    >>> topKFrequent([1], 1)
+    [1]
+    """
+    frequency = {}
+    for num in nums:
+        if num not in frequency:
+            frequency[num] = 1
+        else:
+            frequency[num] = frequency[num] + 1
+    frequency = dict(sorted(frequency.items(), key=lambda x: x[1], reverse=True))
+    result = list(frequency.keys())[:k]
+
+    return result
+ 
+ 
+# 048
+def intersection(nums1: List[int], nums2: List[int]) -> List[int]:
+    """
+    Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
+
+    >>> intersection(nums1 = [1,2,2,1], nums2 = [2,2])
+    [2]
+    >>> intersection(nums1 = [4,9,5], nums2 = [9,4,9,8,4])
+    [9, 4]
+    """
+    d = {}
+    res = []
+    for n in nums1:
+      d[n] = 1
+      
+    for n in nums2:
+      # Check if n is in dictionary and not in the result
+      if n in d and d[n]:
+        res.append(n)
+        d[n] -= 1 # It will set the value of d[n] = 0 which will indicate we already added n in result
+    return res
+    
+
+# 049
+def isSubsequence(s: str, t: str) -> bool:
+    """
+    Given two strings s and t, return true if s is a subsequence of t, or false otherwise.
+
+    Example 1:
+    isSubsequence("abc", "ahbgdc") == True
+
+    Example 2:
+    isSubsequence("axc", "ahbgdc") == False
+    """
+    i, j = 0, 0
+    while i < len(s) and j < len(t):
+        if s[i] == t[j]:
+            i += 1
+        j += 1
+    return i == len(s)
+    
+
+# 050
+def findTheDifference(s: str, t: str) -> str:
+    """
+    You are given two strings s and t.
+    String t is generated by random shuffling string s and then add one more letter at a random position.
+    Return the letter that was added to t.
+
+    Example 1:
+    Input: s = "abcd", t = "abcde"
+    Output: "e"
+
+    Example 2:
+    Input: s = "", t = "y"
+    Output: "y"
+    """
+    for i in t:
+        if s.count(i) != t.count(i):
+            return i

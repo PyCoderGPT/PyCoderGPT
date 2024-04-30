@@ -1,0 +1,109 @@
+from case_MBPP_311 import radian_degree
+
+
+def check(candidate):
+    assert candidate(90)==1.5707963267948966
+    assert candidate(60)==1.0471975511965976
+    assert candidate(120)==2.0943951023931953
+    assert candidate(94) == 1.6406094968746698
+    assert candidate(88) == 1.53588974175501
+    assert candidate(89) == 1.5533430342749532
+    assert candidate(88) == 1.53588974175501
+    assert candidate(92) == 1.6057029118347832
+    assert candidate(86) == 1.5009831567151235
+    assert candidate(90) == 1.5707963267948966
+    assert candidate(91) == 1.5882496193148399
+    assert candidate(89) == 1.5533430342749532
+    assert candidate(87) == 1.5184364492350666
+    assert candidate(87) == 1.5184364492350666
+    assert candidate(85) == 1.4835298641951802
+    assert candidate(86) == 1.5009831567151235
+    assert candidate(94) == 1.6406094968746698
+    assert candidate(90) == 1.5707963267948966
+    assert candidate(89) == 1.5533430342749532
+    assert candidate(95) == 1.6580627893946132
+    assert candidate(86) == 1.5009831567151235
+    assert candidate(94) == 1.6406094968746698
+    assert candidate(85) == 1.4835298641951802
+    assert candidate(87) == 1.5184364492350666
+    assert candidate(87) == 1.5184364492350666
+    assert candidate(94) == 1.6406094968746698
+    assert candidate(89) == 1.5533430342749532
+    assert candidate(86) == 1.5009831567151235
+    assert candidate(93) == 1.6231562043547265
+    assert candidate(95) == 1.6580627893946132
+    assert candidate(90) == 1.5707963267948966
+    assert candidate(95) == 1.6580627893946132
+    assert candidate(87) == 1.5184364492350666
+    assert candidate(91) == 1.5882496193148399
+    assert candidate(85) == 1.4835298641951802
+    assert candidate(93) == 1.6231562043547265
+    assert candidate(63) == 1.0995574287564276
+    assert candidate(64) == 1.117010721276371
+    assert candidate(58) == 1.0122909661567112
+    assert candidate(62) == 1.0821041362364843
+    assert candidate(55) == 0.9599310885968813
+    assert candidate(60) == 1.0471975511965976
+    assert candidate(57) == 0.9948376736367679
+    assert candidate(60) == 1.0471975511965976
+    assert candidate(63) == 1.0995574287564276
+    assert candidate(56) == 0.9773843811168246
+    assert candidate(60) == 1.0471975511965976
+    assert candidate(56) == 0.9773843811168246
+    assert candidate(60) == 1.0471975511965976
+    assert candidate(63) == 1.0995574287564276
+    assert candidate(60) == 1.0471975511965976
+    assert candidate(59) == 1.0297442586766545
+    assert candidate(58) == 1.0122909661567112
+    assert candidate(65) == 1.1344640137963142
+    assert candidate(65) == 1.1344640137963142
+    assert candidate(65) == 1.1344640137963142
+    assert candidate(60) == 1.0471975511965976
+    assert candidate(61) == 1.064650843716541
+    assert candidate(64) == 1.117010721276371
+    assert candidate(65) == 1.1344640137963142
+    assert candidate(60) == 1.0471975511965976
+    assert candidate(57) == 0.9948376736367679
+    assert candidate(61) == 1.064650843716541
+    assert candidate(57) == 0.9948376736367679
+    assert candidate(55) == 0.9599310885968813
+    assert candidate(58) == 1.0122909661567112
+    assert candidate(60) == 1.0471975511965976
+    assert candidate(58) == 1.0122909661567112
+    assert candidate(58) == 1.0122909661567112
+    assert candidate(115) == 2.007128639793479
+    assert candidate(115) == 2.007128639793479
+    assert candidate(123) == 2.1467549799530254
+    assert candidate(118) == 2.059488517353309
+    assert candidate(122) == 2.129301687433082
+    assert candidate(121) == 2.111848394913139
+    assert candidate(120) == 2.0943951023931953
+    assert candidate(125) == 2.181661564992912
+    assert candidate(120) == 2.0943951023931953
+    assert candidate(118) == 2.059488517353309
+    assert candidate(124) == 2.1642082724729685
+    assert candidate(117) == 2.0420352248333655
+    assert candidate(120) == 2.0943951023931953
+    assert candidate(124) == 2.1642082724729685
+    assert candidate(116) == 2.0245819323134224
+    assert candidate(123) == 2.1467549799530254
+    assert candidate(119) == 2.076941809873252
+    assert candidate(118) == 2.059488517353309
+    assert candidate(119) == 2.076941809873252
+    assert candidate(121) == 2.111848394913139
+    assert candidate(121) == 2.111848394913139
+    assert candidate(124) == 2.1642082724729685
+    assert candidate(118) == 2.059488517353309
+    assert candidate(122) == 2.129301687433082
+    assert candidate(121) == 2.111848394913139
+    assert candidate(117) == 2.0420352248333655
+    assert candidate(116) == 2.0245819323134224
+    assert candidate(123) == 2.1467549799530254
+    assert candidate(115) == 2.007128639793479
+    assert candidate(117) == 2.0420352248333655
+    assert candidate(119) == 2.076941809873252
+    assert candidate(115) == 2.007128639793479
+    assert candidate(123) == 2.1467549799530254
+
+if __name__ == '__main__':
+    check(radian_degree)

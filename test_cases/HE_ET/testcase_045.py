@@ -1,0 +1,80 @@
+from case_HE_045 import triangle_area
+
+
+def check(candidate):
+    assert candidate(10, 7) == 35.0
+    assert candidate(5, 7) == 17.5
+    assert candidate(9, 3) == 13.5
+    assert candidate(13, 8) == 52.0
+    assert candidate(4, 4) == 8.0
+    assert candidate(9, 8) == 36.0
+    assert candidate(7, 7) == 24.5
+    assert candidate(11, 8) == 44.0
+    assert candidate(10, 12) == 60.0
+    assert candidate(6, 1) == 3.0
+    assert candidate(9, 9) == 40.5
+    assert candidate(15, 4) == 30.0
+    assert candidate(10, 5) == 25.0
+    assert candidate(5, 3) == 7.5
+    assert candidate(6, 2) == 6.0
+    assert candidate(7, 12) == 42.0
+    assert candidate(3, 2) == 3.0
+    assert candidate(9, 6) == 27.0
+    assert candidate(5, 2) == 5.0
+    assert candidate(8, 7) == 28.0
+    assert candidate(10, 8) == 40.0
+    assert candidate(4, 6) == 12.0
+    assert candidate(6, 8) == 24.0
+    assert candidate(8, 10) == 40.0
+    assert candidate(2, 3) == 3.0
+    assert candidate(13, 5) == 32.5
+    assert candidate(8, 8) == 32.0
+    assert candidate(7, 3) == 10.5
+    assert candidate(10, 10) == 50.0
+    assert candidate(5, 4) == 10.0
+    assert candidate(3, 4) == 6.0
+    assert candidate(6, 12) == 36.0
+    assert candidate(13, 10) == 65.0
+    assert candidate(2, 2) == 2.0
+    assert candidate(10, 3) == 15.0
+    assert candidate(4, 2) == 4.0
+    assert candidate(3, 5) == 7.5
+    assert candidate(2, 4) == 4.0
+    assert candidate(13, 11) == 71.5
+    assert candidate(6, 5) == 15.0
+    assert candidate(5, 9) == 22.5
+    assert candidate(7, 1) == 3.5
+    assert candidate(5, 5) == 12.5
+    assert candidate(7, 8) == 28.0
+    assert candidate(13, 6) == 39.0
+    assert candidate(6, 3) == 9.0
+    assert candidate(15, 11) == 82.5
+    assert candidate(8, 13) == 52.0
+    assert candidate(1, 7) == 3.5
+    assert candidate(4, 7) == 14.0
+    assert candidate(1, 6) == 3.0
+    assert candidate(5, 13) == 32.5
+    assert candidate(15, 13) == 97.5
+    assert candidate(9, 12) == 54.0
+    assert candidate(3, 8) == 12.0
+    assert candidate(7, 10) == 35.0
+    assert candidate(4, 1) == 2.0
+    assert candidate(1, 5) == 2.5
+    assert candidate(7, 5) == 17.5
+    assert candidate(4, 5) == 10.0
+    assert candidate(7, 4) == 14.0
+    assert candidate(3, 7) == 10.5
+    assert candidate(1, 4) == 2.0
+    assert candidate(6, 9) == 27.0
+    assert candidate(15, 3) == 22.5
+    assert candidate(6, 7) == 21.0
+    assert candidate(2, 1) == 1.0
+    assert candidate(15, 12) == 90.0
+    assert candidate(3, 6) == 9.0
+    assert candidate(6, 6) == 18.0
+    assert candidate(14, 8) == 56.0
+    assert candidate(2, 6) == 6.0
+    assert candidate(3, 1) == 1.5
+
+if __name__ == '__main__':
+    check(triangle_area)

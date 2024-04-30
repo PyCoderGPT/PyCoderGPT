@@ -1,0 +1,109 @@
+from case_MBPP_383 import check_monthnumber_number
+
+
+def check(candidate):
+    assert candidate(6)==True
+    assert candidate(2)==False
+    assert candidate(12)==False
+    assert candidate(5) == False
+    assert candidate(10) == False
+    assert candidate(6) == True
+    assert candidate(2) == False
+    assert candidate(4) == True
+    assert candidate(7) == False
+    assert candidate(1) == False
+    assert candidate(5) == False
+    assert candidate(4) == True
+    assert candidate(11) == True
+    assert candidate(6) == True
+    assert candidate(7) == False
+    assert candidate(5) == False
+    assert candidate(8) == False
+    assert candidate(10) == False
+    assert candidate(7) == False
+    assert candidate(8) == False
+    assert candidate(11) == True
+    assert candidate(11) == True
+    assert candidate(10) == False
+    assert candidate(6) == True
+    assert candidate(7) == False
+    assert candidate(9) == True
+    assert candidate(8) == False
+    assert candidate(10) == False
+    assert candidate(5) == False
+    assert candidate(3) == False
+    assert candidate(8) == False
+    assert candidate(1) == False
+    assert candidate(7) == False
+    assert candidate(11) == True
+    assert candidate(7) == False
+    assert candidate(2) == False
+    assert candidate(2) == False
+    assert candidate(3) == False
+    assert candidate(1) == False
+    assert candidate(6) == True
+    assert candidate(2) == False
+    assert candidate(6) == True
+    assert candidate(4) == True
+    assert candidate(6) == True
+    assert candidate(2) == False
+    assert candidate(4) == True
+    assert candidate(3) == False
+    assert candidate(5) == False
+    assert candidate(5) == False
+    assert candidate(1) == False
+    assert candidate(3) == False
+    assert candidate(5) == False
+    assert candidate(4) == True
+    assert candidate(5) == False
+    assert candidate(2) == False
+    assert candidate(5) == False
+    assert candidate(3) == False
+    assert candidate(2) == False
+    assert candidate(6) == True
+    assert candidate(1) == False
+    assert candidate(7) == False
+    assert candidate(1) == False
+    assert candidate(5) == False
+    assert candidate(2) == False
+    assert candidate(1) == False
+    assert candidate(5) == False
+    assert candidate(2) == False
+    assert candidate(7) == False
+    assert candidate(4) == True
+    assert candidate(10) == False
+    assert candidate(9) == True
+    assert candidate(13) == False
+    assert candidate(15) == False
+    assert candidate(17) == False
+    assert candidate(7) == False
+    assert candidate(7) == False
+    assert candidate(13) == False
+    assert candidate(15) == False
+    assert candidate(7) == False
+    assert candidate(17) == False
+    assert candidate(16) == False
+    assert candidate(10) == False
+    assert candidate(9) == True
+    assert candidate(17) == False
+    assert candidate(9) == True
+    assert candidate(8) == False
+    assert candidate(9) == True
+    assert candidate(17) == False
+    assert candidate(10) == False
+    assert candidate(9) == True
+    assert candidate(8) == False
+    assert candidate(11) == True
+    assert candidate(11) == True
+    assert candidate(13) == False
+    assert candidate(15) == False
+    assert candidate(15) == False
+    assert candidate(11) == True
+    assert candidate(11) == True
+    assert candidate(13) == False
+    assert candidate(8) == False
+    assert candidate(17) == False
+    assert candidate(15) == False
+
+if __name__ == '__main__':
+    check(check_monthnumber_number)

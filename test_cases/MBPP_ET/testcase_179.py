@@ -1,0 +1,109 @@
+from case_MBPP_179 import volume_cone
+
+
+def check(candidate):
+    assert candidate(5,12)==314.15926535897927
+    assert candidate(10,15)==1570.7963267948965
+    assert candidate(19,17)==6426.651371693521
+    assert candidate(8, 11) == 737.2270760424047
+    assert candidate(1, 12) == 12.566370614359172
+    assert candidate(7, 16) == 821.0028801381326
+    assert candidate(9, 7) == 593.7610115284708
+    assert candidate(3, 17) == 160.22122533307945
+    assert candidate(4, 10) == 167.5516081914556
+    assert candidate(3, 8) == 75.39822368615503
+    assert candidate(7, 15) == 769.6902001294993
+    assert candidate(9, 17) == 1441.991027997715
+    assert candidate(3, 9) == 84.82300164692441
+    assert candidate(2, 14) == 58.64306286700947
+    assert candidate(2, 14) == 58.64306286700947
+    assert candidate(3, 12) == 113.09733552923255
+    assert candidate(10, 16) == 1675.5160819145563
+    assert candidate(7, 9) == 461.81412007769956
+    assert candidate(5, 9) == 235.61944901923448
+    assert candidate(2, 17) == 71.20943348136863
+    assert candidate(4, 7) == 117.28612573401894
+    assert candidate(7, 8) == 410.5014400690663
+    assert candidate(2, 11) == 46.0766922526503
+    assert candidate(7, 10) == 513.1268000863329
+    assert candidate(2, 11) == 46.0766922526503
+    assert candidate(1, 9) == 9.42477796076938
+    assert candidate(7, 10) == 513.1268000863329
+    assert candidate(10, 10) == 1047.1975511965977
+    assert candidate(9, 8) == 678.5840131753953
+    assert candidate(5, 7) == 183.25957145940458
+    assert candidate(7, 11) == 564.4394800949661
+    assert candidate(7, 10) == 513.1268000863329
+    assert candidate(1, 14) == 14.660765716752367
+    assert candidate(3, 15) == 141.3716694115407
+    assert candidate(3, 10) == 94.24777960769379
+    assert candidate(2, 17) == 71.20943348136863
+    assert candidate(10, 11) == 1151.9173063162575
+    assert candidate(7, 20) == 1026.2536001726658
+    assert candidate(9, 12) == 1017.8760197630929
+    assert candidate(7, 19) == 974.9409201640325
+    assert candidate(8, 10) == 670.2064327658225
+    assert candidate(9, 20) == 1696.4600329384882
+    assert candidate(8, 20) == 1340.412865531645
+    assert candidate(9, 13) == 1102.6990214100174
+    assert candidate(14, 12) == 2463.0086404143976
+    assert candidate(9, 17) == 1441.991027997715
+    assert candidate(6, 13) == 490.0884539600077
+    assert candidate(9, 13) == 1102.6990214100174
+    assert candidate(6, 17) == 640.8849013323178
+    assert candidate(6, 20) == 753.9822368615503
+    assert candidate(11, 13) == 1647.241748032248
+    assert candidate(8, 14) == 938.2890058721515
+    assert candidate(11, 16) == 2027.374459116613
+    assert candidate(12, 20) == 3015.928947446201
+    assert candidate(12, 20) == 3015.928947446201
+    assert candidate(7, 17) == 872.3155601467658
+    assert candidate(11, 20) == 2534.2180738957663
+    assert candidate(10, 15) == 1570.7963267948965
+    assert candidate(13, 16) == 2831.6221784356
+    assert candidate(8, 19) == 1273.3922222550627
+    assert candidate(10, 16) == 1675.5160819145563
+    assert candidate(12, 20) == 3015.928947446201
+    assert candidate(5, 11) == 287.9793265790644
+    assert candidate(7, 13) == 667.0648401122327
+    assert candidate(5, 19) == 497.4188368183839
+    assert candidate(12, 20) == 3015.928947446201
+    assert candidate(8, 10) == 670.2064327658225
+    assert candidate(5, 17) == 445.058959258554
+    assert candidate(13, 12) == 2123.7166338266998
+    assert candidate(15, 14) == 3298.6722862692823
+    assert candidate(16, 12) == 3216.990877275948
+    assert candidate(18, 20) == 6785.840131753953
+    assert candidate(23, 21) == 11633.317596243003
+    assert candidate(22, 15) == 7602.654221687299
+    assert candidate(14, 22) == 4515.515840759729
+    assert candidate(20, 19) == 7958.7013890941425
+    assert candidate(22, 15) == 7602.654221687299
+    assert candidate(24, 20) == 12063.715789784805
+    assert candidate(20, 19) == 7958.7013890941425
+    assert candidate(14, 15) == 3078.7608005179973
+    assert candidate(18, 13) == 4410.79608564007
+    assert candidate(14, 17) == 3489.2622405870634
+    assert candidate(14, 13) == 2668.2593604489307
+    assert candidate(17, 18) == 5447.521661324701
+    assert candidate(17, 12) == 3631.681107549801
+    assert candidate(19, 18) == 6804.689687675492
+    assert candidate(18, 20) == 6785.840131753953
+    assert candidate(14, 12) == 2463.0086404143976
+    assert candidate(24, 18) == 10857.344210806325
+    assert candidate(20, 15) == 6283.185307179586
+    assert candidate(17, 20) == 6052.801845916334
+    assert candidate(20, 22) == 9215.33845053006
+    assert candidate(24, 19) == 11460.530000295565
+    assert candidate(24, 22) == 13270.087368763287
+    assert candidate(22, 19) == 9630.028680803913
+    assert candidate(21, 22) == 10159.910641709392
+    assert candidate(17, 13) == 3934.3211998456172
+    assert candidate(22, 20) == 10136.872295583065
+    assert candidate(23, 14) == 7755.545064162003
+    assert candidate(14, 17) == 3489.2622405870634
+    assert candidate(15, 20) == 4712.388980384689
+    assert candidate(16, 22) == 5897.816608339238
+
+if __name__ == '__main__':
+    check(volume_cone)

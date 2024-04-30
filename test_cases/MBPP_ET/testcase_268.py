@@ -1,0 +1,109 @@
+from case_MBPP_268 import digit_distance_nums
+
+
+def check(candidate):
+    assert candidate(1,2) == 1
+    assert candidate(23,56) == 6
+    assert candidate(123,256) == 7
+    assert candidate(1, 2) == 1
+    assert candidate(4, 1) == 3
+    assert candidate(2, 6) == 4
+    assert candidate(6, 5) == 1
+    assert candidate(5, 6) == 1
+    assert candidate(5, 1) == 4
+    assert candidate(1, 7) == 6
+    assert candidate(4, 1) == 3
+    assert candidate(2, 2) == 0
+    assert candidate(3, 2) == 1
+    assert candidate(5, 6) == 1
+    assert candidate(6, 3) == 3
+    assert candidate(6, 6) == 0
+    assert candidate(4, 5) == 1
+    assert candidate(5, 5) == 0
+    assert candidate(6, 2) == 4
+    assert candidate(4, 2) == 2
+    assert candidate(6, 1) == 5
+    assert candidate(6, 1) == 5
+    assert candidate(1, 4) == 3
+    assert candidate(3, 5) == 2
+    assert candidate(2, 1) == 1
+    assert candidate(1, 1) == 0
+    assert candidate(6, 3) == 3
+    assert candidate(4, 2) == 2
+    assert candidate(1, 4) == 3
+    assert candidate(2, 7) == 5
+    assert candidate(5, 3) == 2
+    assert candidate(2, 6) == 4
+    assert candidate(3, 4) == 1
+    assert candidate(6, 5) == 1
+    assert candidate(5, 7) == 2
+    assert candidate(2, 6) == 4
+    assert candidate(22, 58) == 9
+    assert candidate(20, 54) == 7
+    assert candidate(20, 61) == 5
+    assert candidate(22, 56) == 7
+    assert candidate(18, 58) == 4
+    assert candidate(19, 61) == 6
+    assert candidate(21, 52) == 4
+    assert candidate(23, 51) == 10
+    assert candidate(21, 60) == 12
+    assert candidate(20, 61) == 5
+    assert candidate(23, 54) == 4
+    assert candidate(25, 51) == 8
+    assert candidate(24, 53) == 11
+    assert candidate(28, 54) == 8
+    assert candidate(25, 51) == 8
+    assert candidate(28, 58) == 3
+    assert candidate(27, 53) == 8
+    assert candidate(18, 59) == 5
+    assert candidate(25, 59) == 7
+    assert candidate(28, 55) == 9
+    assert candidate(24, 57) == 6
+    assert candidate(22, 60) == 11
+    assert candidate(22, 60) == 11
+    assert candidate(20, 60) == 4
+    assert candidate(26, 51) == 7
+    assert candidate(24, 60) == 9
+    assert candidate(26, 59) == 6
+    assert candidate(19, 54) == 8
+    assert candidate(19, 51) == 5
+    assert candidate(20, 52) == 5
+    assert candidate(27, 51) == 6
+    assert candidate(27, 59) == 5
+    assert candidate(21, 53) == 5
+    assert candidate(122, 253) == 5
+    assert candidate(119, 259) == 5
+    assert candidate(120, 261) == 6
+    assert candidate(124, 251) == 10
+    assert candidate(119, 252) == 7
+    assert candidate(126, 260) == 8
+    assert candidate(125, 253) == 11
+    assert candidate(118, 259) == 6
+    assert candidate(124, 257) == 7
+    assert candidate(125, 254) == 12
+    assert candidate(120, 251) == 5
+    assert candidate(122, 251) == 12
+    assert candidate(118, 254) == 10
+    assert candidate(123, 251) == 11
+    assert candidate(119, 252) == 7
+    assert candidate(128, 258) == 4
+    assert candidate(127, 261) == 8
+    assert candidate(128, 251) == 6
+    assert candidate(119, 251) == 6
+    assert candidate(127, 261) == 8
+    assert candidate(122, 253) == 5
+    assert candidate(118, 256) == 12
+    assert candidate(124, 261) == 11
+    assert candidate(121, 256) == 9
+    assert candidate(125, 261) == 10
+    assert candidate(125, 257) == 6
+    assert candidate(121, 256) == 9
+    assert candidate(119, 253) == 8
+    assert candidate(128, 251) == 6
+    assert candidate(121, 259) == 12
+    assert candidate(127, 254) == 10
+    assert candidate(121, 252) == 5
+    assert candidate(125, 259) == 8
+
+if __name__ == '__main__':
+    check(digit_distance_nums)

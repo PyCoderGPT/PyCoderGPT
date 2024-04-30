@@ -1,0 +1,109 @@
+from case_MBPP_094 import area_polygon
+
+
+def check(candidate):
+    assert candidate(4,20)==400.00000000000006
+    assert candidate(10,15)==1731.1969896610804
+    assert candidate(9,7)==302.90938549487214
+    assert candidate(3, 23) == 229.0637193009841
+    assert candidate(9, 24) == 3560.7307356131905
+    assert candidate(9, 17) == 1786.5471920003683
+    assert candidate(3, 21) == 190.95860153446878
+    assert candidate(6, 21) == 1145.7516092068124
+    assert candidate(5, 24) == 990.994982739245
+    assert candidate(8, 24) == 2781.1740238538055
+    assert candidate(2, 16) == 7.83773951454306e-15
+    assert candidate(1, 23) == -1.0799032022300438e+18
+    assert candidate(3, 16) == 110.85125168440818
+    assert candidate(2, 18) == 9.919639073093561e-15
+    assert candidate(4, 22) == 484.00000000000006
+    assert candidate(1, 24) == -1.1758492334300667e+18
+    assert candidate(9, 21) == 2726.184469453849
+    assert candidate(2, 16) == 7.83773951454306e-15
+    assert candidate(5, 22) == 832.71106188506
+    assert candidate(8, 22) == 2336.958728377156
+    assert candidate(1, 16) == -5.2259965930225184e+17
+    assert candidate(5, 25) == 1075.2983753681044
+    assert candidate(3, 15) == 97.42785792574938
+    assert candidate(4, 20) == 400.00000000000006
+    assert candidate(6, 23) == 1374.3823158059042
+    assert candidate(5, 22) == 832.71106188506
+    assert candidate(6, 24) == 1496.49189773951
+    assert candidate(4, 15) == 225.00000000000003
+    assert candidate(3, 18) == 140.2961154130791
+    assert candidate(4, 16) == 256.00000000000006
+    assert candidate(2, 25) == 1.9135106236677392e-14
+    assert candidate(5, 20) == 688.1909602355868
+    assert candidate(1, 19) == -7.36947175812941e+17
+    assert candidate(4, 20) == 400.00000000000006
+    assert candidate(5, 18) == 557.4346777908253
+    assert candidate(6, 21) == 1145.7516092068124
+    assert candidate(14, 16) == 3925.6324957112015
+    assert candidate(11, 13) == 1582.7931442737788
+    assert candidate(14, 14) == 3005.5623795288884
+    assert candidate(7, 17) == 1050.2006963164592
+    assert candidate(11, 14) == 1835.6654217613057
+    assert candidate(14, 12) == 2208.1682788375506
+    assert candidate(7, 11) == 439.7034057241923
+    assert candidate(7, 15) == 817.6302999003576
+    assert candidate(8, 14) == 946.3717164502533
+    assert candidate(11, 17) == 2706.6699331072314
+    assert candidate(14, 11) == 1855.4747343009976
+    assert candidate(14, 12) == 2208.1682788375506
+    assert candidate(12, 11) == 1354.7344431475026
+    assert candidate(5, 19) == 621.092341612617
+    assert candidate(10, 12) == 1107.9660733830913
+    assert candidate(8, 12) == 695.2935059634514
+    assert candidate(11, 14) == 1835.6654217613057
+    assert candidate(12, 13) == 1892.149759437421
+    assert candidate(7, 16) == 930.2815856644069
+    assert candidate(9, 14) == 1211.6375419794886
+    assert candidate(7, 16) == 930.2815856644069
+    assert candidate(15, 15) == 3969.5316548724463
+    assert candidate(6, 16) == 665.1075101064489
+    assert candidate(5, 11) == 208.177765471265
+    assert candidate(14, 16) == 3925.6324957112015
+    assert candidate(5, 10) == 172.0477400588967
+    assert candidate(15, 15) == 3969.5316548724463
+    assert candidate(10, 19) == 2777.6093923006665
+    assert candidate(14, 11) == 1855.4747343009976
+    assert candidate(10, 13) == 1300.3212944565448
+    assert candidate(7, 16) == 930.2815856644069
+    assert candidate(5, 16) == 440.44221455077553
+    assert candidate(11, 18) == 3034.4673298503217
+    assert candidate(7, 8) == 232.57039641610172
+    assert candidate(9, 12) == 890.1826839032976
+    assert candidate(13, 10) == 1318.576832832388
+    assert candidate(12, 8) == 716.5537550532244
+    assert candidate(13, 2) == 52.74307331329552
+    assert candidate(10, 8) == 492.4293659480406
+    assert candidate(12, 8) == 716.5537550532244
+    assert candidate(5, 5) == 43.01193501472417
+    assert candidate(14, 7) == 751.3905948822221
+    assert candidate(14, 3) == 138.0105174273469
+    assert candidate(4, 9) == 81.00000000000001
+    assert candidate(14, 6) == 552.0420697093876
+    assert candidate(13, 12) == 1898.7506392786386
+    assert candidate(14, 4) == 245.3520309819501
+    assert candidate(13, 6) == 474.68765981965964
+    assert candidate(4, 6) == 36.00000000000001
+    assert candidate(14, 11) == 1855.4747343009976
+    assert candidate(13, 12) == 1898.7506392786386
+    assert candidate(9, 10) == 618.1824193772901
+    assert candidate(8, 6) == 173.82337649086284
+    assert candidate(5, 2) == 6.881909602355868
+    assert candidate(12, 7) == 548.611468712625
+    assert candidate(12, 5) == 279.9038105676658
+    assert candidate(14, 9) == 1242.0946568461222
+    assert candidate(7, 12) == 523.2833919362289
+    assert candidate(11, 7) == 458.9163554403264
+    assert candidate(4, 11) == 121.00000000000001
+    assert candidate(6, 8) == 166.27687752661222
+    assert candidate(6, 8) == 166.27687752661222
+    assert candidate(5, 11) == 208.177765471265
+    assert candidate(10, 5) == 192.35522107345335
+    assert candidate(13, 12) == 1898.7506392786386
+    assert candidate(9, 3) == 55.6364177439561
+
+if __name__ == '__main__':
+    check(area_polygon)

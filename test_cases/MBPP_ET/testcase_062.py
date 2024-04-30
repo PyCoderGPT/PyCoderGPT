@@ -1,0 +1,109 @@
+from case_MBPP_062 import odd_Equivalent
+
+
+def check(candidate):
+    assert candidate("011001",6) == 3
+    assert candidate("11011",5) == 4
+    assert candidate("1010",4) == 2
+    assert candidate('359859369', 7) == 0
+    assert candidate('382', 3) == 0
+    assert candidate('6907', 4) == 0
+    assert candidate('4861725470', 4) == 1
+    assert candidate('162635864', 1) == 1
+    assert candidate('513597339167', 8) == 1
+    assert candidate('22733630', 2) == 0
+    assert candidate('78965751', 1) == 0
+    assert candidate('386348765', 6) == 0
+    assert candidate('42774053838', 11) == 0
+    assert candidate('390843807478', 1) == 0
+    assert candidate('85463911351', 9) == 2
+    assert candidate('891721922', 2) == 0
+    assert candidate('33763768', 1) == 0
+    assert candidate('0470019556', 2) == 0
+    assert candidate('60350740424', 5) == 0
+    assert candidate('782545839688', 1) == 0
+    assert candidate('01693138664', 4) == 1
+    assert candidate('059193', 5) == 1
+    assert candidate('28372444', 3) == 0
+    assert candidate('073909165803', 7) == 1
+    assert candidate('7835812605', 4) == 0
+    assert candidate('16415648955', 7) == 2
+    assert candidate('80546042', 4) == 0
+    assert candidate('7643480688', 8) == 0
+    assert candidate('97089506885', 4) == 0
+    assert candidate('20469', 3) == 0
+    assert candidate('985080499', 1) == 0
+    assert candidate('560898', 3) == 0
+    assert candidate('51802065', 3) == 1
+    assert candidate('7892', 2) == 0
+    assert candidate('77777', 5) == 0
+    assert candidate('500756037043', 7) == 0
+    assert candidate('34451887', 3) == 0
+    assert candidate('091479187', 6) == 1
+    assert candidate('849486362', 6) == 0
+    assert candidate('9974480', 4) == 0
+    assert candidate('682433', 5) == 0
+    assert candidate('048', 3) == 0
+    assert candidate('10212', 1) == 1
+    assert candidate('06155360', 2) == 0
+    assert candidate('158926692', 7) == 1
+    assert candidate('78362994', 5) == 0
+    assert candidate('289184', 5) == 1
+    assert candidate('816066', 4) == 1
+    assert candidate('96085774', 5) == 0
+    assert candidate('670050', 5) == 0
+    assert candidate('128080550', 4) == 1
+    assert candidate('2113135', 6) == 3
+    assert candidate('130286528', 9) == 1
+    assert candidate('67433', 4) == 0
+    assert candidate('026068291', 5) == 0
+    assert candidate('51413674', 3) == 1
+    assert candidate('7692962', 6) == 0
+    assert candidate('933575241', 1) == 0
+    assert candidate('507070997', 6) == 0
+    assert candidate('31692768', 6) == 1
+    assert candidate('7440763', 2) == 0
+    assert candidate('35989213', 1) == 0
+    assert candidate('2866', 4) == 0
+    assert candidate('53086883', 2) == 0
+    assert candidate('581', 2) == 0
+    assert candidate('1490437', 4) == 1
+    assert candidate('536', 1) == 0
+    assert candidate('9479630', 4) == 0
+    assert candidate('6235683', 3) == 0
+    assert candidate('353193245', 3) == 0
+    assert candidate('62965', 2) == 0
+    assert candidate('5031447', 3) == 0
+    assert candidate('086109', 5) == 1
+    assert candidate('37222', 2) == 0
+    assert candidate('831952', 4) == 1
+    assert candidate('804347539', 8) == 0
+    assert candidate('05906079', 5) == 0
+    assert candidate('28473498', 2) == 0
+    assert candidate('950928367', 5) == 0
+    assert candidate('878204540', 3) == 0
+    assert candidate('518328857', 1) == 0
+    assert candidate('62282', 1) == 0
+    assert candidate('20928', 3) == 0
+    assert candidate('9048', 3) == 0
+    assert candidate('125', 2) == 1
+    assert candidate('53892866', 5) == 0
+    assert candidate('01932300', 5) == 1
+    assert candidate('659521', 1) == 0
+    assert candidate('8782941', 2) == 0
+    assert candidate('63558229', 7) == 0
+    assert candidate('23930834', 1) == 0
+    assert candidate('2299055', 2) == 0
+    assert candidate('36474', 4) == 0
+    assert candidate('3221078', 7) == 1
+    assert candidate('2812', 3) == 1
+    assert candidate('8732351', 7) == 1
+    assert candidate('56878', 5) == 0
+    assert candidate('094082017', 1) == 0
+    assert candidate('6552470', 6) == 0
+    assert candidate('006703', 5) == 0
+    assert candidate('002789545', 6) == 0
+    assert candidate('55506', 3) == 0
+
+if __name__ == '__main__':
+    check(odd_Equivalent)

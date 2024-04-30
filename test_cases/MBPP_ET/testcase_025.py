@@ -1,0 +1,109 @@
+from case_MBPP_025 import bell_number
+
+
+def check(candidate):
+    assert candidate(2)==2
+    assert candidate(10)==115975
+    assert candidate(56)==6775685320645824322581483068371419745979053216268760300
+    assert candidate(4) == 15
+    assert candidate(3) == 5
+    assert candidate(5) == 52
+    assert candidate(7) == 877
+    assert candidate(4) == 15
+    assert candidate(7) == 877
+    assert candidate(4) == 15
+    assert candidate(3) == 5
+    assert candidate(7) == 877
+    assert candidate(3) == 5
+    assert candidate(2) == 2
+    assert candidate(7) == 877
+    assert candidate(1) == 1
+    assert candidate(5) == 52
+    assert candidate(3) == 5
+    assert candidate(1) == 1
+    assert candidate(4) == 15
+    assert candidate(6) == 203
+    assert candidate(4) == 15
+    assert candidate(4) == 15
+    assert candidate(7) == 877
+    assert candidate(4) == 15
+    assert candidate(4) == 15
+    assert candidate(6) == 203
+    assert candidate(1) == 1
+    assert candidate(1) == 1
+    assert candidate(4) == 15
+    assert candidate(3) == 5
+    assert candidate(5) == 52
+    assert candidate(3) == 5
+    assert candidate(7) == 877
+    assert candidate(6) == 203
+    assert candidate(4) == 15
+    assert candidate(10) == 115975
+    assert candidate(9) == 21147
+    assert candidate(10) == 115975
+    assert candidate(13) == 27644437
+    assert candidate(11) == 678570
+    assert candidate(14) == 190899322
+    assert candidate(7) == 877
+    assert candidate(10) == 115975
+    assert candidate(11) == 678570
+    assert candidate(8) == 4140
+    assert candidate(14) == 190899322
+    assert candidate(6) == 203
+    assert candidate(10) == 115975
+    assert candidate(11) == 678570
+    assert candidate(10) == 115975
+    assert candidate(13) == 27644437
+    assert candidate(5) == 52
+    assert candidate(8) == 4140
+    assert candidate(10) == 115975
+    assert candidate(11) == 678570
+    assert candidate(15) == 1382958545
+    assert candidate(15) == 1382958545
+    assert candidate(10) == 115975
+    assert candidate(10) == 115975
+    assert candidate(7) == 877
+    assert candidate(5) == 52
+    assert candidate(6) == 203
+    assert candidate(5) == 52
+    assert candidate(5) == 52
+    assert candidate(15) == 1382958545
+    assert candidate(5) == 52
+    assert candidate(11) == 678570
+    assert candidate(6) == 203
+    assert candidate(53) == 1052928518014714166107781298021583534928402714242132
+    assert candidate(54) == 19317287589145618265728950069285503257349832850302011
+    assert candidate(55) == 359334085968622831041960188598043661065388726959079837
+    assert candidate(60) == 976939307467007552986994066961675455550246347757474482558637
+    assert candidate(55) == 359334085968622831041960188598043661065388726959079837
+    assert candidate(61) == 19652364471547941482114228389322789963345673460673370562378245
+    assert candidate(57) == 129482661947506964462616580633806000917491602609372517195
+    assert candidate(57) == 129482661947506964462616580633806000917491602609372517195
+    assert candidate(51) == 3263983870004111524856951830191582524419255819477
+    assert candidate(59) == 49176743336309621659000944152624896853591018248919168867818
+    assert candidate(57) == 129482661947506964462616580633806000917491602609372517195
+    assert candidate(58) == 2507136358984296114560786627437574942253015623445622326263
+    assert candidate(56) == 6775685320645824322581483068371419745979053216268760300
+    assert candidate(57) == 129482661947506964462616580633806000917491602609372517195
+    assert candidate(58) == 2507136358984296114560786627437574942253015623445622326263
+    assert candidate(58) == 2507136358984296114560786627437574942253015623445622326263
+    assert candidate(60) == 976939307467007552986994066961675455550246347757474482558637
+    assert candidate(60) == 976939307467007552986994066961675455550246347757474482558637
+    assert candidate(56) == 6775685320645824322581483068371419745979053216268760300
+    assert candidate(54) == 19317287589145618265728950069285503257349832850302011
+    assert candidate(57) == 129482661947506964462616580633806000917491602609372517195
+    assert candidate(56) == 6775685320645824322581483068371419745979053216268760300
+    assert candidate(56) == 6775685320645824322581483068371419745979053216268760300
+    assert candidate(55) == 359334085968622831041960188598043661065388726959079837
+    assert candidate(60) == 976939307467007552986994066961675455550246347757474482558637
+    assert candidate(57) == 129482661947506964462616580633806000917491602609372517195
+    assert candidate(53) == 1052928518014714166107781298021583534928402714242132
+    assert candidate(60) == 976939307467007552986994066961675455550246347757474482558637
+    assert candidate(58) == 2507136358984296114560786627437574942253015623445622326263
+    assert candidate(52) == 58205338024195872785464627063218599149503972126463
+    assert candidate(54) == 19317287589145618265728950069285503257349832850302011
+    assert candidate(53) == 1052928518014714166107781298021583534928402714242132
+    assert candidate(60) == 976939307467007552986994066961675455550246347757474482558637
+
+if __name__ == '__main__':
+    check(bell_number)

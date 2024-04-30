@@ -1,0 +1,109 @@
+from case_MBPP_075 import multiply_int
+
+
+def check(candidate):
+    assert candidate(10,20)==200
+    assert candidate(5,10)==50
+    assert candidate(4,8)==32
+    assert candidate(11, 25) == 275
+    assert candidate(14, 19) == 266
+    assert candidate(13, 18) == 234
+    assert candidate(10, 21) == 210
+    assert candidate(8, 19) == 152
+    assert candidate(11, 15) == 165
+    assert candidate(7, 16) == 112
+    assert candidate(6, 21) == 126
+    assert candidate(10, 20) == 200
+    assert candidate(13, 20) == 260
+    assert candidate(6, 16) == 96
+    assert candidate(11, 21) == 231
+    assert candidate(5, 18) == 90
+    assert candidate(13, 20) == 260
+    assert candidate(14, 21) == 294
+    assert candidate(6, 23) == 138
+    assert candidate(14, 19) == 266
+    assert candidate(12, 21) == 252
+    assert candidate(6, 17) == 102
+    assert candidate(13, 24) == 312
+    assert candidate(13, 20) == 260
+    assert candidate(11, 20) == 220
+    assert candidate(9, 24) == 216
+    assert candidate(7, 17) == 119
+    assert candidate(8, 22) == 176
+    assert candidate(5, 15) == 75
+    assert candidate(11, 25) == 275
+    assert candidate(6, 22) == 132
+    assert candidate(13, 18) == 234
+    assert candidate(12, 15) == 180
+    assert candidate(10, 25) == 250
+    assert candidate(10, 21) == 210
+    assert candidate(8, 16) == 128
+    assert candidate(7, 6) == 42
+    assert candidate(5, 14) == 70
+    assert candidate(8, 6) == 48
+    assert candidate(10, 12) == 120
+    assert candidate(3, 8) == 24
+    assert candidate(5, 15) == 75
+    assert candidate(7, 11) == 77
+    assert candidate(10, 13) == 130
+    assert candidate(7, 5) == 35
+    assert candidate(6, 10) == 60
+    assert candidate(7, 9) == 63
+    assert candidate(3, 7) == 21
+    assert candidate(2, 8) == 16
+    assert candidate(7, 9) == 63
+    assert candidate(7, 6) == 42
+    assert candidate(3, 12) == 36
+    assert candidate(9, 13) == 117
+    assert candidate(5, 6) == 30
+    assert candidate(5, 7) == 35
+    assert candidate(9, 11) == 99
+    assert candidate(3, 6) == 18
+    assert candidate(7, 8) == 56
+    assert candidate(3, 11) == 33
+    assert candidate(2, 13) == 26
+    assert candidate(2, 12) == 24
+    assert candidate(2, 11) == 22
+    assert candidate(1, 11) == 11
+    assert candidate(8, 10) == 80
+    assert candidate(5, 9) == 45
+    assert candidate(2, 14) == 28
+    assert candidate(10, 13) == 130
+    assert candidate(5, 9) == 45
+    assert candidate(4, 10) == 40
+    assert candidate(7, 5) == 35
+    assert candidate(1, 9) == 9
+    assert candidate(8, 8) == 64
+    assert candidate(5, 5) == 25
+    assert candidate(2, 4) == 8
+    assert candidate(1, 8) == 8
+    assert candidate(9, 5) == 45
+    assert candidate(3, 7) == 21
+    assert candidate(1, 12) == 12
+    assert candidate(9, 13) == 117
+    assert candidate(7, 13) == 91
+    assert candidate(8, 8) == 64
+    assert candidate(7, 9) == 63
+    assert candidate(7, 4) == 28
+    assert candidate(6, 8) == 48
+    assert candidate(9, 5) == 45
+    assert candidate(3, 4) == 12
+    assert candidate(3, 9) == 27
+    assert candidate(4, 4) == 16
+    assert candidate(6, 13) == 78
+    assert candidate(3, 13) == 39
+    assert candidate(9, 13) == 117
+    assert candidate(3, 10) == 30
+    assert candidate(2, 5) == 10
+    assert candidate(6, 4) == 24
+    assert candidate(2, 3) == 6
+    assert candidate(2, 6) == 12
+    assert candidate(4, 5) == 20
+    assert candidate(5, 13) == 65
+    assert candidate(6, 13) == 78
+    assert candidate(3, 6) == 18
+    assert candidate(9, 13) == 117
+    assert candidate(5, 3) == 15
+
+if __name__ == '__main__':
+    check(multiply_int)

@@ -1,0 +1,109 @@
+from case_MBPP_122 import babylonian_squareroot
+
+
+def check(candidate):
+    assert candidate(10)==3.162277660168379
+    assert candidate(2)==1.414213562373095
+    assert candidate(9)==3.0
+    assert candidate(8) == 2.82842712474619
+    assert candidate(14) == 3.7416573867739413
+    assert candidate(12) == 3.4641016151377544
+    assert candidate(10) == 3.162277660168379
+    assert candidate(11) == 3.3166247903554
+    assert candidate(9) == 3.0
+    assert candidate(15) == 3.872983346207417
+    assert candidate(6) == 2.449489742783178
+    assert candidate(5) == 2.23606797749979
+    assert candidate(7) == 2.6457513110645907
+    assert candidate(10) == 3.162277660168379
+    assert candidate(8) == 2.82842712474619
+    assert candidate(9) == 3.0
+    assert candidate(7) == 2.6457513110645907
+    assert candidate(12) == 3.4641016151377544
+    assert candidate(13) == 3.6055512754639896
+    assert candidate(14) == 3.7416573867739413
+    assert candidate(10) == 3.162277660168379
+    assert candidate(13) == 3.6055512754639896
+    assert candidate(12) == 3.4641016151377544
+    assert candidate(10) == 3.162277660168379
+    assert candidate(6) == 2.449489742783178
+    assert candidate(15) == 3.872983346207417
+    assert candidate(14) == 3.7416573867739413
+    assert candidate(8) == 2.82842712474619
+    assert candidate(6) == 2.449489742783178
+    assert candidate(15) == 3.872983346207417
+    assert candidate(15) == 3.872983346207417
+    assert candidate(5) == 2.23606797749979
+    assert candidate(9) == 3.0
+    assert candidate(15) == 3.872983346207417
+    assert candidate(9) == 3.0
+    assert candidate(6) == 2.449489742783178
+    assert candidate(2) == 1.414213562373095
+    assert candidate(1) == 1.0
+    assert candidate(2) == 1.414213562373095
+    assert candidate(3) == 1.7320508075688772
+    assert candidate(4) == 2.0
+    assert candidate(1) == 1.0
+    assert candidate(7) == 2.6457513110645907
+    assert candidate(1) == 1.0
+    assert candidate(5) == 2.23606797749979
+    assert candidate(3) == 1.7320508075688772
+    assert candidate(1) == 1.0
+    assert candidate(4) == 2.0
+    assert candidate(7) == 2.6457513110645907
+    assert candidate(5) == 2.23606797749979
+    assert candidate(7) == 2.6457513110645907
+    assert candidate(3) == 1.7320508075688772
+    assert candidate(2) == 1.414213562373095
+    assert candidate(4) == 2.0
+    assert candidate(4) == 2.0
+    assert candidate(4) == 2.0
+    assert candidate(5) == 2.23606797749979
+    assert candidate(5) == 2.23606797749979
+    assert candidate(3) == 1.7320508075688772
+    assert candidate(1) == 1.0
+    assert candidate(6) == 2.449489742783178
+    assert candidate(1) == 1.0
+    assert candidate(3) == 1.7320508075688772
+    assert candidate(7) == 2.6457513110645907
+    assert candidate(6) == 2.449489742783178
+    assert candidate(5) == 2.23606797749979
+    assert candidate(6) == 2.449489742783178
+    assert candidate(5) == 2.23606797749979
+    assert candidate(2) == 1.414213562373095
+    assert candidate(6) == 2.449489742783178
+    assert candidate(4) == 2.0
+    assert candidate(14) == 3.7416573867739413
+    assert candidate(4) == 2.0
+    assert candidate(13) == 3.6055512754639896
+    assert candidate(11) == 3.3166247903554
+    assert candidate(12) == 3.4641016151377544
+    assert candidate(13) == 3.6055512754639896
+    assert candidate(11) == 3.3166247903554
+    assert candidate(13) == 3.6055512754639896
+    assert candidate(4) == 2.0
+    assert candidate(9) == 3.0
+    assert candidate(8) == 2.82842712474619
+    assert candidate(11) == 3.3166247903554
+    assert candidate(5) == 2.23606797749979
+    assert candidate(5) == 2.23606797749979
+    assert candidate(5) == 2.23606797749979
+    assert candidate(7) == 2.6457513110645907
+    assert candidate(13) == 3.6055512754639896
+    assert candidate(12) == 3.4641016151377544
+    assert candidate(12) == 3.4641016151377544
+    assert candidate(8) == 2.82842712474619
+    assert candidate(13) == 3.6055512754639896
+    assert candidate(6) == 2.449489742783178
+    assert candidate(4) == 2.0
+    assert candidate(11) == 3.3166247903554
+    assert candidate(5) == 2.23606797749979
+    assert candidate(5) == 2.23606797749979
+    assert candidate(11) == 3.3166247903554
+    assert candidate(11) == 3.3166247903554
+    assert candidate(7) == 2.6457513110645907
+    assert candidate(14) == 3.7416573867739413
+    assert candidate(9) == 3.0
+
+if __name__ == '__main__':
+    check(babylonian_squareroot)

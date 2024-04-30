@@ -1,0 +1,109 @@
+from case_MBPP_310 import prime_num
+
+
+def check(candidate):
+    assert candidate(13)==True
+    assert candidate(7)==True
+    assert candidate(-1010)==False
+    assert candidate(15) == True
+    assert candidate(16) == False
+    assert candidate(11) == True
+    assert candidate(11) == True
+    assert candidate(8) == False
+    assert candidate(9) == True
+    assert candidate(11) == True
+    assert candidate(8) == False
+    assert candidate(11) == True
+    assert candidate(13) == True
+    assert candidate(8) == False
+    assert candidate(16) == False
+    assert candidate(13) == True
+    assert candidate(17) == True
+    assert candidate(8) == False
+    assert candidate(10) == False
+    assert candidate(18) == False
+    assert candidate(9) == True
+    assert candidate(17) == True
+    assert candidate(15) == True
+    assert candidate(16) == False
+    assert candidate(10) == False
+    assert candidate(18) == False
+    assert candidate(18) == False
+    assert candidate(16) == False
+    assert candidate(10) == False
+    assert candidate(13) == True
+    assert candidate(18) == False
+    assert candidate(9) == True
+    assert candidate(12) == False
+    assert candidate(12) == False
+    assert candidate(12) == False
+    assert candidate(8) == False
+    assert candidate(5) == None
+    assert candidate(4) == None
+    assert candidate(2) == None
+    assert candidate(9) == True
+    assert candidate(9) == True
+    assert candidate(2) == None
+    assert candidate(5) == None
+    assert candidate(8) == False
+    assert candidate(11) == True
+    assert candidate(11) == True
+    assert candidate(8) == False
+    assert candidate(9) == True
+    assert candidate(5) == None
+    assert candidate(10) == False
+    assert candidate(7) == True
+    assert candidate(7) == True
+    assert candidate(9) == True
+    assert candidate(10) == False
+    assert candidate(11) == True
+    assert candidate(9) == True
+    assert candidate(10) == False
+    assert candidate(10) == False
+    assert candidate(7) == True
+    assert candidate(8) == False
+    assert candidate(2) == None
+    assert candidate(3) == None
+    assert candidate(6) == False
+    assert candidate(11) == True
+    assert candidate(3) == None
+    assert candidate(9) == True
+    assert candidate(7) == True
+    assert candidate(12) == False
+    assert candidate(7) == True
+    assert candidate(-1014) == False
+    assert candidate(-1015) == False
+    assert candidate(-1010) == False
+    assert candidate(-1014) == False
+    assert candidate(-1015) == False
+    assert candidate(-1006) == False
+    assert candidate(-1009) == False
+    assert candidate(-1012) == False
+    assert candidate(-1008) == False
+    assert candidate(-1012) == False
+    assert candidate(-1007) == False
+    assert candidate(-1014) == False
+    assert candidate(-1014) == False
+    assert candidate(-1006) == False
+    assert candidate(-1009) == False
+    assert candidate(-1009) == False
+    assert candidate(-1011) == False
+    assert candidate(-1011) == False
+    assert candidate(-1012) == False
+    assert candidate(-1014) == False
+    assert candidate(-1005) == False
+    assert candidate(-1010) == False
+    assert candidate(-1014) == False
+    assert candidate(-1009) == False
+    assert candidate(-1015) == False
+    assert candidate(-1014) == False
+    assert candidate(-1011) == False
+    assert candidate(-1005) == False
+    assert candidate(-1013) == False
+    assert candidate(-1008) == False
+    assert candidate(-1010) == False
+    assert candidate(-1006) == False
+    assert candidate(-1012) == False
+
+if __name__ == '__main__':
+    check(prime_num)

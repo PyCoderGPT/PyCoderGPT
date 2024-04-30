@@ -1,0 +1,109 @@
+from case_MBPP_197 import rearrange_bigger
+
+
+def check(candidate):
+    assert candidate(12)==21
+    assert candidate(10)==False
+    assert candidate(102)==120
+    assert candidate(14) == 41
+    assert candidate(9) == False
+    assert candidate(8) == False
+    assert candidate(11) == False
+    assert candidate(9) == False
+    assert candidate(8) == False
+    assert candidate(8) == False
+    assert candidate(15) == 51
+    assert candidate(8) == False
+    assert candidate(12) == 21
+    assert candidate(13) == 31
+    assert candidate(13) == 31
+    assert candidate(16) == 61
+    assert candidate(9) == False
+    assert candidate(17) == 71
+    assert candidate(8) == False
+    assert candidate(16) == 61
+    assert candidate(8) == False
+    assert candidate(17) == 71
+    assert candidate(13) == 31
+    assert candidate(16) == 61
+    assert candidate(7) == False
+    assert candidate(16) == 61
+    assert candidate(8) == False
+    assert candidate(16) == 61
+    assert candidate(15) == 51
+    assert candidate(14) == 41
+    assert candidate(8) == False
+    assert candidate(9) == False
+    assert candidate(7) == False
+    assert candidate(7) == False
+    assert candidate(9) == False
+    assert candidate(10) == False
+    assert candidate(6) == False
+    assert candidate(11) == False
+    assert candidate(6) == False
+    assert candidate(9) == False
+    assert candidate(12) == 21
+    assert candidate(13) == 31
+    assert candidate(10) == False
+    assert candidate(8) == False
+    assert candidate(5) == False
+    assert candidate(14) == 41
+    assert candidate(8) == False
+    assert candidate(9) == False
+    assert candidate(10) == False
+    assert candidate(11) == False
+    assert candidate(12) == 21
+    assert candidate(8) == False
+    assert candidate(9) == False
+    assert candidate(10) == False
+    assert candidate(14) == 41
+    assert candidate(15) == 51
+    assert candidate(9) == False
+    assert candidate(7) == False
+    assert candidate(13) == 31
+    assert candidate(9) == False
+    assert candidate(11) == False
+    assert candidate(10) == False
+    assert candidate(11) == False
+    assert candidate(6) == False
+    assert candidate(12) == 21
+    assert candidate(11) == False
+    assert candidate(14) == 41
+    assert candidate(7) == False
+    assert candidate(5) == False
+    assert candidate(106) == 160
+    assert candidate(104) == 140
+    assert candidate(107) == 170
+    assert candidate(99) == False
+    assert candidate(103) == 130
+    assert candidate(102) == 120
+    assert candidate(107) == 170
+    assert candidate(98) == False
+    assert candidate(99) == False
+    assert candidate(100) == False
+    assert candidate(107) == 170
+    assert candidate(105) == 150
+    assert candidate(100) == False
+    assert candidate(99) == False
+    assert candidate(103) == 130
+    assert candidate(102) == 120
+    assert candidate(101) == 110
+    assert candidate(100) == False
+    assert candidate(98) == False
+    assert candidate(103) == 130
+    assert candidate(100) == False
+    assert candidate(100) == False
+    assert candidate(97) == False
+    assert candidate(101) == 110
+    assert candidate(103) == 130
+    assert candidate(102) == 120
+    assert candidate(97) == False
+    assert candidate(97) == False
+    assert candidate(103) == 130
+    assert candidate(98) == False
+    assert candidate(106) == 160
+    assert candidate(97) == False
+    assert candidate(103) == 130
+
+if __name__ == '__main__':
+    check(rearrange_bigger)

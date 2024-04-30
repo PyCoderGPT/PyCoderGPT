@@ -1,0 +1,109 @@
+from case_MBPP_218 import parabola_directrix
+
+
+def check(candidate):
+    assert candidate(5,3,2)==-198
+    assert candidate(9,8,4)==-2336
+    assert candidate(2,4,6)==-130
+    assert candidate(9, 2, 4) == -176
+    assert candidate(1, 1, 1) == -7
+    assert candidate(9, 2, 4) == -176
+    assert candidate(1, 1, 6) == -2
+    assert candidate(5, 2, 1) == -99
+    assert candidate(8, 1, 1) == -63
+    assert candidate(9, 1, 5) == -67
+    assert candidate(6, 4, 2) == -406
+    assert candidate(1, 4, 7) == -61
+    assert candidate(5, 1, 5) == -35
+    assert candidate(10, 7, 1) == -1999
+    assert candidate(4, 5, 6) == -410
+    assert candidate(8, 7, 3) == -1597
+    assert candidate(3, 4, 6) == -198
+    assert candidate(3, 1, 6) == -18
+    assert candidate(8, 1, 1) == -63
+    assert candidate(5, 8, 4) == -1296
+    assert candidate(9, 8, 3) == -2337
+    assert candidate(8, 7, 3) == -1597
+    assert candidate(8, 7, 5) == -1595
+    assert candidate(7, 7, 6) == -1394
+    assert candidate(4, 1, 3) == -29
+    assert candidate(8, 5, 4) == -828
+    assert candidate(10, 7, 6) == -1994
+    assert candidate(8, 3, 1) == -319
+    assert candidate(6, 3, 6) == -234
+    assert candidate(10, 7, 1) == -1999
+    assert candidate(2, 2, 7) == -33
+    assert candidate(6, 2, 7) == -113
+    assert candidate(3, 3, 6) == -114
+    assert candidate(4, 5, 7) == -409
+    assert candidate(1, 6, 5) == -143
+    assert candidate(9, 1, 4) == -68
+    assert candidate(10, 3, 9) == -391
+    assert candidate(9, 10, 8) == -3628
+    assert candidate(8, 6, 9) == -1175
+    assert candidate(12, 9, 5) == -3931
+    assert candidate(7, 5, 4) == -724
+    assert candidate(9, 13, 5) == -6115
+    assert candidate(9, 10, 7) == -3629
+    assert candidate(11, 4, 6) == -742
+    assert candidate(13, 10, 6) == -5246
+    assert candidate(5, 4, 2) == -338
+    assert candidate(12, 5, 1) == -1247
+    assert candidate(12, 5, 4) == -1244
+    assert candidate(12, 11, 2) == -5854
+    assert candidate(13, 4, 5) == -879
+    assert candidate(10, 12, 4) == -5796
+    assert candidate(7, 5, 1) == -727
+    assert candidate(14, 9, 2) == -4590
+    assert candidate(5, 8, 2) == -1298
+    assert candidate(13, 13, 7) == -8833
+    assert candidate(5, 7, 6) == -994
+    assert candidate(12, 11, 7) == -5849
+    assert candidate(5, 7, 6) == -994
+    assert candidate(12, 11, 3) == -5853
+    assert candidate(14, 7, 4) == -2796
+    assert candidate(8, 5, 6) == -826
+    assert candidate(14, 13, 7) == -9513
+    assert candidate(11, 8, 8) == -2852
+    assert candidate(6, 11, 4) == -2924
+    assert candidate(12, 13, 6) == -8154
+    assert candidate(9, 9, 7) == -2945
+    assert candidate(13, 3, 6) == -514
+    assert candidate(4, 12, 2) == -2318
+    assert candidate(5, 9, 6) == -1634
+    assert candidate(3, 2, 10) == -50
+    assert candidate(7, 2, 4) == -136
+    assert candidate(5, 6, 7) == -733
+    assert candidate(1, 9, 8) == -320
+    assert candidate(7, 1, 5) == -51
+    assert candidate(5, 4, 5) == -335
+    assert candidate(7, 7, 5) == -1395
+    assert candidate(6, 7, 5) == -1195
+    assert candidate(7, 7, 5) == -1395
+    assert candidate(6, 2, 10) == -110
+    assert candidate(5, 9, 4) == -1636
+    assert candidate(7, 9, 3) == -2293
+    assert candidate(1, 8, 10) == -250
+    assert candidate(4, 6, 8) == -584
+    assert candidate(5, 3, 3) == -197
+    assert candidate(1, 8, 9) == -251
+    assert candidate(2, 7, 1) == -399
+    assert candidate(2, 3, 2) == -78
+    assert candidate(2, 3, 9) == -71
+    assert candidate(7, 9, 10) == -2286
+    assert candidate(7, 2, 5) == -135
+    assert candidate(5, 8, 1) == -1299
+    assert candidate(7, 9, 4) == -2292
+    assert candidate(3, 3, 8) == -112
+    assert candidate(2, 9, 7) == -649
+    assert candidate(3, 5, 1) == -311
+    assert candidate(3, 8, 8) == -772
+    assert candidate(4, 3, 3) == -157
+    assert candidate(2, 1, 2) == -14
+    assert candidate(2, 6, 2) == -294
+    assert candidate(2, 9, 4) == -652
+    assert candidate(4, 8, 11) == -1029
+    assert candidate(7, 4, 9) == -467
+
+if __name__ == '__main__':
+    check(parabola_directrix)

@@ -1,0 +1,109 @@
+from case_MBPP_074 import sum
+
+
+def check(candidate):
+    assert candidate(10,15) == 6
+    assert candidate(100,150) == 93
+    assert candidate(4,6) == 3
+    assert candidate(7, 15) == 1
+    assert candidate(15, 14) == 1
+    assert candidate(6, 14) == 3
+    assert candidate(6, 18) == 6
+    assert candidate(5, 12) == 1
+    assert candidate(14, 15) == 1
+    assert candidate(10, 13) == 1
+    assert candidate(10, 11) == 1
+    assert candidate(12, 20) == 7
+    assert candidate(14, 19) == 1
+    assert candidate(9, 19) == 1
+    assert candidate(6, 10) == 3
+    assert candidate(10, 12) == 3
+    assert candidate(7, 11) == 1
+    assert candidate(12, 18) == 12
+    assert candidate(12, 17) == 1
+    assert candidate(7, 15) == 1
+    assert candidate(15, 16) == 1
+    assert candidate(12, 16) == 7
+    assert candidate(13, 18) == 1
+    assert candidate(14, 11) == 1
+    assert candidate(8, 14) == 3
+    assert candidate(9, 13) == 1
+    assert candidate(7, 12) == 1
+    assert candidate(13, 17) == 1
+    assert candidate(13, 14) == 1
+    assert candidate(7, 10) == 1
+    assert candidate(13, 12) == 1
+    assert candidate(14, 20) == 3
+    assert candidate(9, 12) == 4
+    assert candidate(5, 16) == 1
+    assert candidate(10, 10) == 8
+    assert candidate(5, 11) == 1
+    assert candidate(96, 147) == 4
+    assert candidate(103, 146) == 1
+    assert candidate(100, 147) == 1
+    assert candidate(97, 155) == 1
+    assert candidate(105, 145) == 6
+    assert candidate(98, 152) == 3
+    assert candidate(102, 155) == 1
+    assert candidate(96, 151) == 1
+    assert candidate(103, 146) == 1
+    assert candidate(100, 145) == 6
+    assert candidate(104, 145) == 1
+    assert candidate(103, 153) == 1
+    assert candidate(101, 146) == 1
+    assert candidate(95, 148) == 1
+    assert candidate(99, 148) == 1
+    assert candidate(105, 155) == 6
+    assert candidate(100, 155) == 6
+    assert candidate(95, 150) == 6
+    assert candidate(97, 153) == 1
+    assert candidate(96, 155) == 1
+    assert candidate(95, 145) == 6
+    assert candidate(100, 150) == 93
+    assert candidate(95, 154) == 1
+    assert candidate(99, 149) == 1
+    assert candidate(97, 154) == 1
+    assert candidate(103, 147) == 1
+    assert candidate(95, 151) == 1
+    assert candidate(97, 151) == 1
+    assert candidate(95, 151) == 1
+    assert candidate(99, 147) == 4
+    assert candidate(100, 147) == 1
+    assert candidate(102, 152) == 3
+    assert candidate(105, 153) == 4
+    assert candidate(3, 2) == 1
+    assert candidate(6, 7) == 1
+    assert candidate(1, 9) == 0
+    assert candidate(3, 5) == 1
+    assert candidate(3, 1) == 0
+    assert candidate(4, 4) == 3
+    assert candidate(5, 7) == 1
+    assert candidate(4, 5) == 1
+    assert candidate(5, 5) == 1
+    assert candidate(3, 7) == 1
+    assert candidate(4, 8) == 3
+    assert candidate(9, 8) == 1
+    assert candidate(4, 9) == 1
+    assert candidate(1, 11) == 0
+    assert candidate(9, 6) == 4
+    assert candidate(1, 8) == 0
+    assert candidate(1, 7) == 0
+    assert candidate(9, 4) == 1
+    assert candidate(4, 4) == 3
+    assert candidate(6, 5) == 1
+    assert candidate(4, 7) == 1
+    assert candidate(3, 4) == 1
+    assert candidate(9, 9) == 4
+    assert candidate(1, 2) == 0
+    assert candidate(5, 10) == 1
+    assert candidate(3, 3) == 1
+    assert candidate(7, 6) == 1
+    assert candidate(3, 8) == 1
+    assert candidate(4, 7) == 1
+    assert candidate(8, 10) == 3
+    assert candidate(4, 1) == 0
+    assert candidate(9, 9) == 4
+    assert candidate(6, 4) == 3
+
+if __name__ == '__main__':
+    check(sum)

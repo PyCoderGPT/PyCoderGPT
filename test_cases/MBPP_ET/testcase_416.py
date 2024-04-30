@@ -1,0 +1,109 @@
+from case_MBPP_416 import left_Rotate
+
+
+def check(candidate):
+    assert candidate(16,2) == 64
+    assert candidate(10,2) == 40
+    assert candidate(99,3) == 792
+    assert candidate(19, 6) == 1216
+    assert candidate(15, 5) == 480
+    assert candidate(18, 3) == 144
+    assert candidate(13, 5) == 416
+    assert candidate(18, 3) == 144
+    assert candidate(12, 7) == 1536
+    assert candidate(12, 3) == 96
+    assert candidate(19, 2) == 76
+    assert candidate(15, 5) == 480
+    assert candidate(20, 2) == 80
+    assert candidate(19, 6) == 1216
+    assert candidate(17, 7) == 2176
+    assert candidate(20, 2) == 80
+    assert candidate(15, 5) == 480
+    assert candidate(16, 1) == 32
+    assert candidate(11, 5) == 352
+    assert candidate(14, 4) == 224
+    assert candidate(19, 1) == 38
+    assert candidate(17, 3) == 136
+    assert candidate(21, 2) == 84
+    assert candidate(20, 2) == 80
+    assert candidate(16, 1) == 32
+    assert candidate(12, 7) == 1536
+    assert candidate(15, 5) == 480
+    assert candidate(14, 3) == 112
+    assert candidate(15, 6) == 960
+    assert candidate(13, 6) == 832
+    assert candidate(16, 3) == 128
+    assert candidate(15, 6) == 960
+    assert candidate(21, 3) == 168
+    assert candidate(15, 3) == 120
+    assert candidate(12, 4) == 192
+    assert candidate(15, 2) == 60
+    assert candidate(9, 1) == 18
+    assert candidate(11, 3) == 88
+    assert candidate(15, 2) == 60
+    assert candidate(13, 3) == 104
+    assert candidate(5, 7) == 640
+    assert candidate(5, 6) == 320
+    assert candidate(7, 1) == 14
+    assert candidate(11, 4) == 176
+    assert candidate(8, 5) == 256
+    assert candidate(7, 7) == 896
+    assert candidate(5, 4) == 80
+    assert candidate(7, 6) == 448
+    assert candidate(10, 1) == 20
+    assert candidate(15, 2) == 60
+    assert candidate(12, 6) == 768
+    assert candidate(9, 4) == 144
+    assert candidate(14, 1) == 28
+    assert candidate(13, 4) == 208
+    assert candidate(11, 4) == 176
+    assert candidate(12, 1) == 24
+    assert candidate(8, 4) == 128
+    assert candidate(12, 5) == 384
+    assert candidate(8, 7) == 1024
+    assert candidate(8, 6) == 512
+    assert candidate(5, 4) == 80
+    assert candidate(10, 1) == 20
+    assert candidate(14, 3) == 112
+    assert candidate(15, 3) == 120
+    assert candidate(6, 3) == 48
+    assert candidate(5, 6) == 320
+    assert candidate(11, 6) == 704
+    assert candidate(15, 2) == 60
+    assert candidate(8, 3) == 64
+    assert candidate(95, 3) == 760
+    assert candidate(100, 4) == 1600
+    assert candidate(98, 7) == 12544
+    assert candidate(101, 8) == 25856
+    assert candidate(99, 1) == 198
+    assert candidate(95, 1) == 190
+    assert candidate(96, 7) == 12288
+    assert candidate(102, 2) == 408
+    assert candidate(103, 4) == 1648
+    assert candidate(104, 8) == 26624
+    assert candidate(96, 8) == 24576
+    assert candidate(97, 3) == 776
+    assert candidate(99, 2) == 396
+    assert candidate(95, 3) == 760
+    assert candidate(101, 6) == 6464
+    assert candidate(101, 2) == 404
+    assert candidate(102, 3) == 816
+    assert candidate(101, 8) == 25856
+    assert candidate(104, 5) == 3328
+    assert candidate(103, 4) == 1648
+    assert candidate(103, 3) == 824
+    assert candidate(103, 6) == 6592
+    assert candidate(96, 3) == 768
+    assert candidate(102, 8) == 26112
+    assert candidate(101, 3) == 808
+    assert candidate(96, 1) == 192
+    assert candidate(101, 5) == 3232
+    assert candidate(101, 7) == 12928
+    assert candidate(99, 8) == 25344
+    assert candidate(98, 6) == 6272
+    assert candidate(103, 4) == 1648
+    assert candidate(102, 2) == 408
+    assert candidate(96, 6) == 6144
+
+if __name__ == '__main__':
+    check(left_Rotate)

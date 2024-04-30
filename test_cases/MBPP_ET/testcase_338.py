@@ -1,0 +1,109 @@
+from case_MBPP_338 import wind_chill
+
+
+def check(candidate):
+    assert candidate(120,35)==40
+    assert candidate(40,70)==86
+    assert candidate(10,100)==116
+    assert candidate(116, 30) == 33
+    assert candidate(122, 32) == 36
+    assert candidate(125, 32) == 36
+    assert candidate(123, 32) == 36
+    assert candidate(124, 38) == 45
+    assert candidate(118, 40) == 48
+    assert candidate(122, 33) == 37
+    assert candidate(115, 34) == 39
+    assert candidate(116, 33) == 37
+    assert candidate(117, 39) == 46
+    assert candidate(125, 31) == 34
+    assert candidate(125, 39) == 46
+    assert candidate(124, 39) == 46
+    assert candidate(118, 33) == 37
+    assert candidate(117, 32) == 36
+    assert candidate(118, 35) == 40
+    assert candidate(121, 32) == 36
+    assert candidate(119, 31) == 34
+    assert candidate(124, 37) == 43
+    assert candidate(118, 32) == 36
+    assert candidate(115, 40) == 48
+    assert candidate(125, 38) == 45
+    assert candidate(125, 36) == 42
+    assert candidate(122, 32) == 36
+    assert candidate(122, 34) == 39
+    assert candidate(121, 40) == 48
+    assert candidate(117, 38) == 45
+    assert candidate(123, 36) == 42
+    assert candidate(117, 36) == 42
+    assert candidate(120, 33) == 37
+    assert candidate(116, 39) == 46
+    assert candidate(122, 40) == 48
+    assert candidate(124, 31) == 34
+    assert candidate(38, 69) == 85
+    assert candidate(39, 69) == 85
+    assert candidate(38, 73) == 90
+    assert candidate(45, 69) == 85
+    assert candidate(38, 73) == 90
+    assert candidate(39, 69) == 85
+    assert candidate(42, 71) == 88
+    assert candidate(38, 72) == 89
+    assert candidate(42, 66) == 81
+    assert candidate(45, 73) == 91
+    assert candidate(41, 73) == 90
+    assert candidate(39, 73) == 90
+    assert candidate(43, 70) == 87
+    assert candidate(45, 65) == 80
+    assert candidate(39, 66) == 81
+    assert candidate(45, 67) == 83
+    assert candidate(45, 70) == 87
+    assert candidate(44, 72) == 89
+    assert candidate(43, 68) == 84
+    assert candidate(39, 70) == 86
+    assert candidate(39, 70) == 86
+    assert candidate(40, 72) == 89
+    assert candidate(38, 71) == 87
+    assert candidate(44, 69) == 85
+    assert candidate(41, 67) == 82
+    assert candidate(37, 73) == 90
+    assert candidate(43, 69) == 85
+    assert candidate(43, 75) == 93
+    assert candidate(40, 73) == 90
+    assert candidate(40, 66) == 81
+    assert candidate(41, 71) == 88
+    assert candidate(40, 71) == 88
+    assert candidate(38, 70) == 86
+    assert candidate(11, 100) == 117
+    assert candidate(15, 102) == 121
+    assert candidate(14, 102) == 121
+    assert candidate(14, 102) == 121
+    assert candidate(7, 104) == 119
+    assert candidate(8, 100) == 115
+    assert candidate(11, 98) == 114
+    assert candidate(5, 102) == 114
+    assert candidate(9, 105) == 121
+    assert candidate(6, 102) == 115
+    assert candidate(6, 96) == 108
+    assert candidate(7, 102) == 116
+    assert candidate(9, 102) == 118
+    assert candidate(14, 97) == 115
+    assert candidate(8, 103) == 118
+    assert candidate(14, 96) == 114
+    assert candidate(14, 95) == 112
+    assert candidate(6, 100) == 113
+    assert candidate(15, 105) == 125
+    assert candidate(5, 96) == 107
+    assert candidate(14, 103) == 122
+    assert candidate(12, 96) == 113
+    assert candidate(10, 95) == 110
+    assert candidate(14, 101) == 120
+    assert candidate(13, 95) == 112
+    assert candidate(14, 103) == 122
+    assert candidate(13, 100) == 118
+    assert candidate(14, 101) == 120
+    assert candidate(8, 105) == 121
+    assert candidate(11, 102) == 119
+    assert candidate(10, 105) == 122
+    assert candidate(6, 96) == 108
+    assert candidate(13, 101) == 119
+
+if __name__ == '__main__':
+    check(wind_chill)

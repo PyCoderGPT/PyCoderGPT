@@ -1,0 +1,109 @@
+from case_MBPP_137 import dog_age
+
+
+def check(candidate):
+    assert candidate(12)==61
+    assert candidate(15)==73
+    assert candidate(24)==109
+    assert candidate(17) == 81
+    assert candidate(14) == 69
+    assert candidate(9) == 49
+    assert candidate(8) == 45
+    assert candidate(11) == 57
+    assert candidate(12) == 61
+    assert candidate(10) == 53
+    assert candidate(12) == 61
+    assert candidate(7) == 41
+    assert candidate(14) == 69
+    assert candidate(7) == 41
+    assert candidate(9) == 49
+    assert candidate(17) == 81
+    assert candidate(8) == 45
+    assert candidate(15) == 73
+    assert candidate(12) == 61
+    assert candidate(16) == 77
+    assert candidate(8) == 45
+    assert candidate(11) == 57
+    assert candidate(16) == 77
+    assert candidate(17) == 81
+    assert candidate(12) == 61
+    assert candidate(7) == 41
+    assert candidate(11) == 57
+    assert candidate(14) == 69
+    assert candidate(17) == 81
+    assert candidate(14) == 69
+    assert candidate(16) == 77
+    assert candidate(15) == 73
+    assert candidate(11) == 57
+    assert candidate(12) == 61
+    assert candidate(10) == 53
+    assert candidate(16) == 77
+    assert candidate(13) == 65
+    assert candidate(14) == 69
+    assert candidate(18) == 85
+    assert candidate(20) == 93
+    assert candidate(19) == 89
+    assert candidate(10) == 53
+    assert candidate(16) == 77
+    assert candidate(16) == 77
+    assert candidate(13) == 65
+    assert candidate(11) == 57
+    assert candidate(19) == 89
+    assert candidate(17) == 81
+    assert candidate(19) == 89
+    assert candidate(20) == 93
+    assert candidate(19) == 89
+    assert candidate(15) == 73
+    assert candidate(13) == 65
+    assert candidate(10) == 53
+    assert candidate(18) == 85
+    assert candidate(15) == 73
+    assert candidate(17) == 81
+    assert candidate(18) == 85
+    assert candidate(12) == 61
+    assert candidate(17) == 81
+    assert candidate(17) == 81
+    assert candidate(18) == 85
+    assert candidate(18) == 85
+    assert candidate(16) == 77
+    assert candidate(11) == 57
+    assert candidate(14) == 69
+    assert candidate(11) == 57
+    assert candidate(16) == 77
+    assert candidate(16) == 77
+    assert candidate(22) == 101
+    assert candidate(25) == 113
+    assert candidate(20) == 93
+    assert candidate(24) == 109
+    assert candidate(23) == 105
+    assert candidate(24) == 109
+    assert candidate(19) == 89
+    assert candidate(28) == 125
+    assert candidate(26) == 117
+    assert candidate(26) == 117
+    assert candidate(20) == 93
+    assert candidate(20) == 93
+    assert candidate(23) == 105
+    assert candidate(25) == 113
+    assert candidate(28) == 125
+    assert candidate(26) == 117
+    assert candidate(20) == 93
+    assert candidate(28) == 125
+    assert candidate(26) == 117
+    assert candidate(23) == 105
+    assert candidate(20) == 93
+    assert candidate(25) == 113
+    assert candidate(29) == 129
+    assert candidate(27) == 121
+    assert candidate(29) == 129
+    assert candidate(22) == 101
+    assert candidate(25) == 113
+    assert candidate(23) == 105
+    assert candidate(29) == 129
+    assert candidate(20) == 93
+    assert candidate(26) == 117
+    assert candidate(29) == 129
+    assert candidate(19) == 89
+
+if __name__ == '__main__':
+    check(dog_age)

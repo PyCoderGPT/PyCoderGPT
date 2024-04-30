@@ -1,0 +1,109 @@
+from case_MBPP_281 import surfacearea_cylinder
+
+
+def check(candidate):
+    assert candidate(10,5)==942.45
+    assert candidate(4,5)==226.18800000000002
+    assert candidate(4,10)==351.848
+    assert candidate(9, 9) == 1017.8460000000001
+    assert candidate(5, 2) == 219.90500000000003
+    assert candidate(13, 1) == 1143.506
+    assert candidate(6, 5) == 414.678
+    assert candidate(8, 8) == 804.224
+    assert candidate(9, 7) == 904.7520000000001
+    assert candidate(8, 4) == 603.168
+    assert candidate(10, 7) == 1068.1100000000001
+    assert candidate(15, 8) == 2167.635
+    assert candidate(15, 8) == 2167.635
+    assert candidate(9, 5) == 791.6580000000001
+    assert candidate(12, 9) == 1583.3159999999998
+    assert candidate(8, 2) == 502.64000000000004
+    assert candidate(15, 8) == 2167.635
+    assert candidate(12, 8) == 1507.92
+    assert candidate(13, 3) == 1306.864
+    assert candidate(10, 1) == 691.1300000000001
+    assert candidate(12, 7) == 1432.524
+    assert candidate(8, 2) == 502.64000000000004
+    assert candidate(13, 7) == 1633.58
+    assert candidate(14, 1) == 1319.43
+    assert candidate(15, 5) == 1884.9
+    assert candidate(12, 3) == 1130.94
+    assert candidate(10, 1) == 691.1300000000001
+    assert candidate(10, 7) == 1068.1100000000001
+    assert candidate(7, 1) == 351.848
+    assert candidate(15, 7) == 2073.3900000000003
+    assert candidate(13, 9) == 1796.938
+    assert candidate(11, 4) == 1036.695
+    assert candidate(6, 4) == 376.98
+    assert candidate(5, 10) == 471.225
+    assert candidate(9, 8) == 961.2990000000001
+    assert candidate(15, 8) == 2167.635
+    assert candidate(9, 8) == 961.2990000000001
+    assert candidate(7, 5) == 527.772
+    assert candidate(4, 4) == 201.056
+    assert candidate(5, 10) == 471.225
+    assert candidate(7, 10) == 747.677
+    assert candidate(6, 1) == 263.88599999999997
+    assert candidate(6, 9) == 565.47
+    assert candidate(7, 8) == 659.715
+    assert candidate(7, 7) == 615.734
+    assert candidate(1, 7) == 50.264
+    assert candidate(5, 3) == 251.32000000000002
+    assert candidate(7, 4) == 483.79100000000005
+    assert candidate(8, 1) == 452.37600000000003
+    assert candidate(4, 8) == 301.584
+    assert candidate(8, 2) == 502.64000000000004
+    assert candidate(4, 10) == 351.848
+    assert candidate(6, 7) == 490.074
+    assert candidate(5, 5) == 314.15000000000003
+    assert candidate(6, 1) == 263.88599999999997
+    assert candidate(7, 6) == 571.753
+    assert candidate(5, 7) == 376.98
+    assert candidate(4, 7) == 276.452
+    assert candidate(3, 10) == 245.037
+    assert candidate(4, 4) == 201.056
+    assert candidate(7, 7) == 615.734
+    assert candidate(1, 10) == 69.113
+    assert candidate(8, 8) == 804.224
+    assert candidate(3, 9) == 226.188
+    assert candidate(9, 10) == 1074.393
+    assert candidate(7, 8) == 659.715
+    assert candidate(9, 7) == 904.7520000000001
+    assert candidate(4, 4) == 201.056
+    assert candidate(7, 4) == 483.79100000000005
+    assert candidate(8, 10) == 904.7520000000001
+    assert candidate(3, 14) == 320.433
+    assert candidate(2, 13) == 188.49
+    assert candidate(1, 8) == 56.547000000000004
+    assert candidate(4, 12) == 402.112
+    assert candidate(2, 12) == 175.924
+    assert candidate(7, 11) == 791.658
+    assert candidate(4, 8) == 301.584
+    assert candidate(6, 13) == 716.262
+    assert candidate(1, 10) == 69.113
+    assert candidate(2, 12) == 175.924
+    assert candidate(8, 10) == 904.7520000000001
+    assert candidate(7, 5) == 527.772
+    assert candidate(3, 6) == 169.641
+    assert candidate(8, 11) == 955.0160000000001
+    assert candidate(7, 5) == 527.772
+    assert candidate(6, 13) == 716.262
+    assert candidate(4, 14) == 452.37600000000003
+    assert candidate(7, 12) == 835.6390000000001
+    assert candidate(3, 6) == 169.641
+    assert candidate(9, 11) == 1130.94
+    assert candidate(3, 7) == 188.49
+    assert candidate(8, 7) == 753.96
+    assert candidate(2, 6) == 100.528
+    assert candidate(8, 8) == 804.224
+    assert candidate(7, 13) == 879.6200000000001
+    assert candidate(1, 7) == 50.264
+    assert candidate(5, 14) == 596.8850000000001
+    assert candidate(8, 6) == 703.696
+    assert candidate(3, 10) == 245.037
+    assert candidate(4, 15) == 477.50800000000004
+    assert candidate(9, 5) == 791.6580000000001
+    assert candidate(8, 9) == 854.488
+
+if __name__ == '__main__':
+    check(surfacearea_cylinder)
